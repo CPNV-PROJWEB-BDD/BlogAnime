@@ -8,6 +8,9 @@ if (isset($_GET['action'])){
         case "home" :
             home();
             break;
+        case "displayArticles":
+            displayArticles();
+            break;
         default :
             lost();
     }

@@ -1,0 +1,27 @@
+.Image-header{
+    height: 120px;
+}
+
+.wrap_menu, .main_menu{
+    display: flex;
+    padding:0;
+}
+
+.wrap_menu, .main_menu li{
+    list-style-type: none ;
+}
+
+.wrap_menu, .main_menu a{
+    display:block;
+    min-width: 350px;
+
+    margin: 0.5rem;
+    padding: 0.4rem 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.wrap_menu{
+    border: black;
+}
