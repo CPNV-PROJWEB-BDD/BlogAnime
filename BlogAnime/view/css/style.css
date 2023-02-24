@@ -1,27 +1,53 @@
+body{
+    font-size: 25px;
+    font-family: "Arial Black"
+}
+
+#Box2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid black 2px;
+}
+
 .Image-header{
     height: 120px;
 }
 
-.wrap_menu, .main_menu{
-    display: flex;
-    padding:0;
+.Logo{
+    height: 120px;
+    width: 120px;
 }
 
-.wrap_menu, .main_menu li{
-    list-style-type: none ;
-}
-
-.wrap_menu, .main_menu a{
-    display:block;
-    min-width: 350px;
-
-    margin: 0.5rem;
-    padding: 0.4rem 0;
-    color: black;
-    text-align: center;
+.navlink{
     text-decoration: none;
+    color: black;
+    display: block;
+    position: relative;
+    margin-left: 3em;
 }
 
-.wrap_menu{
-    border: black;
+#Login{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: solid black 1px;
+    align-self: flex-end;
+    height: 120px;
+    width: 200px;
+}
+
+#LoginText{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    color: black;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }

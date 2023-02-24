@@ -9,23 +9,25 @@
 <!--Header-->
 <header>
     <!-- Header desktop -->
-    <div class="wrap_menu">
-        <a href="index.php" class="logo"><img class="Image-header" src="view/image/Logo_BlogAnime.png"></a>
-        <div>
-            <nav class="menu">
-                <ul class="main_menu">
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="index.php?action=Blog">Blog</a></li>
-                    <li><a href="index.php?action=AboutUs">A propos de nous</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <a href="#">Login</a>
-        </div>
-    </div>
 
-    <!-- Header Mobile -->
+    <div id="Box2">
+
+             <a href="index.php" class="Logo"><img class="Image-header" src="view/image/Logo_BlogAnime.png"></a>
+
+
+         <nav class="menu">
+             <ul class="main_menu">
+                 <li><a href="index.php" class="navlink">Accueil</a></li>
+                 <li><a href="index.php?action=Blog" class="navlink">Blog</a></li>
+                 <li><a href="index.php?action=AboutUs" class="navlink">A propos de nous</a></li>
+             </ul>
+         </nav>
+         <div id="Login">
+             <a id="LoginText" href="#">Login</a>
+         </div>
+     </div>
+
+     <!-- Header Mobile -->
 
 
 </header>

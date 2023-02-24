@@ -2,19 +2,21 @@
 
 require 'controller/navigation.php';
 
-if (isset($_GET['action'])){
+if (isset($_GET['action'])) {
     $action = $_GET['action'];
-    switch ($action){
+    switch ($action) {
         case "home" :
             home();
             break;
-        case "displayArticles":
-            displayArticles();
+        case "Blog":
+            getBlog();
+            break;
+        case "AboutUs":
+            getAboutUs();
             break;
         default :
             lost();
     }
-}
-else{
+} else {
     home();
 }
