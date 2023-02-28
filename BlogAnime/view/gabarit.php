@@ -17,9 +17,9 @@
 
          <nav class="menu">
              <ul class="main_menu">
-                 <li><a href="index.php" class="navlink">Accueil</a></li>
-                 <li><a href="index.php?action=Blog" class="navlink">Blog</a></li>
-                 <li><a href="index.php?action=AboutUs" class="navlink">A propos de nous</a></li>
+                 <li><a class="navlink" href="index.php">Accueil</a></li>
+                 <li><a class="navlink" href="index.php?action=Blog">Blog</a></li>
+                 <li><a class="navlink" href="index.php?action=AboutUs">A propos de nous</a></li>
              </ul>
          </nav>
          <div id="Login">
