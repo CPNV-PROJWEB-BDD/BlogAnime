@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 25px;
-    font-family: "Arial Black"
+    font-family: "Arial";
 }
 
 #Box2{
@@ -68,4 +68,69 @@ ul {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.box-footer{
+    display: flex;
+    border: solid black 1px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.box-left{
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#fMail{
+    height: 50px;
+    width: 400px;
+    border: none;
+    padding: 16px 32px;
+    border-top-left-radius:4px ;
+    border-bottom-left-radius:4px ;
+    box-sizing: border-box;
+    border-bottom: solid black 1px;
+    border-left: solid black 1px;
+    border-top: solid black 1px;
+
+}
+#btnSubmit{
+    height: 18px;
+    background-color: #04AA6D;
+    border-left: solid #000 1px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius:4px ;
+    border-bottom-right-radius:4px ;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+}
+#fMail:focus{
+    outline: none;
+}
+#copyright{
+    font-size: 15px;
+}
+.box-right{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.logo{
+    height: 50px;
 }
