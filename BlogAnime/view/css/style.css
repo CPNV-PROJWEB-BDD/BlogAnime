@@ -5,7 +5,7 @@ body{
     font-family: "Arial Black"
 }
 
-#Box2{
+#Box1{
     display: flex;
     align-items: center;
     justify-content: flex-start;

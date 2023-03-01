@@ -10,10 +10,8 @@
 <header>
     <!-- Header desktop -->
 
-    <div id="Box2">
-
-             <a href="index.php" class="Logo"><img class="Image-header" src="view/image/Logo_BlogAnime.png"></a>
-
+    <div id="Box1">
+             <a href="index.php" class="Logo"><img class="Image-header" src="../view/image/Logo_BlogAnime.png"></a>
 
          <nav class="menu">
              <ul class="main_menu">
@@ -22,8 +20,9 @@
                  <li><a class="navlink" href="index.php?action=AboutUs">A propos de nous</a></li>
              </ul>
          </nav>
+
          <div id="Login">
-             <a id="LoginText" href="#">Login</a>
+             <a id="LoginText" href="index.php?action=Login">Login</a>
          </div>
      </div>
 
@@ -36,5 +35,3 @@
 
 <!--Footer-->
 </body>
-
-

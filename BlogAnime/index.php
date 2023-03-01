@@ -14,6 +14,9 @@ if (isset($_GET['action'])) {
         case "AboutUs":
             getAboutUs();
             break;
+        case "Login":
+            getLogin();
+            break;
         default :
             lost();
     }
