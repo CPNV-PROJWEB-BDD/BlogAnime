@@ -6,6 +6,24 @@
     <link rel="stylesheet" type="text/css" href="view/css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
+<!--Header-->
+<header id="topbar">
+    <a href="index.php" class="Image-header"><img class="Logo" src="view/image/Logo_BlogAnime.png" alt="logo"></a>
+    <nav class="navbar">
+        <div class="ulNavbar">
+            <a class="navlink" href="index.php?action=home">Accueil</a>
+            <a class="navlink" href="index.php?action=Blog">Blog</a>
+            <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
+            <a id="Login" href="#">Login </a>
+        </div>
+        <div class="navbarbtn" onclick="displayNavbar(this)">
+            <div class="barbtn1"></div>
+            <div class="barbtn2"></div>
+            <div class="barbtn3"></div>
+        </div>
+    </nav>
+=======
 
     <div id="Box1">
              <a href="index.php" class="Logo"><img class="Image-header" src="../view/image/Logo_BlogAnime.png"></a>
@@ -26,6 +44,7 @@
     <!-- Header Mobile -->
 
 
+>>>>>>> ce42fe927ab9f9a5e4d50c2ead63e8c08790920c
 </header>
 
 <?= $content; ?>
@@ -74,3 +93,18 @@
     </div>
 </footer>
 </body>
+<<<<<<< HEAD
+<script>
+    function displayNavbar(btnIcon) {
+        btnIcon.classList.toggle("change");
+
+        //var links = document.getElementById("ulNavbar");
+        //if (links.style.display === "block") {
+        //    links.style.display = "none";
+        //} else {
+        //    links.style.display = "block";
+        //}
+    }
+</script>
+=======
+>>>>>>> ce42fe927ab9f9a5e4d50c2ead63e8c08790920c
