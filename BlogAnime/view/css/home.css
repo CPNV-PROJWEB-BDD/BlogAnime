@@ -14,9 +14,19 @@
     border: solid black 2px;
 }
 
-.Welcome-Image{
+.Enjoy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align : justify;
     width: 50%;
     height: 500px;
+    border: solid black 2px;
+}
+
+.Welcome-Image{
+    width: 50%;
+    height: 498px;
     border: solid black 2px;
 }
 

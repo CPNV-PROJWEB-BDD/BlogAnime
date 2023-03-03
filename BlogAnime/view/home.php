@@ -14,9 +14,7 @@ $title = "BlogAnime";
     <div class="welcome">
         <a>Bonjour !<br> et bienvenue sur <br> notre site de blog d'anime</a>
     </div>
-    <div class="Welcome-Image">
-        <a>inserez image</a>
-    </div>
+    <img class="Welcome-Image" src="view/image/HomePicture.png">
 </div>
 
 <div class="Box">
@@ -29,14 +27,13 @@ $title = "BlogAnime";
     <div class="Welcome-Image">
         <a>images decrivant un articles</a>
     </div>
-    <div class="welcome">
+    <div class="Enjoy">
         <a>Amusez vous à explorer notre site !<br>Et découvrez tout ce que vous chercher<br> sur vos personnage préféré !!!</a>
     </div>
 </div>
 
 <div class="Box">
     <img src="../view/image/JoinBanner.png" id="Joinbanner">
-
     <div id="Join">
         <button class="recBtn" role="button">Click to Join us !</button>
     </div>
