@@ -20,7 +20,7 @@ $title = "AboutUs";
         <div class="Titre-AboutUs">
             <a class="Texte-Titre-AboutUs">
                 <h1>A propos de nous</h1>
-                <h3>On explique tout!</h3>
+                <h3>On vous explique tout!</h3>
             </a>
         </div>
         <div class="Info-AboutUs">
@@ -50,14 +50,10 @@ $title = "AboutUs";
                 les mangas et animés !
                 <br>
             <ul>
-                <li><a class="lien-Réseaux-Sociaux-AboutUs"
-                       href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><h4>Instagram</h4></a></li>
-                <li><a class="lien-Réseaux-Sociaux-AboutUs" href="https://twitter.com/BlogAnime2023"><h4>Twitter</h4>
-                    </a></li>
-                <li><a class="lien-Réseaux-Sociaux-AboutUs" href="https://www.reddit.com/user/BlogAnime2023"><h4>
-                            Reddit</h4></a></li>
-                <li><a class="lien-Réseaux-Sociaux-AboutUs"
-                       href="https://www.facebook.com/profile.php?id=100090937893061""><h4>Facebook</h4></a></li>
+                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><h4>Instagram</h4></a>
+                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://twitter.com/BlogAnime2023"><h4>Twitter</h4></a>
+                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://www.reddit.com/user/BlogAnime2023"><h4>Reddit</h4></a>
+                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://www.facebook.com/profile.php?id=100090937893061""><h4>Facebook</h4></a>
             </ul>
 
             </p>
