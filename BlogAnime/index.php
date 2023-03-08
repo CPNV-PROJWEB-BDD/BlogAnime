@@ -1,6 +1,7 @@
 <?php
 
 require 'controller/navigation.php';
+require 'controller/User.php';
 
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
@@ -14,8 +15,8 @@ if (isset($_GET['action'])) {
         case "AboutUs":
             getAboutUs();
             break;
-        case "Login":
-            getLogin();
+        case "register":
+            displayregister($_POST);
             break;
         default :
             lost();
