@@ -4,31 +4,33 @@
     <title><?= $title; ?></title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="view/css/style.css">
+    <script src="view/script/master.js"></script>
 </head>
 <body>
 <!--Header-->
 <header id="topbar">
-    <a href="index.php" class="Image-header"><img class="Logo" src="view/image/Logo_BlogAnime.png" alt="logo"></a>
-    <nav class="navbar">
 
-        <div class="ulNavbar">
+    <nav class="navbar">
+        <a href="index.php" class="Image-header"><img class="Logo" src="view/image/Logo_BlogAnime.png" alt="logo"></a>
+        <div class="mobileNavbar">
+            <div class="navbarbtn" onclick="displayNavbar(this)">
+                <div class="barbtn1"></div>
+                <div class="barbtn2"></div>
+                <div class="barbtn3"></div>
+            </div>
+        </div>
+        <div id="ulNavbar">
             <a class="navlink" href="index.php?action=home">Accueil</a>
             <a class="navlink" href="index.php?action=Blog">Blog</a>
             <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
             <a id="Login" href="#">Login</a>
         </div>
-        <div class="navbarbtn" onclick="displayNavbar(this)">
-            <div class="barbtn1"></div>
-            <div class="barbtn2"></div>
-            <div class="barbtn3"></div>
-        </div>
+
     </nav>
 </header>
 
 
-
 <?= $content; ?>
-
 
 
 <!--Footer-->
@@ -63,10 +65,16 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><img class="Image-header" id="instagram" src="view/image/instagram-logo.png"></a>
-                        <a href="https://twitter.com/BlogAnime2023"><img class="Image-header" id="twitter" src="view/image/twitter-logo.jpg"></a>
-                        <a href="https://www.reddit.com/user/BlogAnime2023"><img class="Image-header" id="reddit" src="view/image/reddit-logo.jpg"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100090937893061"><img class="Image-header" id="facebook" src="view/image/facebook-logo.jpg"></a>
+                        <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><img class="Image-header"
+                                                                                               id="instagram"
+                                                                                               src="view/image/instagram-logo.png"></a>
+                        <a href="https://twitter.com/BlogAnime2023"><img class="Image-header" id="twitter"
+                                                                         src="view/image/twitter-logo.jpg"></a>
+                        <a href="https://www.reddit.com/user/BlogAnime2023"><img class="Image-header" id="reddit"
+                                                                                 src="view/image/reddit-logo.jpg"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100090937893061"><img class="Image-header"
+                                                                                               id="facebook"
+                                                                                               src="view/image/facebook-logo.jpg"></a>
                     </td>
                 </tr>
             </table>
@@ -74,16 +82,3 @@
     </div>
 </footer>
 </body>
-<script>
-    function displayNavbar(btnIcon) {
-        btnIcon.classList.toggle("change");
-
-        //var links = document.getElementById("ulNavbar");
-        //if (links.style.display === "block") {
-        //    links.style.display = "none";
-        //} else {
-        //    links.style.display = "block";
-        //}
-    }
-</script>
-
