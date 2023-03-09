@@ -35,7 +35,7 @@ $title = "BlogAnime";
 <div class="Box">
     <img src="../view/image/JoinBanner.png" id="Joinbanner">
     <div id="Join">
-        <button class="recBtn" role="button">Click to Join us !</button>
+        <a href="index.php?action=register"><button class="recBtn" role="button">Click to Join us !</button></a>
     </div>
 </div>
 </body>

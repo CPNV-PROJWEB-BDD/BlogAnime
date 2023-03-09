@@ -6,65 +6,26 @@
  * @version 24.02.2023
  */
 
-
-
-
-$fileFullPath = "";//le chemin complet jusqu'au fichier
-$TextToWrite = "";
-$fileName = "";
-
-
-function setFullPath($fName)
+function getRegister($name, $firstname, $mail, $pwd)
 {
-    /* Help
-        get current directory -> http://php.net/manual/en/function.getcwd.php
-    */
-    $currentPath = getcwd();
+    $data = ([
+        "nom" => $name,
+        "Prénom" => $firstname,
+        "Adresse mail" => $mail,
+        "Mot de passe" => $pwd
+    ]);
 
-    $fullPathToFileTemp = $currentPath . "\\" . $fName;
+    $filename = "model/LoginName.json";
 
-    return $fullPathToFileTemp;
-}
-
-function writeMsgInFile($fileFullPath, $lineToWrite)
-{
-    /* Help
-    //http://php.net/manual/en/function.fopen.php
-    */
-
-    $strWriter = null;
-
-    $strWriter = fopen($fileFullPath, "a");
-
-    fwrite($strWriter, $lineToWrite . "\r\n");
-    fclose($strWriter);
-}
-
-function PrepareMsgToWrite($name, $firstname, $mail, $pwd)
-{
-
-    $name = '"Nom":"' . $name . '",';
-    $firstname = '"Prénom":"' . $firstname . '",';
-    $mail = '"Adresse mail":"' . $mail . '",';
-    $pwd = '"Mot de Passe":"' . $pwd . '"';
-
-    $msg = '{ ' . $name . $firstname . $mail . $pwd . ' }';
-
-    return $msg;
-}
-
-function getRegister($name, $firstname, $mail, $pwd){
-    $data = array(
-        "nom"=>"",
-        "Prénom"=>"",
-        "Adresse mail"=>"",
-        "Mot de passe"=>""
-    );
-
-    $data["nom"] = $name;
-    $data["Prénom"] = $firstname;
-    $data["Adresse mail"] = $mail;
-    $data["Mot de passe"] = $pwd;
-
+    if (file_get_contents($filename) ==""){
+        $dataEncode = json_encode($data, true);
+        file_put_contents($filename, $dataEncode);
+    }else{
+        $temparray = file_get_contents($filename);
+        $temparray = json_decode($temparray, true);
+        array_push($temparray, $data);
+        $dataEncode = json_encode($temparray, true);
+        file_put_contents($filename, $dataEncode);
+    }
 
 }

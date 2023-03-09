@@ -21,8 +21,27 @@ function displayregister($Register)
         } else {
             require "view/register.php";
         }
+    } finally {
+        require "view/register.php";
     }
-    finally {
+}
+
+function displayLogin($Register)
+{
+    try {
+        if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
+            $Surname = $Register['LogSurname'];
+            $firstname = $Register['LogFirstname'];
+            $mail = $Register['LogMail'];
+            $Password = $Register['LogPassword'];
+
+            require_once "model/articlesManager.php";
+            $articles = getRegister($Surname, $firstname, $mail, $Password);
+            require "view/home.php";
+        } else {
             require "view/register.php";
         }
+    } finally {
+        require "view/register.php";
     }
+}
