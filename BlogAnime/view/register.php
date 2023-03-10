@@ -38,6 +38,7 @@ $title = "BlogAnime";
                         </div>
 
                         <button class="roundBtn" role="button">Créez votre compte</button>
+                        <a class="Account" href="index.php?action=login">Déjà un Compte ? Connecte toi !</a>
                     </form>
                 </div>
             </div>

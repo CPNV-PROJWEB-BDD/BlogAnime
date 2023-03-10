@@ -12,7 +12,9 @@ $title = "BlogAnime";
 <body>
 <div class="Box">
     <div class="welcome">
+
         <a>Bonjour !<br> et bienvenue sur <br> notre site de blog d'anime</a>
+
     </div>
     <img class="Welcome-Image" src="view/image/HomePicture.png">
 </div>

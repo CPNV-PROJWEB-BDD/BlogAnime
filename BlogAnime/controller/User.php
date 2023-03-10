@@ -15,7 +15,7 @@ function displayregister($Register)
         $Password = $Register['LogPassword'];
 
         require_once "model/articlesManager.php";
-        getRegister($Surname, $firstname, $mail, $Password);
+        $Name =  getRegister($Surname, $firstname, $mail, $Password);
     } else {
         require "view/register.php";
     }
@@ -29,7 +29,7 @@ function displayLogin($login)
         $firstname = $login['LogFirstname'];
 
         require_once "model/articlesManager.php";
-        getLogin($Surname, $firstname);
+        $Name = getLogin($Surname, $firstname);
     } else {
         require "view/Login.php";
     }

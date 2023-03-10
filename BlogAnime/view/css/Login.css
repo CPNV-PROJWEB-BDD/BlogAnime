@@ -14,7 +14,8 @@ body {
 }
 
 .bgwhite {
-    background-color: white;
+    background-color: gainsboro;
+    border-top: solid black 2px;
 }
 
 .p-t-66 {
@@ -95,7 +96,24 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-#CreateAccount{
-    text-decoration: none;
+.Account{
+    position: relative;
     color: grey;
+    text-decoration: none;
+}
+
+.Account::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.Account:hover::after {
+    transform: scaleX(1);
 }

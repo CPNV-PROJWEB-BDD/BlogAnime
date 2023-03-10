@@ -21,7 +21,7 @@ $title = "BlogAnime";
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-b-30">
-                    <form class="leave-comment" action="index.php?action=Login" method="post">
+                    <form class="leave-comment" action="index.php?action=home" method="post">
                         <div class="bo4 size15 m-b-20">
                             <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="LogMail" placeholder="Adresse mail">
                         </div>
@@ -31,7 +31,7 @@ $title = "BlogAnime";
                         </div>
 
                         <button class="roundBtn" role="button">Se connecter</button>
-                        <a id="CreateAccount" href="index.php?action=register">Pas de Compte ? Créez en un !</a>
+                        <a class="Account" href="index.php?action=register">Pas de Compte ? Créez en un !</a>
                     </form>
                 </div>
             </div>

@@ -27,7 +27,7 @@ function getRegister($name, $firstname, $mail, $pwd)
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
     }
-
+    return $firstname;
 }
 
 
@@ -50,5 +50,5 @@ function getLogin($name, $firstname)
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
     }
-
+    return $firstname;
 }
