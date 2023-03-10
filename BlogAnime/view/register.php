@@ -20,7 +20,7 @@ $title = "BlogAnime";
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-b-30">
-                    <form class="leave-comment" action="index.php?action=register" method="post">
+                    <form class="leave-comment" action="index.php?action=home" method="post">
                         <div class="bo4 size15 m-b-20">
                             <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="LogSurname" placeholder="Nom">
                         </div>
@@ -37,7 +37,7 @@ $title = "BlogAnime";
                             <input class="sizefull s-text7 p-l-22 p-r-22" type="password" name="LogPassword" placeholder="Mot de passe">
                         </div>
 
-                        <input type="submit" value="Se connecter" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+                        <button class="roundBtn" role="button">Créez votre compte</button>
                     </form>
                 </div>
             </div>

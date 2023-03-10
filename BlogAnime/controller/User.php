@@ -8,40 +8,30 @@
 
 function displayregister($Register)
 {
-    try {
-        if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
-            $Surname = $Register['LogSurname'];
-            $firstname = $Register['LogFirstname'];
-            $mail = $Register['LogMail'];
-            $Password = $Register['LogPassword'];
+    if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
+        $Surname = $Register['LogSurname'];
+        $firstname = $Register['LogFirstname'];
+        $mail = $Register['LogMail'];
+        $Password = $Register['LogPassword'];
 
-            require_once "model/articlesManager.php";
-            $articles = getRegister($Surname, $firstname, $mail, $Password);
-            require "view/home.php";
-        } else {
-            require "view/register.php";
-        }
-    } finally {
+        require_once "model/articlesManager.php";
+        getRegister($Surname, $firstname, $mail, $Password);
+    } else {
         require "view/register.php";
     }
+
 }
 
-function displayLogin($Register)
+function displayLogin($login)
 {
-    try {
-        if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
-            $Surname = $Register['LogSurname'];
-            $firstname = $Register['LogFirstname'];
-            $mail = $Register['LogMail'];
-            $Password = $Register['LogPassword'];
+    if (isset($login['LogSurname'], $login['LogFirstname'])) {
+        $Surname = $login['LogSurname'];
+        $firstname = $login['LogFirstname'];
 
-            require_once "model/articlesManager.php";
-            $articles = getRegister($Surname, $firstname, $mail, $Password);
-            require "view/home.php";
-        } else {
-            require "view/register.php";
-        }
-    } finally {
-        require "view/register.php";
+        require_once "model/articlesManager.php";
+        getLogin($Surname, $firstname);
+    } else {
+        require "view/Login.php";
     }
+
 }

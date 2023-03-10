@@ -18,7 +18,7 @@ if (isset($_GET['action'])) {
         case "register":
             displayregister($_POST);
             break;
-        case "login":
+        case "Login":
             displayLogin($_POST);
             break;
         default :

@@ -15,7 +15,3 @@ function getBlog(){
 function getAboutUs() {
     require 'view/AboutUs.php';
 }
-
-function getLogin() {
-    require 'view/Login.php';
-}
