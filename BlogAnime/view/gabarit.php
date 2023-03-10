@@ -65,16 +65,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><img class="Image-header"
-                                                                                               id="instagram"
-                                                                                               src="view/image/instagram-logo.png"></a>
-                        <a href="https://twitter.com/BlogAnime2023"><img class="Image-header" id="twitter"
-                                                                         src="view/image/twitter-logo.jpg"></a>
-                        <a href="https://www.reddit.com/user/BlogAnime2023"><img class="Image-header" id="reddit"
-                                                                                 src="view/image/reddit-logo.jpg"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100090937893061"><img class="Image-header"
-                                                                                               id="facebook"
-                                                                                               src="view/image/facebook-logo.jpg"></a>
+                        <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><img class="Image-header" id="instagram" src="view/image/instagram-logo.png"></a>
+                        <a href="https://twitter.com/BlogAnime2023"><img class="Image-header" id="twitter" src="view/image/twitter-logo.jpg"></a>
+                        <a href="https://www.reddit.com/user/BlogAnime2023"><img class="Image-header" id="reddit" src="view/image/reddit-logo.jpg"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100090937893061"><img class="Image-header" id="facebook" src="view/image/facebook-logo.jpg"></a>
                     </td>
                 </tr>
             </table>
