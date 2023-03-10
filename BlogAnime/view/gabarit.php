@@ -23,7 +23,7 @@
             <a class="navlink" href="index.php?action=home">Accueil</a>
             <a class="navlink" href="index.php?action=Blog">Blog</a>
             <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
-            <a id="Login" href="#">Login</a>
+            <a id="Login" href="index.php?action=login">Login</a>
         </div>
 
     </nav>
