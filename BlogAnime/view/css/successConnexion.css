@@ -1,0 +1,16 @@
+.containSuccess {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #30C522;
+    border: 1px solid #CCEBD1;
+    border-radius: 40px;
+    height: 35px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -12px;
+    color: #e6e6e6;
+}

@@ -9,18 +9,15 @@
 ob_start();
 $title = "BlogAnime";
 ?>
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+    <section>
         <link rel="stylesheet" type="text/css" href="view/css/Login.css">
-    </head>
-    <body>
+    </section>
+
     <section class="bgwhite p-t-66 p-b-60">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-b-30">
-                    <form class="leave-comment" action="index.php?action=home" method="post">
+                    <form class="leave-comment" action="index.php?action=register" method="post">
                         <div class="bo4 size15 m-b-20">
                             <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="LogSurname" placeholder="Nom">
                         </div>
@@ -45,7 +42,6 @@ $title = "BlogAnime";
         </div>
     </section>
 
-    </body>
 
 
 <?php

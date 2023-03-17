@@ -15,23 +15,30 @@ function displayregister($Register)
         $Password = $Register['LogPassword'];
 
         require_once "model/articlesManager.php";
-        $Name =  getRegister($Surname, $firstname, $mail, $Password);
+        getRegister($Surname, $firstname, $mail, $Password);
+        require "view/home.php";
     } else {
         require "view/register.php";
     }
-
 }
 
-function displayLogin($login)
-{
-    if (isset($login['LogSurname'], $login['LogFirstname'])) {
-        $Surname = $login['LogSurname'];
-        $firstname = $login['LogFirstname'];
+function displayLogin($login){
 
-        require_once "model/articlesManager.php";
-        $Name = getLogin($Surname, $firstname);
-    } else {
+    if (isset($login['LogMail'], $login['LogPassword'])) {
+        $mail = $login['LogMail'];
+        $Password = $login['LogPassword'];
+
+        require "model/articlesManager.php";
+        $valeur = getLogin($mail, $Password);
+        if ($valeur == 'vrai') {
+            /*require "view/failConnection.php";*/
+            require "view/home.php";
+        }
+        if ($valeur == 'faux') {
+            /*require "view/successConnexion.php";*/
+            require "view/Login.php";
+        }
+    }else{
         require "view/Login.php";
     }
-
 }

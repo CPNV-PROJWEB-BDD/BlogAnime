@@ -3,13 +3,10 @@ ob_start();
 $title = "BlogAnime";
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<section>
     <link rel="stylesheet" type="text/css" href="view/css/home.css">
-</head>
-<body>
+</section>
+
 <div class="Box">
     <div class="welcome">
 
@@ -40,7 +37,7 @@ $title = "BlogAnime";
         <a href="index.php?action=register"><button class="recBtn" role="button">Click to Join us !</button></a>
     </div>
 </div>
-</body>
+
 
 <?php
 $content = ob_get_clean();

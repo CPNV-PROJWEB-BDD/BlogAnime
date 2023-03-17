@@ -18,7 +18,8 @@ function getRegister($name, $firstname, $mail, $pwd)
     $filename = "model/LoginName.json";
 
     if (file_get_contents($filename) ==""){
-        $dataEncode = json_encode($data, true);
+        $temparray[] = $data;
+        $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
     }else{
         $temparray = file_get_contents($filename);
@@ -27,28 +28,23 @@ function getRegister($name, $firstname, $mail, $pwd)
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
     }
-    return $firstname;
 }
 
 
-function getLogin($name, $firstname)
+function getLogin($mail, $pwd)
 {
-    $data = ([
-        "nom" => $name,
-        "Prenom" => $firstname
-    ]);
-
+    $valeur = 'faux';
     $filename = "model/LoginName.json";
+    $temparray = file_get_contents($filename);
 
-    if (file_get_contents($filename) ==""){
-        $dataEncode = json_encode($data, true);
-        file_put_contents($filename, $dataEncode);
-    }else{
-        $temparray = file_get_contents($filename);
-        $temparray = json_decode($temparray, true);
-        array_push($temparray, $data);
-        $dataEncode = json_encode($temparray, true);
-        file_put_contents($filename, $dataEncode);
+    $users = json_decode($temparray, true);
+
+    foreach ($users as $user){
+        if ($user['LogMail'] == $mail && $user['LogPassword'] == $pwd){
+            $valeur = 'vrai';
+            session_start();
+            $_SESSION['user_id'] = $user['LogMail'];
+        }
     }
-    return $firstname;
+    return $valeur;
 }
