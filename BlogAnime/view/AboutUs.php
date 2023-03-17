@@ -12,10 +12,11 @@ $title = "AboutUs";
 ?>
     <!DOCTYPE html>
     <html lang="en">
-    <head>
+    <section>
         <link rel="stylesheet" type="text/css" href="../view/css/AboutUs.css">
-    </head>
-<body>
+    </section>
+<section>
+<div class="Block-global">
     <div class="Block-AboutUs">
         <div class="Titre-AboutUs">
             <a class="Texte-Titre-AboutUs">
@@ -59,7 +60,8 @@ $title = "AboutUs";
             </p>
         </div>
     </div>
-</body>
+</div>
+</section>
 <?php
 $content = ob_get_clean();
 require 'gabarit.php';

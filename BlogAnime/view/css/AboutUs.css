@@ -1,23 +1,25 @@
+.Block-global{
+    border: solid black 1px;
+}
+
 .Block-AboutUs{
     display: flex;
     flex-direction: column;
-    border: solid black 1px;
     justify-content: space-around;
     text-align: center;
     justify-content: center;
 }
 
 .Titre-AboutUs{
-    background-color: rebeccapurple;
-    color: whitesmoke;
+    background-color: #994CE5;
     height: 400px;
     font-size: 50px;
+    border-bottom: solid black 1px;
 }
 
 .Info-AboutUs{
     font-size: 25px;
-    margin-left: 5px;
-    margin-right: 5px;
+    background-color: #BB91E5;
 }
 
 .image-réseau-sociaux-AboutUs{
@@ -44,5 +46,15 @@
     transform-origin: center;
 }
 .lien-Réseaux-Sociaux-AboutUs:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(0.5);
+}
+@media screen and (max-width: 930px) {
+    .Info-AboutUs{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .Block-global{
+        background-color: #BB91E5 ;
+    }
+
 }
