@@ -25,7 +25,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="#0">Read More </a>
+                        <a class="readMore" href="index.php?action=article" >Read More </a>
                     </div>
                 </div>
             <?php endfor; ?>
@@ -39,7 +39,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="#0">Read More </a>
+                        <a class="readMore" href="index.php?action=article" >Read More </a>
                     </div>
                 </div>
             <?php endfor; ?>
@@ -53,7 +53,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="#0">Read More </a>
+                        <a class="readMore" href="index.php?action=article" >Read More </a>
                     </div>
                 </div>
             <?php endfor; ?>

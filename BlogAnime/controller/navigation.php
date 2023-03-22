@@ -15,3 +15,7 @@ function getBlog(){
 function getAboutUs() {
     require 'view/AboutUs.php';
 }
+
+function getArticle() {
+    require 'view/articles.php';
+}

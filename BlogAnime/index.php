@@ -21,6 +21,8 @@ if (isset($_GET['action'])) {
         case "login":
             displayLogin($_POST);
             break;
+        case "article":
+            getArticle();
         default :
             lost();
     }
