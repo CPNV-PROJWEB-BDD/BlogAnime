@@ -40,10 +40,10 @@ function getLogin($mail, $pwd)
     $users = json_decode($temparray, true);
 
     foreach ($users as $user){
-        if ($user['LogMail'] == $mail && $user['LogPassword'] == $pwd){
+        if ($user['Adresse mail'] == $mail && $user['Mot de passe'] == $pwd){
             $valeur = 'vrai';
             session_start();
-            $_SESSION['user_id'] = $user['LogMail'];
+            $_SESSION['user_id'] = $user['Adresse mail'];
         }
     }
     return $valeur;
