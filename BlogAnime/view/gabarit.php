@@ -35,18 +35,45 @@
 
 <!--Footer-->
 <footer id="footer">
-    <div id="contactDetails">
+    <div>
 
-    </div>
-    <div id="navigationalKeys">
-
+        <div id="navigationalKeys">
+            <table>
+                <tr>
+                    <td><span><a href="index.php?action=home">Accueil</a></span></td>
+                    <td>Nous contacter</td>
+                </tr>
+                <tr>
+                    <td><span><a href="index.php?action=Blog">Blog</a></span></td>
+                    <td>aide</td>
+                </tr>
+                <tr>
+                    <td> <span><a href="index.php?action=AboutUs">A propos de nous</a></span></td>
+                </tr>
+                <tr>
+                    <td><span><a href="index.php?action=login">Login</a></span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="contactDetails">
+            <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM=">
+                <img class="Image-header" id="instagram" src="view/image/instagram-logo.png">
+            </a>
+            <a href="https://twitter.com/BlogAnime2023">
+                <img class="Image-header" id="twitter" src="view/image/twitter-logo.jpg">
+            </a>
+            <a href="https://www.reddit.com/user/BlogAnime2023">
+                <img class="Image-header" id="reddit" src="view/image/reddit-logo.jpg">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100090937893061">
+                <img class="Image-header" id="facebook" src="view/image/facebook-logo.jpg">
+            </a>
+        </div>
     </div>
     <div id="legalContent">
-        <ul>
-            <li>Cookies</li>
-            <li>Cookies</li>
-            <li>Cookies</li>
-        </ul>
+        <span><a href="#">cookie</a></span>
+        <span><a href="#">cookie</a></span>
+        <span><a href="#">cookie</a></span>
     </div>
 </footer>
 </body>
