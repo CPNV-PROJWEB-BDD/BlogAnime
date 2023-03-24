@@ -20,6 +20,9 @@ $title = "BlogAnime";
         <div class="InfoContent">
             <a>notre site propose un blog contenant information et details sur les personnages d'animées</a>
         </div>
+        <div>
+            <img class="Image-Content" src="view/image/Image_home_Contenu.png">
+        </div>
     </div>
 
     <div class="Box">

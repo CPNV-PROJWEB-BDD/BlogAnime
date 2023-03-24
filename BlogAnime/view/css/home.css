@@ -36,10 +36,19 @@
     background-color: #b23386;
 }
 
+.Image-Content{
+    height: 100%;
+    width: 953px;
+    align-items: end;
+    text-decoration: none;
+    bottom-top: solid black 1px;
+}
+
 .Welcome-Image{
     width: 50%;
-    height: 498px;
-    border: solid black 2px;
+    height: 100%;
+    border-bottom: solid black 1px;
+
 }
 
 .HomePicture{
@@ -50,6 +59,7 @@
 .InfoContent{
     width: 100%;
     height: 500px   ;
+    border-bottom: solid black 2px;
 }
 
 #Join{
