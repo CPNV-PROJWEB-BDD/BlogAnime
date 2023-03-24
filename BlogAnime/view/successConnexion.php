@@ -12,11 +12,11 @@ $title = "BlogAnime";
 
     <section>
         <title>Erreur de connexion</title>
-        <link rel="stylesheet" type="text/css" href="css/failConnexion.css">
+        <link rel="stylesheet" type="text/css" href="css/successConnexion.css">
     </section>
 
     <div class="containSuccess">
-        <h1>Connexion Impossible, vérifier vos identifiants et réessayer.</h1>
+        <h1>Connexion Réussi, amusez-vous bien !.</h1>
     </div>
 
 <?php
