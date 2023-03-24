@@ -2,6 +2,7 @@
         margin: 0;
         padding: 0;
         font-size: 19px;
+        border: inset black 1px;
     }
 
     #topbar {
@@ -43,7 +44,7 @@
         height: 70px;
     }
 
-    .Image-header {
+    .Logo-header {
         position: absolute;
         height: 70px;
         width: 70px;
@@ -95,11 +96,30 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: gray;
+        background-color: #000000;
     }
 
 
+    #FooterInformation{
+        background-color: #000;
+        display: inline-flex;
+        width: 100%;
+        color: white;
+    }
+
+    .Social-Footer {
+        height: 35px;
+        width: 35px;
+    }
+
+    #Logo-footer{
+        height: 70px;
+        width: 124.32px;
+    }
+
     #form {
+        padding-left: 30px;
+        padding-top: 30px;
         display: flex;
         flex-direction: row;
 
@@ -119,11 +139,13 @@
 
     }
 
+
+
     #btnSubmit {
         height: 18px;
         background-color: #04AA6D;
         border-left: solid #000 1px;
-        color: white;
+
         padding: 16px 32px;
         text-decoration: none;
         margin: 0 0;
@@ -139,29 +161,45 @@
         outline: none;
     }
 
-    #contactDetails{
-        background-color: red;
+    #footerform{
+        width: 50%;
+        margin-top: 30px;
+        padding-left: 30px;
+
+    }
+
+    #contactDetails {
         width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+    #contactDetails a {
+        padding-right: 4em;
     }
 
     #navigationalKeys{
+        width: 50%;
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-right: 100px;
-        background-color: pink;
         display: flex;
+        flex-direction: column;
         justify-content: right;
     }
     #navigationalKeys td{
         padding-right: 4em;
         padding-left: 4em;
     }
-
+    #navigationalKeys a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    #navigationalKeys a:hover{
+        text-decoration: underline 1px;
+    }
 
 
     #legalContent {
         display: flex;
-        color: whitesmoke;
         width: 100%;
         justify-content: center;
     }
@@ -293,7 +331,7 @@
 
 
     .mobileNavbar {
-        z-index: 0;
+        z-index: 1;
         padding: 15px;
         display: flex;
         align-items: center;
@@ -326,5 +364,31 @@
         transform: translate(0, -11px) rotate(45deg);
     }
 
-}
 
+    #FooterInformation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerform{
+        width: 50%;
+    }
+
+    #contactDetails{
+        margin-top: 30px;
+        width: 100%;
+
+    }
+
+    #navigationalKeys{
+        width: 100%;
+
+    }
+
+    #legalContent span{
+        padding-top: 10px;
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-bottom: 10px;
+    }
+}
