@@ -2,6 +2,7 @@
 
 require 'controller/navigation.php';
 require 'controller/User.php';
+require 'controller/article.php';
 
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
@@ -22,7 +23,8 @@ if (isset($_GET['action'])) {
             displayLogin($_POST);
             break;
         case "article":
-            getArticle();
+            displayArticle($_GET['name']);
+            break;
         default :
             lost();
     }

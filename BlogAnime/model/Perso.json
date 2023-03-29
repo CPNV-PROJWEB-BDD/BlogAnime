@@ -1,10 +1,11 @@
 [
   {
-    "Nom": "Maka Albarn",
+    "Nom": "Maka_Albarn",
     "Nom de code": "Aucun",
     "Age": "13",
     "Anime": "Soul Eater",
-    "Images": "view/image/Perso/Maka.png",
+    "Images": "../view/image/Perso/Maka.png",
+    "Banner": "../view/image/Banner/Maka_Albarn.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Femme",
     "Especes": "Humain",
@@ -17,11 +18,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Natsu Dragneel",
+    "Nom": "Natsu_Dragneel",
     "Nom de code": "Salamandre/E.N.D",
     "Age": "+400",
     "Anime": "Fairy Tail",
-    "Images": "view/image/Perso/Natsu.png",
+    "Images": "../view/image/Perso/Natsu.png",
+    "Banner": "../view/image/Banner/Natsu.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Humain/Dragon/Démon",
@@ -34,11 +36,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Kazuto Kirigaya",
+    "Nom": "Kazuto_Kirigaya",
     "Nom de code": "Kirito\nBeater\nL'épéiste noir\nPapa\nDaddy\nLe héros de SAO\nKirito-kun (par Asuna)",
     "Age": "17",
     "Anime": "Sword Art Online",
-    "Images": "view/image/Perso/Kirito.png",
+    "Images": "../view/image/Perso/Kirito.png",
+    "Banner": "../view/image/Banner/Kirito.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Humain",
@@ -51,11 +54,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Hitori Gotō",
+    "Nom": "Hitori_Gotō",
     "Nom de code": "Bocchi",
     "Age": "16",
     "Anime": "Bocchi the rock !",
-    "Images": "view/image/Perso/Hitori.png",
+    "Images": "../view/image/Perso/Hitori.png",
+    "Banner": "../view/image/Banner/Hitori.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Femme",
     "Especes": "Humain",
@@ -68,11 +72,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Ichigo Kurosaki",
+    "Nom": "Ichigo_Kurosaki",
     "Nom de code": "Shinigami/Âme de substitution",
     "Age": "15",
     "Anime": "Bleach",
-    "Images": "view/image/Perso/Ichigo.png",
+    "Images": "../view/image/Perso/Ichigo.png",
+    "Banner": "../view/image/Banner/Ichigo.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Human/Shinigami",
@@ -85,11 +90,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Naruto Uzumaki",
+    "Nom": "Naruto_Uzumaki",
     "Nom de code": "7eme Hokage",
     "Age": "19",
     "Anime": "Naruto",
-    "Images": "view/image/Perso/Naruto.png",
+    "Images": "../view/image/Perso/Naruto.png",
+    "Banner": "../view/image/Banner/Naruto.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Humain",
@@ -102,11 +108,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Lelouch vi Britannia",
+    "Nom": "Lelouch_vi_Britannia",
     "Nom de code": "Zero\nLelouch Lamperouge\nJulius Kingsley\nAlan Spacer\nWarlock\nLulu\nPrince Noir\nL'empereur démon\nL'ennemi du monde\nDemon\nL.L.",
     "Age": "18",
     "Anime": "Code geass",
-    "Images": "view/image/Perso/Lelouch.png",
+    "Images": "../view/image/Perso/Lelouch.png",
+    "Banner": "../view/image/Banner/Lelouch.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Humain",
@@ -119,11 +126,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Eren Yeager",
+    "Nom": "Eren_Yeager",
     "Nom de code": "Batard suicidaire\nTitan d'attaque\nFondateur\nUsurpateur\nTitan marteau\nTitan apocalyptique",
     "Age": "19",
     "Anime": "Attaque des titans",
-    "Images": "view/image/Perso/Eren.png",
+    "Images": "../view/image/Perso/Eren.png",
+    "Banner": "../view/image/Banner/Eren_Jaeger.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Human, Titan Primordiaux",
@@ -136,11 +144,12 @@
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
-    "Nom": "Izuku Midoriya",
+    "Nom": "Izuku_Midoriya",
     "Nom de code": "Deku",
     "Age": "16",
     "Anime": "My Hero Academia",
-    "Images": "view/image/Perso/Izuku.png",
+    "Images": "../view/image/Perso/Izuku.png",
+    "Banner": "../view/image/Banner/Deku.png",
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Humain",

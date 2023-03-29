@@ -48,3 +48,19 @@ function getLogin($mail, $pwd)
     }
     return $valeur;
 }
+
+
+function getArticle($name)
+{
+    $filename = "model/Perso.json";
+    $temparray = file_get_contents($filename);
+
+    $Persos = json_decode($temparray, true);
+
+    foreach ($Persos as $Perso){
+        if ($Perso['Nom'] == $name){
+            $NomPerso[] = $Perso;
+        }
+    }
+    return $NomPerso;
+}
