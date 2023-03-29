@@ -1,11 +1,12 @@
 .Border-page{
-    border: inset black 2px;
+    border: inset black 1px;
 }
 
 .Box{
     display: flex;
     height: 500px;
     position: relative;
+    border: solid black 1px;
 }
 
 .Box-image{
@@ -21,8 +22,7 @@
     text-align : justify;
     width: 50%;
     height: 500px;
-    border: solid black 2px;
-    background-color: #ff90e8;
+    background-color: lightpink;
 }
 
 .Enjoy{
@@ -32,22 +32,14 @@
     text-align : justify;
     width: 50%;
     height: 500px;
-    border: solid black 2px;
-    background-color: #b23386;
-}
-
-.Image-Content{
-    height: 100%;
-    width: 953px;
-    align-items: end;
-    text-decoration: none;
-    bottom-top: solid black 1px;
+    background-color: #BB91E5;
+    border-left: solid black 1px;
 }
 
 .Welcome-Image{
     width: 50%;
     height: 100%;
-    border-bottom: solid black 1px;
+    border-right: solid black 1px;
 
 }
 
@@ -57,9 +49,23 @@
 }
 
 .InfoContent{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hotpink;
+    text-align: justify;
+    width: 50%;
     height: 500px   ;
-    border-bottom: solid black 2px;
+    border-right: solid black 1px;
+}
+.ImageContent{
+    width: 50%;
+    height: 500px   ;
+}
+
+#ImageAnimeContent{
+    height: 100%;
+    width: 100%;
 }
 
 #Join{

@@ -10,28 +10,28 @@ $title = "BlogAnime";
 <section>
 <div class="Border-page">
     <div class="Box">
-        <div class="welcome">
-            <a>Bonjour !<br> et bienvenue sur <br> notre site de blog d'anime</a>
-        </div>
         <img class="Welcome-Image" src="view/image/HomePicture.png">
+        <div class="welcome">
+            <h3>Bonjour !<br> et bienvenue sur <br> notre site de blog d'anime</h3>
+        </div>
     </div>
 
     <div class="Box">
         <div class="InfoContent">
-            <a>notre site propose un blog contenant information et details sur les personnages d'animées</a>
+            <h3>Notre blog sur les animes <br> propose des infos vérifiées par des fans <br> pour des fans</h3>
         </div>
-        <div>
-            <img class="Image-Content" src="view/image/Image_home_Contenu.png">
+        <div class="ImageContent">
+            <img id="ImageAnimeContent" src="../view/image/Image_home_Contenu.png">
         </div>
     </div>
 
     <div class="Box">
         <div class="Welcome-Image">
-            <a>images decrivant un articles</a>
+            <img id="ImageAnimeContent" src='../view/image/ScreenArticle.PNG'>
         </div>
         <div class="Enjoy">
-            <a>Amusez vous à explorer notre site !<br>Et découvrez tout ce que vous chercher<br> sur vos personnage
-            préféré !!!</a>
+            <h3>Amusez vous à explorer notre site !<br>Et découvrez tout ce que vous chercher<br> sur vos personnage
+            préféré !!!</h3>
         </div>
    </div>
 
