@@ -16,24 +16,23 @@ body {
 .bgwhite {
     background-color: gainsboro;
     border-top: solid black 2px;
-}
-
-.p-t-66 {
     padding-top: 66px;
-}
-
-.p-b-60 {
     padding-bottom: 60px;
+    height: 505px;
 }
 
 
-.container {
+.containerLog, .containerReg {
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
     width: 100%;
     max-width: 1200px;
+}
+
+.containerLog{
+    margin-top: 100px;
 }
 
 .bo4 {

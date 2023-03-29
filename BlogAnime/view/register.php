@@ -13,9 +13,9 @@ $title = "BlogAnime";
         <link rel="stylesheet" type="text/css" href="view/css/Login.css">
     </section>
 
-    <section class="bgwhite p-t-66 p-b-60">
+    <section class="bgwhite">
 
-        <form class="container" action="index.php?action=register" method="post">
+        <form class="containerReg" action="index.php?action=register" method="post">
             <div class="bo4 size15 m-b-20">
                 <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="LogSurname" placeholder="Nom" required>
             </div>
