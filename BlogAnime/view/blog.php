@@ -25,7 +25,7 @@ $title = "Blog";
                                 meister, puis a rencontré Soul et en a fait son partenaire d'arme, aspirant à créer une Death Scythe beaucoup plus puissante que son père(Spirit), qui
                                 était l'arme actuelle de Shinigami.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Maka_Albarn">Read More </a>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ $title = "Blog";
                                 il est l'un des quatre chasseurs de dragons de la guilde Fairy Tail, et utilise la magie de chasseur de dragon de feu. Il fait équipe avec Happy, Lucy
                                 Heartfilia, Erza Scarlett, Grey Fullbuster, Wendy Marvell, et Carla.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Natsu_Dragneel">Read More </a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ $title = "Blog";
                                 simulation unless they manage to beat the game. In the anime adaptation, Kirito is voiced in Japanese by Yoshitsugu Matsuoka and in English by Bryce
                                 Papenbrook.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Kazuto_Kirigaya">Read More </a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Hitori_Gotō">Read More </a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article" >Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Ichigo_Kurosaki" >Read More </a>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Naruto_Uzumaki">Read More </a>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Lelouch_vi_Britannia">Read More </a>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Eren_Yeager">Read More </a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@ $title = "Blog";
                                 minus delectus laborum magni quos corrupti doloribus aliquid corporis. Illum consectetur
                                 omnis cupiditate dolores, ullam ratione architecto ea odio beatae.</p>
                         </article>
-                        <a class="readMore" href="index.php?action=article">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Izuku_Midoriya">Read More </a>
                     </div>
                 </div>
             </div>
