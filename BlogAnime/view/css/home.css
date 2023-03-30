@@ -1,5 +1,5 @@
 .Border-page{
-    border: ineset black 1px;
+    border: inset black 1px;
 }
 
 .Box{
@@ -40,7 +40,6 @@
     width: 50%;
     height: 100%;
     border-right: solid black 1px;
-
 }
 
 .HomePicture{
@@ -118,4 +117,37 @@
 .recBtn:not([disabled]):active {
     box-shadow: #fff 2px 2px 0px 0px, #000 2px 2px 0px 1px;
     transform: translate(2px, 2px);
+}
+
+@media screen and (max-width: 930px) {
+    .Box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Welcome-Image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome{
+        width: 100%;
+        height: 100%;
+    }
+
+    .InfoContent{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ImageContent{
+        width: 100%;
+        height: 100%;
+    }
+
+    .Enjoy{
+        width: 100%;
+        height: 100%;
+    }
+
 }

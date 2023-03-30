@@ -15,6 +15,7 @@
     height: 400px;
     font-size: 50px;
     border-bottom: solid black 1px;
+    color: #ffffff;
 }
 
 .Info-AboutUs{
@@ -27,7 +28,7 @@
 }
 
 .lien-Réseaux-Sociaux-AboutUs{
-    color: #000;
+    color: #000000;
     text-decoration: none;
     display: block;
     position: relative;
