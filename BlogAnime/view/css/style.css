@@ -2,7 +2,9 @@
         margin: 0;
         padding: 0;
         font-size: 19px;
-        border: inset black 1px;
+        border-top: inset #000 1px;
+        border-left: inset  #000 1px;
+        border-right: inset  #000 1px;
     }
 
     #topbar {
@@ -12,9 +14,6 @@
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
-        border-top: inset #000 2px;
-        border-left: inset #000 2px;
-        border-right: inset #000 2px;
     }
 
     .menu {
@@ -88,11 +87,11 @@
         color: whitesmoke;
     }
     #footer{
-        position: flex;
-        bottom: 0%;
-        left: 0px;
+        position: relative;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -244,6 +243,7 @@
     }
 
 @media screen and (max-width: 930px) {
+
     .Image-header {
         position: absolute;
         height: 70px;
@@ -251,10 +251,11 @@
     }
 
     .navbar {
-        position: relative;
+        position:relative;
     }
 
     #ulNavbar {
+
         margin-left: 0;
         display: none;
         background-color: black;
@@ -265,7 +266,7 @@
         background-color: black;
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 0px;
         width: 100%;
         height: 60px;
         color: white;

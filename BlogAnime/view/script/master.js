@@ -1,12 +1,16 @@
-function displayNavbar(btnIcon) {
+function btndisplayNavbar(btnIcon) {
     btnIcon.classList.toggle("change");
-
     let links = document.getElementById("ulNavbar");
 
 
-    if (links.style.display === "flex") {
-        links.style.display = "none";
+
+
+    if (links.style.display === 'block') {
+        links.style.display = 'none';
+        console.log('changer en non');
     } else {
-        links.style.display = "flex";
+        links.style.display = 'block';
+        console.log('changer en relative');
     }
+
 }

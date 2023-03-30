@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="view/css/style.css">
-    <script src="view/script/master.js"></script>
+
 </head>
 <body>
 <!--Header-->
@@ -14,7 +14,7 @@
     <nav class="navbar">
         <a href="index.php" class="Logo-header"><img class="Logo" src="view/image/Logo_BlogAnime.png" alt="logo"></a>
         <div class="mobileNavbar">
-            <div class="navbarbtn" onclick="displayNavbar(this)">
+            <div class="navbarbtn" onclick="btndisplayNavbar(this)">
                 <div class="barbtn1"></div>
                 <div class="barbtn2"></div>
                 <div class="barbtn3"></div>
@@ -87,6 +87,7 @@
         <span><a href="#">cookie</a></span>
     </div>
 </footer>
+<script src="view/script/master.js"></script>
 </body>
 
 
