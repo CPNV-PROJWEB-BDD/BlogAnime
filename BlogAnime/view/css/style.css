@@ -126,6 +126,7 @@
     }
 
     #fMail {
+        background-color: whitesmoke;
         height: 50px;
         width: 400px;
         border: none;
@@ -241,7 +242,7 @@
         align-self: flex-end;
     }
 
-    @media screen and (max-width: 930px) {
+    @media screen and (max-width: 800px) {
 
     .Image-header {
         position: absolute;

@@ -14,10 +14,10 @@
     <nav class="navbar">
         <a href="index.php" class="Logo-header"><img class="Logo" src="view/image/Logo_BlogAnime.png" alt="logo"></a>
         <div class="mobileNavbar">
-            <div class="navbarbtn" onclick="btndisplayNavbar(this)">
-                <div class="barbtn1"></div>
-                <div class="barbtn2"></div>
-                <div class="barbtn3"></div>
+            <div id="navbarbtn" class="navbarbtn" onclick="btndisplayNavbar(this)">
+                <div id="barbtn1" class="barbtn1"></div>
+                <div id="barbtn2" class="barbtn2"></div>
+                <div id="barbtn2" class="barbtn3"></div>
             </div>
         </div>
         <div id="ulNavbar">
@@ -38,7 +38,7 @@
 <footer id="footer">
     <div id="FooterInformation" >
         <div id="footerform">
-            <img id="Logo-footer" src="view/image/Logo_BlogAnime.png">
+            <img id="Logo-footer" src="view/image/Logo_BlogAnime-white.png">
             <div id="form">
                 <label for="fMail"></label>
                 <input type="text" id="fMail" name="newsletter" placeholder="Newsletter ">
