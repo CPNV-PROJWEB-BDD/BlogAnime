@@ -1,0 +1,41 @@
+.articlePage{
+    background-color: lightgray;
+}
+
+.DescBannerPerso{
+    border-top: solid black 1px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.BannerPerso{
+    width: 80%;
+    height: 350px;
+}
+
+.DescPerso{
+    display: flex;
+    flex-direction: row;
+}
+
+.InfoPerso {
+    width: 50%;
+    border: solid grey 2px;
+    margin-left: 10px;
+}
+
+ul{
+    border: solid grey 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.DescImgPerso{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 50%;
+}

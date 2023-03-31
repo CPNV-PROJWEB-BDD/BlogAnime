@@ -14,7 +14,7 @@
     "Affiliation": "Académie des maîtres des armes de la mort",
     "Occupation": "Meister de faux et partenaire de Soul",
     "Style de combat": "Corps à Corps",
-    "Pouvoir": "Capacités de perception de l'âme\nContrôle de la longueur d'onde",
+    "Pouvoir": "Capacités de perception de l'âme<br>Contrôle de la longueur d'onde",
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
@@ -37,7 +37,7 @@
   },
   {
     "Nom": "Kazuto_Kirigaya",
-    "Nom de code": "Kirito\nBeater\nL'épéiste noir\nPapa\nDaddy\nLe héros de SAO\nKirito-kun (par Asuna)",
+    "Nom de code": "Kirito<br>Beater<br>L'épéiste noir<br>Papa<br>Daddy<br>Le héros de SAO<br>Kirito-kun (par Asuna)",
     "Age": "17",
     "Anime": "Sword Art Online",
     "Images": "../view/image/Perso/Kirito.png",
@@ -45,10 +45,10 @@
     "Première apparition": "Chapitre 1",
     "Sexe": "Homme",
     "Especes": "Humain",
-    "Residence": "Kawagoe, préfecture de Saitama\nniveau 22 ",
+    "Residence": "Kawagoe, préfecture de Saitama<br>niveau 22 ",
     "Origine": "Tokyo",
     "Affiliation": "Ancien joueur solo, Chats noirs au clair de lune (ancien)",
-    "Occupation": "Lycéen\nTesteur à temps partiel pour Rath",
+    "Occupation": "Lycéen<br>Testeur à temps partiel pour Rath",
     "Style de combat": "Corps à Corps",
     "Pouvoir": "Aucun",
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
@@ -86,7 +86,7 @@
     "Affiliation": "Soul Society",
     "Occupation": "Shinigami",
     "Style de combat": "Corps à Corps",
-    "Pouvoir": "Capacité physiques surhumains\nImmense pouvoir spirituel\nTransformations\nAttaques spirituelles",
+    "Pouvoir": "Capacité physiques surhumains<br>Immense pouvoir spirituel<br>Transformations<br>Attaques spirituelles",
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
@@ -104,12 +104,12 @@
     "Affiliation": "Ninja de konoha",
     "Occupation": "Hokage",
     "Style de combat": "",
-    "Pouvoir": "Multiclonage\nRasengan\ndémon à queue(Shukaku, Matatabi, Isobu, Son Goku, Kokuô, Saiken, Chômei, Gyûki, Kurama)",
+    "Pouvoir": "Multiclonage<br>Rasengan<br>démon à queue(Shukaku, Matatabi, Isobu, Son Goku, Kokuô, Saiken, Chômei, Gyûki, Kurama)",
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
     "Nom": "Lelouch_vi_Britannia",
-    "Nom de code": "Zero\nLelouch Lamperouge\nJulius Kingsley\nAlan Spacer\nWarlock\nLulu\nPrince Noir\nL'empereur démon\nL'ennemi du monde\nDemon\nL.L.",
+    "Nom de code": "Zero<br>Lelouch Lamperouge<br>Julius Kingsley<br>Alan Spacer<br>Warlock<br>Lulu<br>Prince Noir<br>L'empereur démon<br>L'ennemi du monde<br>Demon<br>L.L.",
     "Age": "18",
     "Anime": "Code geass",
     "Images": "../view/image/Perso/Lelouch.png",
@@ -120,14 +120,14 @@
     "Residence": "Britannia",
     "Origine": "Britannia",
     "Affiliation": "Britannia, Académie Ashford, Black Knights",
-    "Occupation": "11e prince de Britannia\nÉlève de l'Académie d'Ashford\nVice-président du conseil étudiant de l'Académie d'Ashford\nChef de la cellule de résistance d'origine (en tant que zéro)\nLeader / PDG des Black Knights\n2e Président du Conseil suprême de la Fédération des Nations Unies\n999e empereur de Britannia",
+    "Occupation": "11e prince de Britannia<br>Élève de l'Académie d'Ashford<br>Vice-président du conseil étudiant de l'Académie d'Ashford<br>Chef de la cellule de résistance d'origine (en tant que zéro)<br>Leader / PDG des Black Knights<br>2e Président du Conseil suprême de la Fédération des Nations Unies<br>999e empereur de Britannia",
     "Style de combat": "Stratégie",
-    "Pouvoir": "Intelligence de niveau génie\nHypercognition\nMémoire photographique\nMaître tacticien/stratège\nIntuition logique Intuition de l'efficacité\nPrédiction (actions et attaques)\nMaîtriser le sens des affaires\nIntuition sociale\nIntuition de négociation\nIntuition psychologique\nMaître manipulateur\nMaîtrise des capacités\nPirate informatique expert\nPilote expert de Knightmare Geass\nIncitation au commandement\nVision hypnotique\nContrôle de la pensée\nHypnose\nManipulation d'illusion\nManipulation de la mémoire",
+    "Pouvoir": "Intelligence de niveau génie<br>Hypercognition<br>Mémoire photographique<br>Maître tacticien/stratège<br>Intuition logique Intuition de l'efficacité<br>Prédiction (actions et attaques)<br>Maîtriser le sens des affaires<br>Intuition sociale<br>Intuition de négociation<br>Intuition psychologique<br>Maître manipulateur<br>Maîtrise des capacités<br>Pirate informatique expert<br>Pilote expert de Knightmare Geass<br>Incitation au commandement<br>Vision hypnotique<br>Contrôle de la pensée<br>Hypnose<br>Manipulation d'illusion<br>Manipulation de la mémoire",
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
     "Nom": "Eren_Yeager",
-    "Nom de code": "Batard suicidaire\nTitan d'attaque\nFondateur\nUsurpateur\nTitan marteau\nTitan apocalyptique",
+    "Nom de code": "Batard suicidaire<br>Titan d'attaque<br>Fondateur<br>Usurpateur<br>Titan marteau<br>Titan apocalyptique",
     "Age": "19",
     "Anime": "Attaque des titans",
     "Images": "../view/image/Perso/Eren.png",
@@ -137,10 +137,10 @@
     "Especes": "Human, Titan Primordiaux",
     "Residence": "Mur Rose",
     "Origine": "District de Shiganshina",
-    "Affiliation": "Bataillon d'éxploration\nEscouade d'opérations spéciales\n104e corps d'entraînement\nEscouade Alpha",
+    "Affiliation": "Bataillon d'éxploration<br>Escouade d'opérations spéciales<br>104e corps d'entraînement<br>Escouade Alpha",
     "Occupation": "Soldat",
     "Style de combat": "Corps à Corps",
-    "Pouvoir": "Voir le passé\nLien télépathique\nSuper force\nDurcissement et assouplissement\nGuérison rapide\nContrôler les titans\nRessusciter les neuf titans\nVoir/révéler le futur\nArts martiaux",
+    "Pouvoir": "Voir le passé<br>Lien télépathique<br>Super force<br>Durcissement et assouplissement<br>Guérison rapide<br>Contrôler les titans<br>Ressusciter les neuf titans<br>Voir/révéler le futur<br>Arts martiaux",
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   },
   {
@@ -158,7 +158,7 @@
     "Affiliation": "U.A",
     "Occupation": "Apprenti Héro de U.A",
     "Style de combat": "Corps à Corps",
-    "Pouvoir": "Sans Alter (Naissance)\nOne for All\nChangement de vitesse\nFa Jin\nSens du danger\nFouet noir\nÉcran de fumée\nFlotter",
+    "Pouvoir": "Sans Alter (Naissance)<br>One for All<br>Changement de vitesse<br>Fa Jin<br>Sens du danger<br>Fouet noir<br>Écran de fumée<br>Flotter",
     "Desciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
   }
 ]
