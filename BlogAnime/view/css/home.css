@@ -10,7 +10,7 @@
 }
 
 .Box-image{
-    background-image: url("../../view/image/JoinBanner.png");
+    background-image: url("../../view/image/GIF/subscibe_border.gif");
     width: 100%;
     height: 500px;
 }
@@ -149,5 +149,10 @@
         width: 100%;
         height: 100%;
     }
-
+    .Box-image{
+        height: 300px;
+    }
+    .recBtn{
+        margin-top: 160%;
+    }
 }

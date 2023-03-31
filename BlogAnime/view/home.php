@@ -21,7 +21,7 @@ $title = "BlogAnime";
                     <h3>Notre blog sur les animes <br> propose des infos vérifiées par des fans <br> pour des fans</h3>
                 </div>
                 <div class="ImageContent">
-                    <img id="ImageAnimeContent" src="../view/image/Image_home_Contenu.png">
+                    <img id="ImageAnimeContent" src="../view/image/GIF/UwU.gif">
                 </div>
             </div>
 
