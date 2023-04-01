@@ -8,10 +8,6 @@ function lost(){
     require 'view/lost.php';
 }
 
-function getBlog(){
-    require 'view/blog.php';
-}
-
 function getAboutUs() {
     require 'view/AboutUs.php';
 }

@@ -17,13 +17,13 @@ function getRegister($name, $firstname, $mail, $pwd)
 
     $filename = "model/LoginName.json";
 
-    if (file_get_contents($filename) ==""){
+    if (file_get_contents($filename) == "") {
         $temparray[] = $data;
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
         session_start();
         $_SESSION['user_id'] = $mail;
-    }else{
+    } else {
         $temparray = file_get_contents($filename);
         $temparray = json_decode($temparray, true);
         array_push($temparray, $data);
@@ -43,8 +43,8 @@ function getLogin($mail, $pwd)
 
     $users = json_decode($temparray, true);
 
-    foreach ($users as $user){
-        if ($user['Adresse mail'] == $mail && $user['Mot de passe'] == $pwd){
+    foreach ($users as $user) {
+        if ($user['Adresse mail'] == $mail && $user['Mot de passe'] == $pwd) {
             $valeur = 'vrai';
             $_SESSION['user_id'] = $user['Adresse mail'];
         }
@@ -52,8 +52,19 @@ function getLogin($mail, $pwd)
     return $valeur;
 }
 
-function getLogout(){
+function getLogout()
+{
     unset($_SESSION["user_id"]);
+}
+
+function getBlog()
+{
+    $filename = "model/Perso.json";
+    $temparray = file_get_contents($filename);
+
+    $Persos = json_decode($temparray, true);
+
+    return $Persos;
 }
 
 
@@ -64,8 +75,8 @@ function getArticle($name)
 
     $Persos = json_decode($temparray, true);
 
-    foreach ($Persos as $Perso){
-        if ($Perso['Nom'] == $name){
+    foreach ($Persos as $Perso) {
+        if ($Perso['Nom'] == $name) {
             $NomPerso[] = $Perso;
         }
     }
@@ -79,7 +90,9 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
         "Nom de code" => $alias,
         "Age" => $age,
         "Anime" => $anime,
-        "Première apparition" => $firstAppears,
+        "Images" => "",
+        "Banner" => "",
+        "Premiere apparition" => $firstAppears,
         "Sexe" => $sexe,
         "Especes" => $speces,
         "Residence" => $Residence,
@@ -93,9 +106,9 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
 
     $filename = "model/Perso.json";
 
-    $temparray = file_get_contents($filename);
-    $temparray = json_decode($temparray, true);
-    array_push($temparray, $data);
-    $dataEncode = json_encode($temparray, true);
+    $persos = file_get_contents($filename);
+    $persos = json_decode($persos, true);
+    array_push($persos, $data);
+    $dataEncode = json_encode($persos, true);
     file_put_contents($filename, $dataEncode);
 }

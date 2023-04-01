@@ -25,7 +25,7 @@
             <a class="navlink" href="index.php?action=Blog">Blog</a>
             <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
             <?php if (isset($_SESSION['user_id'])): ?>
-                <a class="navlink" href="index.php?action=addArticle">Ajouter un article</a>
+                    <a class="navlink" href="index.php?action=addArticle">Ajouter un article</a>
             <?php else: ?>
                 <a class="navlink" href="index.php?action=addArticle" hidden>Ajouter un article</a>
             <?php endif; ?>
@@ -67,6 +67,17 @@
                 <tr>
                     <td><span><a href="index.php?action=AboutUs">A propos de nous</a></span></td>
                 </tr>
+
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <tr>
+                        <td><span><a href="index.php?action=addArticle">Ajouter un article</a></span></td>
+                    </tr>
+                <?php else: ?>
+                    <tr>
+                        <td><span><a href="index.php?action=addArticle" hidden>Ajouter un article</a></span></td>
+                    </tr>
+                <?php endif; ?>
+
                 <tr>
                     <td><span><a href="index.php?action=login">Login</a></span></td>
 

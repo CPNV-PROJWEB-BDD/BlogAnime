@@ -11,7 +11,7 @@ if (isset($_GET['action'])) {
             home();
             break;
         case "Blog":
-            getBlog();
+            displayBlog();
             break;
         case "AboutUs":
             getAboutUs();
