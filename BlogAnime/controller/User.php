@@ -28,17 +28,21 @@ function displayLogin($login){
         $mail = $login['LogMail'];
         $Password = $login['LogPassword'];
 
-        require "model/articlesManager.php";
+        require_once "model/articlesManager.php";
         $valeur = getLogin($mail, $Password);
         if ($valeur == 'vrai') {
-            /*require "view/failConnection.php";*/
             require "view/home.php";
         }
         if ($valeur == 'faux') {
-            /*require "view/successConnexion.php";*/
             require "view/Login.php";
         }
     }else{
         require "view/Login.php";
     }
+}
+
+function displayLogout($login){
+        require "model/articlesManager.php";
+        getLogout();
+        require "view/home.php";
 }

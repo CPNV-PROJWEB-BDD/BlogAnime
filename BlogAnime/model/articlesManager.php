@@ -21,12 +21,16 @@ function getRegister($name, $firstname, $mail, $pwd)
         $temparray[] = $data;
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
+        session_start();
+        $_SESSION['user_id'] = $mail;
     }else{
         $temparray = file_get_contents($filename);
         $temparray = json_decode($temparray, true);
         array_push($temparray, $data);
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
+        session_start();
+        $_SESSION['user_id'] = $mail;
     }
 }
 
@@ -42,11 +46,14 @@ function getLogin($mail, $pwd)
     foreach ($users as $user){
         if ($user['Adresse mail'] == $mail && $user['Mot de passe'] == $pwd){
             $valeur = 'vrai';
-            session_start();
             $_SESSION['user_id'] = $user['Adresse mail'];
         }
     }
     return $valeur;
+}
+
+function getLogout(){
+    unset($_SESSION["user_id"]);
 }
 
 
@@ -63,4 +70,32 @@ function getArticle($name)
         }
     }
     return $NomPerso;
+}
+
+function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
+{
+    $data = ([
+        "Nom" => $name,
+        "Nom de code" => $alias,
+        "Age" => $age,
+        "Anime" => $anime,
+        "Première apparition" => $firstAppears,
+        "Sexe" => $sexe,
+        "Especes" => $speces,
+        "Residence" => $Residence,
+        "Origine" => $Origine,
+        "Affiliation" => $affiliation,
+        "Occupation" => $occupation,
+        "Style de combat" => $fightingStyle,
+        "Pouvoir" => $power,
+        "Desciption" => $Description
+    ]);
+
+    $filename = "model/Perso.json";
+
+    $temparray = file_get_contents($filename);
+    $temparray = json_decode($temparray, true);
+    array_push($temparray, $data);
+    $dataEncode = json_encode($temparray, true);
+    file_put_contents($filename, $dataEncode);
 }

@@ -3,7 +3,7 @@
 <head>
     <title><?= $title; ?></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="view/css/style.css">
 
 </head>
@@ -24,7 +24,16 @@
             <a class="navlink" href="index.php?action=home">Accueil</a>
             <a class="navlink" href="index.php?action=Blog">Blog</a>
             <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
-            <a id="Login" href="index.php?action=login">Login</a>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <a class="navlink" href="index.php?action=addArticle">Ajouter un article</a>
+            <?php else: ?>
+                <a class="navlink" href="index.php?action=addArticle" hidden>Ajouter un article</a>
+            <?php endif; ?>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <a id="Login" href="index.php?action=Logout">Logout</a>
+            <?php else: ?>
+                <a id="Login" href="index.php?action=login">Login</a>
+            <?php endif; ?>
         </div>
 
     </nav>
@@ -36,7 +45,7 @@
 
 <!--Footer-->
 <footer id="footer">
-    <div id="FooterInformation" >
+    <div id="FooterInformation">
         <div id="footerform">
             <img id="Logo-footer" src="view/image/Logo_BlogAnime-white.png">
             <div id="form">
@@ -49,17 +58,17 @@
             <table>
                 <tr>
                     <td><span><a href="index.php?action=home">Accueil</a></span></td>
-                    <td><a>contacter</a> </td>
+                    <td><a>contacter</a></td>
                 </tr>
                 <tr>
-                    <td><span><a  href="index.php?action=Blog">Blog</a></span></td>
+                    <td><span><a href="index.php?action=Blog">Blog</a></span></td>
                     <td><a>aide</a></td>
                 </tr>
                 <tr>
-                    <td> <span><a  href="index.php?action=AboutUs">A propos de nous</a></span></td>
+                    <td><span><a href="index.php?action=AboutUs">A propos de nous</a></span></td>
                 </tr>
                 <tr>
-                    <td><span><a  href="index.php?action=login">Login</a></span></td>
+                    <td><span><a href="index.php?action=login">Login</a></span></td>
 
                 </tr>
             </table>

@@ -14,7 +14,7 @@ $title = "Blog";
     <section>
         <link rel="stylesheet" type="text/css" href="../view/css/blog.css">
     </section>
-
+<!-- TODO Loé : refaire le blog pour faire en sorte qu'il ajoute un nouveau blog a chaque fois -->
     <section class="Block-blog">
         <div class="ligne1">
             <div id="margin">
@@ -26,7 +26,7 @@ $title = "Blog";
                                 était l'arme actuelle de Shinigami.</p>
                             <h4>Apprenez pleins d'infos sur Maka Albarn dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Maka_Albarn">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Maka%20Albarn">Read More </a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ $title = "Blog";
                                 Heartfilia, Erza Scarlett, Grey Fullbuster, Wendy Marvell, et Carla.</p>
                             <h4>Apprenez pleins d'infos sur Natsu dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Natsu_Dragneel">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Natsu%20Dragneel">Read More </a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ $title = "Blog";
                                 pouvaient plus quitter le jeu et qu'ils seraient coincé jusq'à terminer le jeu tout en sachant que si ils perdent c'est Game Over.</p>
                             <h4>Apprenez pleins d'infos sur Kirito dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Kazuto_Kirigaya">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Kazuto%20Kirigaya">Read More </a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ $title = "Blog";
                                 accéder aussi à la célébrité.</p>
                             <h4>Apprenez pleins d'infos sur Hitori Gotoh  dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Hitori_Gotō">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Hitori%20Gotō">Read More </a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@ $title = "Blog";
                                 le protagoniste principal du manga Bleach.</p>
                             <h4>Apprenez pleins d'infos sur Ichigo Kurosaki dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Ichigo_Kurosaki" >Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Ichigo%20Kurosaki" >Read More </a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ $title = "Blog";
                                 Hokage.</p>
                             <h4>Apprenez pleins d'infos sur Naruto Uzumaki dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Naruto_Uzumaki">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Naruto%20Uzumaki">Read More </a>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@ $title = "Blog";
                                 lui permettent de cacher sa véritable identité aux yeux de tous.</p>
                             <h4>Apprenez pleins d'infos sur Lelouch Vi Britannia dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Lelouch_vi_Britannia">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Lelouch%20vi%20Britannia">Read More </a>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ $title = "Blog";
                                 envers les Titans, ce dernier voulant les éradiquer jusqu'au dernier sans savoir que son destin va bien basculé.</p>
                             <h4>Apprenez pleins d'infos sur Eren Jaeger dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Eren_Yeager">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Eren%20Yeager">Read More </a>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ $title = "Blog";
                                 détenteur du One for All de devenir le nouveau symbole de la paix après All Might.</p>
                             <h4>Apprenez pleins d'infos sur Izuku Midoriya dans notre article!</h4>
                         </article>
-                        <a class="readMore" href="index.php?action=article&name=Izuku_Midoriya">Read More </a>
+                        <a class="readMore" href="index.php?action=article&name=Izuku%20Midoriya">Read More </a>
                     </div>
                 </div>
             </div>

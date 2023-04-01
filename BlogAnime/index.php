@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require 'controller/navigation.php';
 require 'controller/User.php';
 require 'controller/article.php';
@@ -22,8 +22,14 @@ if (isset($_GET['action'])) {
         case "login":
             displayLogin($_POST);
             break;
+        case "Logout":
+            displayLogout($_POST);
+            break;
         case "article":
             displayArticle($_GET['name']);
+            break;
+        case "addArticle":
+            displayAddArticle($_POST);
             break;
         default :
             lost();

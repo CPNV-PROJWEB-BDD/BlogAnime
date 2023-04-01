@@ -1,0 +1,26 @@
+[
+  {
+    "nom": "Loé",
+    "Prenom": "Lavaud",
+    "Adresse mail": "Loe.Lavaud@cpnv.ch",
+    "Mot de passe": "Pa$$w0rd"
+  },
+  {
+    "nom": "Diogo",
+    "Prenom": "Oliviera-soares",
+    "Adresse mail": "Diogo.Oliviera-soares@cpnv.ch",
+    "Mot de passe": "Pa$$w0rd"
+  },
+  {
+    "nom": "Léo",
+    "Prenom": "Jaquier",
+    "Adresse mail": "Léo.Jaquier@cpnv.ch",
+    "Mot de passe": "Pa$$w0rd"
+  },
+  {
+    "nom": "Pascal",
+    "Prenom": "Benzonana",
+    "Adresse mail": "Pascal.Benzonana@cpnv.ch",
+    "Mot de passe": "Pa$$w0rd"
+  }
+]
