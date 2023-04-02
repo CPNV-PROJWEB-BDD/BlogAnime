@@ -85,16 +85,16 @@
             </table>
             <div id="contactDetails">
                 <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM=">
-                    <img class="Social-Footer" id="instagram" src="view/image/instagram-logo.png">
+                    <img class="Social-Footer" id="instagram" src="view/image/instagram.png">
                 </a>
                 <a href="https://twitter.com/BlogAnime2023">
-                    <img class="Social-Footer" id="twitter" src="view/image/twitter-logo.jpg">
+                    <img class="Social-Footer" id="twitter" src="view/image/twitter.png">
                 </a>
                 <a href="https://www.reddit.com/user/BlogAnime2023">
-                    <img class="Social-Footer" id="reddit" src="view/image/reddit-logo.jpg">
+                    <img class="Social-Footer" id="reddit" src="view/image/reddit-logo.png">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100090937893061">
-                    <img class="Social-Footer" id="facebook" src="view/image/facebook-logo.jpg">
+                    <img class="Social-Footer" id="facebook" src="view/image/facebook.png">
                 </a>
             </div>
 

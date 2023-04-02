@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     border: 1px solid #000;
-    background-color: lightblue;
+    background-color: whitesmoke;
 }
 
 .persoContainer{
@@ -54,7 +54,7 @@
 }
 .artPost{
     height: 35%;
-    background-color: aqua;
+    background-color: whitesmoke;
     position: relative;
     padding: 2em;
     font-size: 17px;
@@ -63,13 +63,13 @@
 .readMore{
     height: 14.65%;
     bottom: 10%;
-    background-color: rebeccapurple;
+    background-color: whitesmoke;
     padding-left: 2em;
-    color: lightgray;
+    color: black;
     font-size: 17px;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,7 +79,7 @@
         flex-direction: column;
         justify-content: center;
         border: 1px solid #000;
-        background-color: lightblue;
+        background-color: whitesmoke;
     }
 
     .persoContainer{
@@ -119,7 +119,7 @@
     }
     .artPost{
         height: 24.86%;
-        background-color: aqua;
+        background-color: whitesmoke;
         position: relative;
         padding: 2em;
         font-size: 17px;
@@ -132,7 +132,7 @@
     .readMore{
         height: 14.65%;
         bottom: 10%;
-        background-color: rebeccapurple;
+        background-color: whitesmoke;
         padding-left: 2em;
         color: #000;
         font-size: 17px;

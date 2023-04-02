@@ -7,10 +7,10 @@ $title = "BlogAnime";
         <link rel="stylesheet" type="text/css" href="view/css/home.css">
     </section>
 
-    <section>
+    <section id="article">
         <div class="Border-page">
             <div class="Box">
-                <img class="Welcome-Image" src="view/image/HomePicture.png">
+                <div class="Welcome-Image" id="imgDemonSlayer"></div>
                 <div class="welcome">
                     <h3>Bonjour !<br> et bienvenue sur <br> notre site de blog d'anime</h3>
                 </div>
@@ -20,14 +20,12 @@ $title = "BlogAnime";
                 <div class="InfoContent">
                     <h3>Notre blog sur les animes <br> propose des infos vérifiées par des fans <br> pour des fans</h3>
                 </div>
-                <div class="ImageContent">
-                    <img id="ImageAnimeContent" src="../view/image/GIF/UwU.gif">
+                <div class="ImageContent"id="imgGifUwU">
                 </div>
             </div>
 
             <div class="Box">
-                <div class="Welcome-Image">
-                    <img id="ImageAnimeContent" src='../view/image/Banner/Eren_Jaeger.png'>
+                <div class="Welcome-Image" id="imgErenJaeger">
                 </div>
                 <div class="Enjoy">
                     <h3>Amusez vous à explorer notre site !<br>Et découvrez tout ce que vous chercher<br> sur vos

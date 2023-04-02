@@ -195,7 +195,7 @@ $title = "Blog";
                                 <h4>Apprenez pleins d'infos sur <?= $article['Nom']; ?> dans notre article!</h4>
                             </article>
                             <a class="readMore" href="index.php?action=article&name=<?= $article['Nom']; ?>">Read
-                                More </a>
+                                More → </a>
                         </div>
                     </div>
                 </div>
