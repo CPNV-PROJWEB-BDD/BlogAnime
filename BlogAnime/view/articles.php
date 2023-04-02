@@ -8,7 +8,11 @@ $title = "BlogAnime";
 <?php foreach ($articles as $article) : ?>
     <section class="articlePage">
         <div class="DescBannerPerso">
-            <img class="BannerPerso" src="<?= $article['Banner']; ?>" alt="Bannière personnages">
+            <?php if ($article['Banner'] == ""): ?>
+                <img class="BannerPerso" src="view/image/Banner/Image_Indisponible.png" alt="Bannière personnages">
+            <?php else: ?>
+                <img class="BannerPerso" src="<?= $article['Banner']; ?>" alt="Bannière personnages">
+            <?php endif; ?>
         </div>
         <div class="DescPerso">
             <div class="InfoPerso">
@@ -30,7 +34,7 @@ $title = "BlogAnime";
                 </ul>
                 <ul>
                     <strong>Première apparition :</strong>
-                    <li><?= $article['Première apparition']; ?><br></li>
+                    <li><?= $article['Premiere apparition']; ?><br></li>
                 </ul>
                 <ul>
                     <strong>Sexe :</strong>
@@ -73,7 +77,11 @@ $title = "BlogAnime";
                 </ul>
             </div>
             <div class="DescImgPerso">
-                <img class="ImgPerso" src="<?= $article['Images']; ?>" alt="Images personnages">
+                <?php if ($article['Banner'] == ""): ?>
+                    <img class="ImgPerso" src="view/image/Perso/PersoSansImage.webp" alt="Bannière personnages">
+                <?php else: ?>
+                    <img class="ImgPerso" src="<?= $article['Images']; ?>" alt="Images personnages">
+                <?php endif; ?>
             </div>
         </div>
     </section>

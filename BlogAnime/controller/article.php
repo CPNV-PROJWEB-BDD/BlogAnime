@@ -6,7 +6,8 @@
  * @version 29.03.2023
  */
 
-function displayBlog(){
+function displayBlog()
+{
     require_once "model/articlesManager.php";
     $articles = getBlog();
     require_once "view/blog.php";
@@ -21,14 +22,15 @@ function displayArticle($name)
 
 function displayAddArticle($Perso)
 {
+
     if (isset($Perso['NomPerso'], $Perso['AliasPerso'], $Perso['AgePerso'], $Perso['AnimePerso'], $Perso['FirstSeenPerso'],
         $Perso['SexePerso'], $Perso['SpecesPerso'], $Perso['ResidencePerso'], $Perso['OriginePerso'], $Perso['AffiliationPerso'],
         $Perso['OccupationPerso'], $Perso['DescriptionPerso'])) {
 
-        if ($Perso['FightingStylePerso'] == ""){
+        if ($Perso['FightingStylePerso'] == "") {
             $Perso['FightingStylePerso'] = "Aucun";
         }
-        if ($Perso['PowerPerso'] == ""){
+        if ($Perso['PowerPerso'] == "") {
             $Perso['PowerPerso'] = "Aucun";
         }
 
@@ -48,10 +50,14 @@ function displayAddArticle($Perso)
         $Description = $Perso['DescriptionPerso'];
 
         require_once "model/articlesManager.php";
-        getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces, $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
-        require_once "model/articlesManager.php";
-        $articles = getBlog();
-        require_once "view/blog.php";
+        $result = getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces, $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
+        if ($result == false) {
+            require_once "view/addArticle.php";
+        } else {
+            require_once "model/articlesManager.php";
+            $articles = getBlog();
+            require_once "view/blog.php";
+        }
     } else {
         require_once "view/addArticle.php";
     }

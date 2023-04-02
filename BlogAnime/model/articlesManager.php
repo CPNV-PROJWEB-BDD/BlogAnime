@@ -108,7 +108,19 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
 
     $persos = file_get_contents($filename);
     $persos = json_decode($persos, true);
-    array_push($persos, $data);
-    $dataEncode = json_encode($persos, true);
-    file_put_contents($filename, $dataEncode);
+    foreach ($persos as $perso) {
+        if ($perso['Nom'] !== $name) {
+            $errorDouble = true;
+        }
+        else{
+            $errorDouble = false;
+        }
+    }
+    if ($errorDouble == true){
+        array_push($persos, $data);
+        $dataEncode = json_encode($persos, true);
+        file_put_contents($filename, $dataEncode);
+    }
+
+    return $errorDouble;
 }
