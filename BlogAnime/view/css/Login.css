@@ -118,8 +118,8 @@ body {
 }
 
 @media screen and (max-width: 930px) {
-    .container{
-        max-width: 400px;
+    .containerLog{
+        max-width: 50%;
         margin-right: auto;
         margin-left: auto;
         padding-right: 10px;
