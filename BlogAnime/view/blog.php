@@ -26,7 +26,7 @@ $title = "Blog";
                             <?php else: ?>
                             <img class="imgPost" src="<?= $article['Banner']; ?>" alt="Images personnages">
                             <?php endif; ?>
-                            <article class="artPost"><p><?= $article['Desciption']; ?></p>
+                            <article class="artPost"><p><?= $article['Description']; ?></p>
                                 <h4>Apprenez pleins d'infos sur <?= $article['Nom']; ?> dans notre article!</h4>
                             </article>
                             <a class="readMore" href="index.php?action=article&name=<?= $article['Nom']; ?>">Read

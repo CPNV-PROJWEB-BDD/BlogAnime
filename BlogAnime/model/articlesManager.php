@@ -101,7 +101,7 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
         "Occupation" => $occupation,
         "Style de combat" => $fightingStyle,
         "Pouvoir" => $power,
-        "Desciption" => $Description
+        "Description" => $Description
     ]);
 
     $filename = "model/Perso.json";
