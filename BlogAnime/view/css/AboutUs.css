@@ -11,7 +11,7 @@
 }
 
 .Titre-AboutUs{
-    background-color: #994CE5;
+    background-color: midnightblue;
     height: 400px;
     font-size: 50px;
     border-bottom: solid black 1px;
@@ -20,7 +20,7 @@
 
 .Info-AboutUs{
     font-size: 25px;
-    background-color: #BB91E5;
+    background-color: whitesmoke;
 }
 
 .image-réseau-sociaux-AboutUs{
@@ -55,7 +55,7 @@
         margin-right: 5px;
     }
     .Block-global{
-        background-color: #BB91E5 ;
+        background-color: whitesmoke ;
     }
     .Titre-AboutUs{
         height: 500px;
