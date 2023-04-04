@@ -1,11 +1,11 @@
 .Block-global{
-    border: solid black 1px;
+    border: solid black 1px;    /*  Permet aux contours de la page d'avoir une bordure */
 }
 
 .Block-AboutUs{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around;  /*  Affecte le contenaire global de la page, permet aux 2 autres contenaires de se mettre en colonne plutôt qu'en ligne et met le contenu au milieu  */
     text-align: center;
     justify-content: center;
 }
@@ -13,24 +13,20 @@
 .Titre-AboutUs{
     background-color: midnightblue;
     height: 400px;
-    font-size: 50px;
+    font-size: 50px;                  /*   affectant le contenaire contenant le titre de la page, change la couleur de fond en bleu foncé donne une hauteur du contenaire de 400 pixels avec une taille de 50 pixels pour le text et une bordure sur le bas du contenaire pour marquer une différence avec celui du bas */
     border-bottom: solid black 1px;
     color: #ffffff;
 }
 
 .Info-AboutUs{
     font-size: 25px;
-    background-color: whitesmoke;
-}
-
-.image-réseau-sociaux-AboutUs{
-    height: 15px;
+    background-color: whitesmoke    /*  affectant le contenaire contenant les informations de la page, met une couleur de fond en un blanc plus agréable pour les yeux et augmente la taille du text de 25 pixels */
 }
 
 .lien-Réseaux-Sociaux-AboutUs{
     color: #000000;
     text-decoration: none;
-    display: block;
+    display: block;                 /*   Affectant les liens des réseaux sociaux, Met la couleurs des liens en noir en enlevant le soulignement de base des liens */
     position: relative;
 }
 
@@ -43,7 +39,7 @@
     height: 1px;
     background-color: rgb(0, 0, 0);
     transition: transform 0.3s;
-    transform: scaleX(0);
+    transform: scaleX(0);                           /*   parlant des 2 classes CSS sur la gauche, permet a quand on passe la souris sur les liens qu'une animation soulignant le lien s'affiche */
     transform-origin: center;
 }
 .lien-Réseaux-Sociaux-AboutUs:hover::after {
@@ -51,14 +47,11 @@
 }
 @media screen and (max-width: 930px) {
     .Info-AboutUs{
-        margin-left: 5px;
+        margin-left: 5px;                          /*    Pour la version mobile, donne un espacement des bords de la page de 5 pixels */
         margin-right: 5px;
     }
-    .Block-global{
-        background-color: whitesmoke ;
-    }
     .Titre-AboutUs{
-        height: 500px;
+        height: 500px;                             /*   Pour la version mobile, Augmente la taille du conteneur de titre à fin qu'on voit correctement tout le texte*/
     }
 
 }

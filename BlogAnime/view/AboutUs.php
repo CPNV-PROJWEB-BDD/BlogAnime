@@ -16,6 +16,7 @@ $title = "AboutUs";
         <link rel="stylesheet" type="text/css" href="../view/css/AboutUs.css">
     </section>
 <section>
+    <!-- Création du premier bloque contenant le titre de la page -->
 <div class="Block-global">
     <div class="Block-AboutUs">
         <div class="Titre-AboutUs">
@@ -26,6 +27,7 @@ $title = "AboutUs";
         </div>
         <div class="Info-AboutUs">
 
+            <!-- Création d'un deuxième bloque qui s'occupera d'avoir 3 paragraphes contenant les informations sur les créateurs -->
             <h2>Qui sommes nous?</h2>
             <p>
                 Grands fans d'animés et de manga, BlogAnime est un projet de passionnés qui se sont mis au défis de
@@ -50,6 +52,7 @@ $title = "AboutUs";
                 Nous possédants des réseaux sociaux avec les fans pourrons suivres les actus du moment en rapport avec
                 les mangas et animés !
                 <br>
+            <!-- Liens qui mènent aux réseaux sociaux du site -->
             <ul>
                 <a class="lien-Réseaux-Sociaux-AboutUs" href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><h4>Instagram</h4></a>
                 <a class="lien-Réseaux-Sociaux-AboutUs" href="https://twitter.com/BlogAnime2023"><h4>Twitter</h4></a>
