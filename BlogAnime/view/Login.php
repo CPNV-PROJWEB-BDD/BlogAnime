@@ -1,11 +1,10 @@
 <?php
 /**
  * @file Login.php
- * @brief file desciption
+ * @brief this page is where user can connect herself to their account
  * @author Created by Loe.LAVAUD
  * @version 24.02.2023
  */
-
 ob_start();
 $title = "BlogAnime";
 ?>

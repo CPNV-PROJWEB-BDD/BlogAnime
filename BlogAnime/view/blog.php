@@ -1,7 +1,7 @@
 <?php
 /**
  * @file blog.php
- * @brief file desciption
+ * @brief this page contain all link to all articles
  * @author Created by Loe.LAVAUD
  * @version 24.02.2023
  */

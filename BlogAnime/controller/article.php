@@ -1,7 +1,7 @@
 <?php
 /**
  * @file article.php
- * @brief file desciption
+ * @brief This file will have all connection/action about article
  * @author Created by Loe.LAVAUD
  * @version 29.03.2023
  */

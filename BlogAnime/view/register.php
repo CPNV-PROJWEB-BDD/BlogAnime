@@ -1,7 +1,7 @@
 <?php
 /**
  * @file register.php
- * @brief file desciption
+ * @brief this page is where user can create an account
  * @author Created by Loe.LAVAUD
  * @version 08.03.2023
  */

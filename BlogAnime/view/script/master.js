@@ -1,5 +1,12 @@
+/**
+ * @file master.js
+ * @brief view/script/master.js
+ * @author Created by Léo.JAQUIER
+ * @version 24.02.2023
+ */
 
 
+//this function will only appear on mobile version, used to open the navbar
 function btndisplayNavbar(btnIcon) {
     console.log(btnIcon);
     btnIcon.classList.toggle("change");
@@ -13,9 +20,9 @@ function btndisplayNavbar(btnIcon) {
     }
 
 }
-addEventListener("resize", (screen) => {resize();});
+addEventListener("resize", (screen) => {fnResize();});
 
-function resize() {
+function fnResize() {
     let navbar=document.getElementById('navbarbtn')
 
     let links = document.getElementById("ulNavbar");

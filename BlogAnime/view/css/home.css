@@ -1,3 +1,9 @@
+/**
+* @file home.css
+* @brief  This file contain the style of the home page
+* @author created by Leo.JAQUIER
+* @version 01.02.2023
+*/
 #article{
     font-size: 30pt;    /* La taille du text sur la page sera de 30 pixels */
 }
@@ -7,6 +13,7 @@
 }
 
 .Box{
+
     display: flex;
     height: 500px;
     position: relative;         /* Donne une taille aux différents conteneurs et leurs donne une bordure de 1 pixel et en leurs donnant un fond blanc */

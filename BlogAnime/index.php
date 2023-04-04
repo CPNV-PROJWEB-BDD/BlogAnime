@@ -1,4 +1,10 @@
 <?php
+/**
+ * @file index.php
+ * @brief  index.php
+ * @author created by Leo.JAQUIER
+ * @version 01.02.2023
+ */
 session_start();
 require 'controller/navigation.php';
 require 'controller/User.php';

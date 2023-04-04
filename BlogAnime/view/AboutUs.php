@@ -1,7 +1,7 @@
 <?php
 /**
  * @file AboutUs.php
- * @brief file desciption
+ * @brief this page contain all information about the site
  * @author Created by Loe.LAVAUD
  * @version 24.02.2023
  */

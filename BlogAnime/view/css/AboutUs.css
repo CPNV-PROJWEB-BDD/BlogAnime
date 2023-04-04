@@ -1,3 +1,9 @@
+/**
+* @file AboutUs.css
+* @brief  This file contain the style of  Abous us page
+* @author created by Leo.JAQUIER
+* @version 01.02.2023
+*/
 .Block-global{
     border: solid black 1px;    /*  Permet aux contours de la page d'avoir une bordure */
 }
@@ -7,7 +13,6 @@
     flex-direction: column;
     justify-content: space-around;  /*  Affecte le contenaire global de la page, permet aux 2 autres contenaires de se mettre en colonne plutôt qu'en ligne et met le contenu au milieu  */
     text-align: center;
-    justify-content: center;
 }
 
 .Titre-AboutUs{

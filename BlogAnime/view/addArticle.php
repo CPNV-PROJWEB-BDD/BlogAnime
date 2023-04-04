@@ -1,4 +1,10 @@
 <?php
+/**
+ * @file addArticle.php
+ * @brief this page is where user can create article
+ * @author Created by Loe.LAVAUD
+ * @version 24.02.2023
+ */
 ob_start();
 $title = "BlogAnime";
 ?>

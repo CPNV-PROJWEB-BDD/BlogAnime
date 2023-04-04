@@ -1,3 +1,9 @@
+/**
+* @file articles.css
+* @brief  This file contain the style of article page
+* @author created by Leo.JAQUIER
+* @version 01.02.2023
+*/
 .articlePage{
     display: flex;
     flex-direction: column;

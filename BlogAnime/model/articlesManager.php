@@ -1,7 +1,7 @@
 <?php
 /**
  * @file articlesManager.php
- * @brief file desciption
+ * @brief this file contain all function to connect to json's file
  * @author Created by Loe.LAVAUD
  * @version 24.02.2023
  */

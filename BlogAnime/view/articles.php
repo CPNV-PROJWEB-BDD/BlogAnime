@@ -1,4 +1,11 @@
 <?php
+/**
+ * @file articles.php
+ * @brief this is a prefab of all articles
+ * @author Created by Léo.JAQUIER
+ * @version 02.04.2023
+ */
+
 ob_start();
 $title = "BlogAnime";
 ?>

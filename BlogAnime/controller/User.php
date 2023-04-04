@@ -1,7 +1,7 @@
 <?php
 /**
  * @file User.php
- * @brief file desciption
+ * @brief this file will have connection about users
  * @author Created by Loe.LAVAUD
  * @version 08.03.2023
  */
