@@ -1,41 +1,67 @@
 .articlePage{
-    background-color: lightgray;
-}
-
-.DescBannerPerso{
-    border-top: solid black 1px;
     display: flex;
-    position: relative;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    background-color: black;
+}
+.topBanner{
+    background-size: cover;
+    background-position:top right;
+    background-color: red;
+    height: 500px;
     width: 100%;
-    margin-bottom: 10px;
 }
 
-.BannerPerso{
-    width: 80%;
-    height: 350px;
-}
-
-.DescPerso{
+.page{
     display: flex;
     flex-direction: row;
+    align-self: center;
+    width: 70%;
+    height: auto;
 }
-
-.InfoPerso {
-    width: 50%;
-    border: solid grey 2px;
-    margin-left: 10px;
-}
-
-ul{
-    border: solid grey 2px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.DescImgPerso{
+.smallDescription{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid darkred;
     display: flex;
-    position: relative;
-    justify-content: center;
-    width: 50%;
+    flex-direction: column;
+    padding: 5px;
+    order: 2;
+    width: 35%;
+    align-self: flex-start;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+article{
+    padding: 10px;
+    margin-right: 5px;
+    order: 1;
+    width: 65%;
+    height: auto;
+    background-color: whitesmoke;
+}
+.infoCharacter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+}
+.titleAside{
+
+    background-color: darkred;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.imgCharacter{
+    align-self:center ;
+    width: 99.9%;
+    height: auto;
+}
+
+.dataCharacter{
+    margin-left: 2px;
+    border-top: 1px solid #212529;
+    padding: 5px;
 }

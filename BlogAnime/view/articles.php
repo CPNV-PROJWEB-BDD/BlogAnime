@@ -7,82 +7,40 @@ $title = "BlogAnime";
     </section>
 <?php foreach ($articles as $article) : ?>
     <section class="articlePage">
-        <div class="DescBannerPerso">
-            <?php if ($article['Banner'] == ""): ?>
-                <img class="BannerPerso" src="view/image/Banner/Image_Indisponible.png" alt="Bannière personnages">
-            <?php else: ?>
-                <img class="BannerPerso" src="<?= $article['Banner']; ?>" alt="Bannière personnages">
-            <?php endif; ?>
-        </div>
-        <div class="DescPerso">
-            <div class="InfoPerso">
-                <ul>
-                    <strong> Nom :</strong>
-                    <li><?= $article['Nom']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Nom de code :</strong>
-                    <li><?= $article['Nom de code']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Age :</strong>
-                    <li><?= $article['Age']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Anime :</strong>
-                    <li><?= $article['Anime']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Première apparition :</strong>
-                    <li><?= $article['Premiere apparition']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Sexe :</strong>
-                    <li><?= $article['Sexe']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Especes :</strong>
-                    <li><?= $article['Especes']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Residence :</strong>
-                    <li><?= $article['Residence']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Origine :</strong>
-                    <li><?= $article['Origine']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Affiliation :</strong>
-                    <li><?= $article['Affiliation']; ?><br></li>
-                </ul>
-                <ul>
-                    <strong>Occupation :</strong>
-                    <li><?= $article['Occupation']; ?><br></li>
-                </ul>
-                <?php if ($article['Style de combat'] !== "Aucun"): ?>
-                    <ul>
-                        <strong>Style de combat :</strong>
-                        <li><?= $article['Style de combat']; ?><br></li>
-                    </ul>
-                <?php endif; ?>
-                <?php if ($article['Pouvoir'] !== "Aucun"): ?>
-                    <ul>
-                        <strong>Pouvoir :</strong>
-                        <li><?= $article['Pouvoir']; ?><br></li>
-                    </ul>
-                <?php endif; ?>
-                <ul>
-                    <strong>Desciption :</strong><br><?= $article['Desciption']; ?>
-                </ul>
-            </div>
-            <div class="DescImgPerso">
-                <?php if ($article['Banner'] == ""): ?>
-                    <img class="ImgPerso" src="view/image/Perso/PersoSansImage.webp" alt="Bannière personnages">
-                <?php else: ?>
-                    <img class="ImgPerso" src="<?= $article['Images']; ?>" alt="Images personnages">
-                <?php endif; ?>
-            </div>
+        <div class="topBanner"></div>
+        <div class="page">
+            <aside class="smallDescription">
+
+                <div class="infoCharacter">
+                    <h2 class="titleAside">Name</h2>
+                    <img class="imgCharacter" src="image/Perso/Lelouch.png">
+                    <div class="dataCharacter">Nom :</div>
+                    <div class="dataCharacter">Nom de code : Zero<br>
+                        Lelouch Lamperouge<br>
+                        Julius Kingsley<br>
+                        Alan Spacer<br>
+                        Warlock<br>
+                        Lulu<br>
+                        Prince Noir<br>
+                        L'empereur démon<br>
+                        L'ennemi du monde<br>
+                        Demon<br>
+                        L.L.</div>
+                    <div class="dataCharacter">Age</div>
+                    <div class="dataCharacter">Première apparition :</div>
+                    <div class="dataCharacter">Sexe :</div>
+                    <div class="dataCharacter">Especes :</div>
+                    <div class="dataCharacter">Residence :</div>
+                    <div class="dataCharacter">Origine :</div>
+                    <div class="dataCharacter">Affiliation :</div>
+                    <div class="dataCharacter">Occupation :</div>
+                    <div class="dataCharacter">Style de combat :</div>
+                    <div class="dataCharacter">Pouvoir :</div>
+                </div>
+
+            </aside>
+            <article>dkmslkfdlksa
+            </article>
         </div>
     </section>
 <?php endforeach; ?>
