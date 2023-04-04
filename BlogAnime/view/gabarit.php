@@ -25,9 +25,9 @@
             <a class="navlink" href="index.php?action=Blog">Blog</a>
             <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
             <?php if (isset($_SESSION['user_id'])): ?>
-                    <a class="navlink" href="index.php?action=addArticle">Ajouter un article</a>
+                <a class="navArticle" href="index.php?action=addArticle">Ajouter un article</a>
             <?php else: ?>
-                <a class="navlink" href="index.php?action=addArticle" hidden>Ajouter un article</a>
+                <a class="navArticle" href="index.php?action=addArticle" hidden>Ajouter un article</a>
             <?php endif; ?>
             <?php if (isset($_SESSION['user_id'])): ?>
                 <a id="Login" href="index.php?action=Logout">Logout</a>
