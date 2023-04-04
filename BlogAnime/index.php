@@ -8,7 +8,7 @@ if (isset($_GET['action'])) {
     $action = $_GET['action'];
     switch ($action) {
         case "home" :
-            home();
+            getHome();
             break;
         case "Blog":
             displayBlog();
@@ -31,11 +31,14 @@ if (isset($_GET['action'])) {
         case "addArticle":
             displayAddArticle($_POST);
             break;
+        case "Contact":
+            getContact();
+            break;
         default :
             lost();
     }
 } else {
-    home();
+    getHome();
 }
 
 

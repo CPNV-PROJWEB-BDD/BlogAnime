@@ -7,71 +7,70 @@ $title = "BlogAnime";
     </section>
 
     <section class="bgwhite">
-        <form class="containerReg" action="index.php?action=addArticle" method="post">
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="NomPerso" placeholder="Nom" required>
+        <form class="containerArticle" action="index.php?action=addArticle" method="post">
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="NomPerso" placeholder="Nom" required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="AliasPerso" placeholder="Nom de code/Surnom"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="AliasPerso" placeholder="Nom de code/Surnom"
                        required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="AgePerso" placeholder="Age"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="AgePerso" placeholder="Age"
                        required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="AnimePerso"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="AnimePerso"
                        placeholder="Anime" required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="FirstSeenPerso" placeholder="Première apparition" required>
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="FirstSeenPerso" placeholder="Première apparition" required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
+            <div class="ContainerPersoFeature">
                 <input class="s-text7 p-l-22 p-r-22" type="radio" name="SexePerso" value="Homme">Homme -
                 <input class="s-text7 p-l-22 p-r-22" type="radio" name="SexePerso" value="Femme">Femme
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="SpecesPerso" placeholder="Especes"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="SpecesPerso" placeholder="Especes"
                        required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="ResidencePerso"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="ResidencePerso"
                        placeholder="Résidence" required>
             </div>
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="OriginePerso" placeholder="Origine" required>
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="OriginePerso" placeholder="Origine" required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="AffiliationPerso" placeholder="Affiliation"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="AffiliationPerso" placeholder="Affiliation"
                        required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="OccupationPerso" placeholder="Occupation"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="OccupationPerso" placeholder="Occupation"
                        required>
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="FightingStylePerso"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="FightingStylePerso"
                        placeholder="Type de combat(Optionel)">
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="PowerPerso"
+            <div class="ContainerPersoFeature">
+                <input class="PersoFeature" type="text" name="PowerPerso"
                        placeholder="Pouvoir(Optionel)">
             </div>
 
-            <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="DescriptionPerso"
-                       placeholder="Description" required>
+            <div class="DescriptionContainer">
+                    <textarea class="DescriptionBox" name="DescriptionPerso" placeholder="Description de votre personnage" required></textarea>
             </div>
 
             <button class="roundBtn" role="button">Ajouter le personnage</button>

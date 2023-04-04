@@ -1,6 +1,6 @@
 <?php
 
-function home(){
+function getHome(){
     require 'view/home.php';
 }
 
@@ -10,4 +10,8 @@ function lost(){
 
 function getAboutUs() {
     require 'view/AboutUs.php';
+}
+
+function getContact() {
+    require 'view/Contact.php';
 }

@@ -58,29 +58,29 @@
             <table>
                 <tr>
                     <td><span><a href="index.php?action=home">Accueil</a></span></td>
-                    <td><a>contacter</a></td>
+                    <td><span><a href="index.php?action=Contact">Contacter</a></span></td>
                 </tr>
                 <tr>
                     <td><span><a href="index.php?action=Blog">Blog</a></span></td>
-                    <td><a>aide</a></td>
+                    <td><a>Aide</a></td>
                 </tr>
                 <tr>
                     <td><span><a href="index.php?action=AboutUs">A propos de nous</a></span></td>
                 </tr>
 
-                <?php if (isset($_SESSION['user_id'])): ?>
-                    <tr>
-                        <td><span><a href="index.php?action=addArticle">Ajouter un article</a></span></td>
-                    </tr>
-                <?php else: ?>
-                    <tr>
-                        <td><span><a href="index.php?action=addArticle" hidden>Ajouter un article</a></span></td>
-                    </tr>
-                <?php endif; ?>
-
                 <tr>
-                    <td><span><a href="index.php?action=login">Login</a></span></td>
-
+                    <?php if (isset($_SESSION['user_id'])): ?>
+                        <td><span><a href="index.php?action=addArticle">Ajouter un article</a></span></td>
+                    <?php else: ?>
+                        <td><span><a href="index.php?action=addArticle" hidden>Ajouter un article</a></span></td>
+                    <?php endif; ?>
+                </tr>
+                <tr>
+                <?php if (isset($_SESSION['user_id'])): ?>
+                        <td><span><a href="index.php?action=Logout">Logout</a></span></td>
+                <?php else: ?>
+                        <td><span><a href="index.php?action=login">Login</a></span></td>
+                <?php endif; ?>
                 </tr>
             </table>
             <div id="contactDetails">

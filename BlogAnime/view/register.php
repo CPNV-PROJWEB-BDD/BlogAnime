@@ -26,7 +26,7 @@ $title = "BlogAnime";
             </div>
 
             <div class="bo4 size15 m-b-20">
-                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="LogMail" placeholder="Adresse mail"
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="email" name="LogMail" placeholder="Adresse mail"
                        required>
             </div>
 
