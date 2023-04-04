@@ -2,7 +2,7 @@
 /**
  * @file blog.php
  * @brief this page contain all link to all articles
- * @author Created by Loe.LAVAUD
+ * @author Created by Diogo.OLIVEIRA-SOARES
  * @version 24.02.2023
  */
 
