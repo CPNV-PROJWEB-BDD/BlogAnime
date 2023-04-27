@@ -1,7 +1,7 @@
 <?php
 /**
  * @file gabarit.php
- * @brief This page contain the footer and header who will be on all pages
+ * @brief This page contain the footer and header who will be on all  pages
  * @author Created by Léo.JAQUIER
  * @version 24.02.2023
  */
@@ -30,15 +30,15 @@
         </div>
         <div id="ulNavbar">
             <a class="navlink" href="index.php?action=home">Accueil</a>
-            <a class="navlink" href="index.php?action=Blog">Blog</a>
-            <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
+            <a class="navlink" href="index.php?action=blog">Blog</a>
+            <a class="navlink" href="index.php?action=aboutUs">A propos de nous</a>
             <?php if (isset($_SESSION['user_id'])): ?>
                 <a class="navArticle" href="index.php?action=addArticle">Ajouter un article</a>
             <?php else: ?>
                 <a class="navArticle" href="index.php?action=addArticle" hidden>Ajouter un article</a>
             <?php endif; ?>
             <?php if (isset($_SESSION['user_id'])): ?>
-                <a id="Login" href="index.php?action=Logout">Logout</a>
+                <a id="Login" href="index.php?action=logout">Logout</a>
             <?php else: ?>
                 <a id="Login" href="index.php?action=login">Login</a>
             <?php endif; ?>
@@ -66,14 +66,14 @@
             <table>
                 <tr>
                     <td><span><a href="index.php?action=home">Accueil</a></span></td>
-                    <td><span><a href="index.php?action=Contact">Contacter</a></span></td>
+                    <td><span><a href="index.php?action=contact">Contacter</a></span></td>
                 </tr>
                 <tr>
-                    <td><span><a href="index.php?action=Blog">Blog</a></span></td>
+                    <td><span><a href="index.php?action=blog">Blog</a></span></td>
                     <td><a>Aide</a></td>
                 </tr>
                 <tr>
-                    <td><span><a href="index.php?action=AboutUs">A propos de nous</a></span></td>
+                    <td><span><a href="index.php?action=aboutUs">A propos de nous</a></span></td>
                 </tr>
 
                 <tr>
@@ -85,9 +85,9 @@
                 </tr>
                 <tr>
                 <?php if (isset($_SESSION['user_id'])): ?>
-                        <td><span><a href="index.php?action=Logout">Logout</a></span></td>
+                        <td><span><a href="index.php?action=logout">logout</a></span></td>
                 <?php else: ?>
-                        <td><span><a href="index.php?action=login">Login</a></span></td>
+                        <td><span><a href="index.php?action=login">login</a></span></td>
                 <?php endif; ?>
                 </tr>
             </table>

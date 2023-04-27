@@ -7,7 +7,7 @@
  */
 session_start();
 require 'controller/navigation.php';
-require 'controller/User.php';
+require 'controller/user.php';
 require 'controller/article.php';
 
 if (isset($_GET['action'])) {
@@ -16,32 +16,32 @@ if (isset($_GET['action'])) {
         case "home" :
             getHome();
             break;
-        case "Blog":
-            displayBlog();
+        case "blog":
+            getBlog();
             break;
-        case "AboutUs":
+        case "aboutUs":
             getAboutUs();
             break;
         case "register":
-            displayregister($_POST);
+            getRegister($_POST);
             break;
         case "login":
-            displayLogin($_POST);
+            getLogin($_POST);
             break;
-        case "Logout":
-            displayLogout($_POST);
+        case "logout":
+            getLogout();
             break;
         case "article":
-            displayArticle($_GET['name']);
+            getArticle($_GET);
             break;
         case "addArticle":
-            displayAddArticle($_POST);
+            getAddArticle($_POST); /** getAddArticle **/
             break;
-        case "Contact":
+        case "contact":
             getContact();
             break;
         default :
-            lost();
+            getLost();
     }
 } else {
     getHome();

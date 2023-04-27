@@ -6,7 +6,7 @@
  * @version 24.02.2023
  */
 
-function getRegister($name, $firstname, $mail, $pwd)
+function displayRegister($name, $firstname, $mail, $pwd)
 {
     $data = ([
         "nom" => $name,
@@ -15,7 +15,7 @@ function getRegister($name, $firstname, $mail, $pwd)
         "Mot de passe" => $pwd
     ]);
 
-    $filename = "model/LoginName.json";
+    $filename = "model/loginName.json";
 
     if (file_get_contents($filename) == "") {
         $temparray[] = $data;
@@ -35,10 +35,10 @@ function getRegister($name, $firstname, $mail, $pwd)
 }
 
 
-function getLogin($mail, $pwd)
+function displayLogin($mail, $pwd)
 {
     $valeur = 'faux';
-    $filename = "model/LoginName.json";
+    $filename = "model/loginName.json";
     $temparray = file_get_contents($filename);
 
     $users = json_decode($temparray, true);
@@ -52,14 +52,14 @@ function getLogin($mail, $pwd)
     return $valeur;
 }
 
-function getLogout()
+function displayLogout()
 {
     unset($_SESSION["user_id"]);
 }
 
-function getBlog()
+function getArticleBlog()
 {
-    $filename = "model/Perso.json";
+    $filename = "model/perso.json";
     $temparray = file_get_contents($filename);
 
     $Persos = json_decode($temparray, true);
@@ -68,9 +68,9 @@ function getBlog()
 }
 
 
-function getArticle($name)
+function displayArticle($name)
 {
-    $filename = "model/Perso.json";
+    $filename = "model/perso.json";
     $temparray = file_get_contents($filename);
 
     $Persos = json_decode($temparray, true);
@@ -83,7 +83,7 @@ function getArticle($name)
     return $NomPerso;
 }
 
-function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
+function displayAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
 {
     $data = ([
         "Nom" => $name,
@@ -104,7 +104,7 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
         "Description" => $Description
     ]);
 
-    $filename = "model/Perso.json";
+    $filename = "model/perso.json";
 
     $persos = file_get_contents($filename);
     $persos = json_decode($persos, true);
