@@ -13,14 +13,14 @@ function getBlog()
     require_once "view/blog.php";
 }
 
-function getArticle($name)
+function showArticle($name)
 {
     require_once "model/articlesManager.php";
-    $articles = displayArticle($name['name']);
+    $articles = getArticle($name['name']);
     require_once "view/articles.php";
 }
 
-function getAddArticle($Perso)
+function addArticle($Perso)
 {
 
     if (isset($Perso['NomPerso'], $Perso['AliasPerso'], $Perso['AgePerso'], $Perso['AnimePerso'], $Perso['FirstSeenPerso'],
@@ -50,7 +50,7 @@ function getAddArticle($Perso)
         $Description = $Perso['DescriptionPerso'];
 
         require_once "model/articlesManager.php";
-        $result = displayAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces, $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
+        $result = getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces, $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
         if ($result == false) {
             require_once "view/addArticle.php";
         } else {

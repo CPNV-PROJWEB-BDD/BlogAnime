@@ -6,7 +6,7 @@
  * @version 08.03.2023
  */
 
-function getRegister($Register)
+function register($Register)
 {
     if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
         $Surname = $Register['LogSurname'];
@@ -15,21 +15,21 @@ function getRegister($Register)
         $Password = $Register['LogPassword'];
 
         require_once "model/articlesManager.php";
-        displayRegister($Surname, $firstname, $mail, $Password);
+        getRegister($Surname, $firstname, $mail, $Password);
         require "view/home.php";
     } else {
         require "view/register.php";
     }
 }
 
-function getLogin($login){
+function login($login){
 
     if (isset($login['LogMail'], $login['LogPassword'])) {
         $mail = $login['LogMail'];
         $Password = $login['LogPassword'];
 
         require_once "model/articlesManager.php";
-        $valeur = displayLogin($mail, $Password);
+        $valeur = getLogin($mail, $Password);
         if ($valeur == 'vrai') {
             require "view/home.php";
         }
@@ -41,8 +41,8 @@ function getLogin($login){
     }
 }
 
-function getLogout(){
+function logout(){
         require "model/articlesManager.php";
-        displayLogout();
+        getLogout();
         require "view/home.php";
 }

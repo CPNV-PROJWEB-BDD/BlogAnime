@@ -6,7 +6,7 @@
  * @version 24.02.2023
  */
 
-function displayRegister($name, $firstname, $mail, $pwd)
+function getRegister($name, $firstname, $mail, $pwd)
 {
     $data = ([
         "nom" => $name,
@@ -21,7 +21,6 @@ function displayRegister($name, $firstname, $mail, $pwd)
         $temparray[] = $data;
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
-        session_start();
         $_SESSION['user_id'] = $mail;
     } else {
         $temparray = file_get_contents($filename);
@@ -29,13 +28,12 @@ function displayRegister($name, $firstname, $mail, $pwd)
         array_push($temparray, $data);
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
-        session_start();
         $_SESSION['user_id'] = $mail;
     }
 }
 
 
-function displayLogin($mail, $pwd)
+function getLogin($mail, $pwd)
 {
     $valeur = 'faux';
     $filename = "model/loginName.json";
@@ -52,7 +50,7 @@ function displayLogin($mail, $pwd)
     return $valeur;
 }
 
-function displayLogout()
+function getLogout()
 {
     unset($_SESSION["user_id"]);
 }
@@ -68,7 +66,7 @@ function getArticleBlog()
 }
 
 
-function displayArticle($name)
+function getArticle($name)
 {
     $filename = "model/perso.json";
     $temparray = file_get_contents($filename);
@@ -83,7 +81,7 @@ function displayArticle($name)
     return $NomPerso;
 }
 
-function displayAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
+function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
 {
     $data = ([
         "Nom" => $name,

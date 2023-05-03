@@ -23,19 +23,19 @@ if (isset($_GET['action'])) {
             getAboutUs();
             break;
         case "register":
-            getRegister($_POST);
+            register($_POST);
             break;
         case "login":
-            getLogin($_POST);
+            login($_POST);
             break;
         case "logout":
-            getLogout();
+            logout();
             break;
         case "article":
-            getArticle($_GET);
+            showArticle($_GET);
             break;
         case "addArticle":
-            getAddArticle($_POST); /** getAddArticle **/
+            addArticle($_POST); /* getAddArticle */
             break;
         case "contact":
             getContact();
