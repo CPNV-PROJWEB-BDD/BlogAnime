@@ -1,6 +1,6 @@
 [
   {
-    "nom": "Loé",
+    "nom": "Lo\u00e9",
     "Prenom": "Lavaud",
     "Adresse mail": "Loe.Lavaud@cpnv.ch",
     "Mot de passe": "Pa$$w0rd"
@@ -12,9 +12,9 @@
     "Mot de passe": "Pa$$w0rd"
   },
   {
-    "nom": "Léo",
+    "nom": "L\u00e9o",
     "Prenom": "Jaquier",
-    "Adresse mail": "Léo.Jaquier@cpnv.ch",
+    "Adresse mail": "L\u00e9o.Jaquier@cpnv.ch",
     "Mot de passe": "Pa$$w0rd"
   },
   {

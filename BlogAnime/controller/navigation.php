@@ -9,14 +9,14 @@ function getHome(){
     require 'view/home.php';
 }
 
-function lost(){
+function getLost(){
     require 'view/lost.php';
 }
 
 function getAboutUs() {
-    require 'view/AboutUs.php';
+    require 'view/aboutUs.php';
 }
 
 function getContact() {
-    require 'view/Contact.php';
+    require 'view/contact.php';
 }

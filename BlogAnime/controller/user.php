@@ -1,12 +1,12 @@
 <?php
 /**
- * @file User.php
+ * @file user.php
  * @brief this file will have connection about users
  * @author Created by Loe.LAVAUD
  * @version 08.03.2023
  */
 
-function displayregister($Register)
+function register($Register)
 {
     if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
         $Surname = $Register['LogSurname'];
@@ -22,7 +22,7 @@ function displayregister($Register)
     }
 }
 
-function displayLogin($login){
+function login($login){
 
     if (isset($login['LogMail'], $login['LogPassword'])) {
         $mail = $login['LogMail'];
@@ -34,14 +34,14 @@ function displayLogin($login){
             require "view/home.php";
         }
         if ($valeur == 'faux') {
-            require "view/Login.php";
+            require "view/login.php";
         }
     }else{
-        require "view/Login.php";
+        require "view/login.php";
     }
 }
 
-function displayLogout($login){
+function logout(){
         require "model/articlesManager.php";
         getLogout();
         require "view/home.php";

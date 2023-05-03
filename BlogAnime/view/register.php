@@ -10,7 +10,7 @@ ob_start();
 $title = "BlogAnime";
 ?>
     <section>
-        <link rel="stylesheet" type="text/css" href="../view/css/Login.css">
+        <link rel="stylesheet" type="text/css" href="view/css/login.css">
     </section>
 
     <section class="bgwhite">

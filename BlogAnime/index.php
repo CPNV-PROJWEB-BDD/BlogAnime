@@ -1,13 +1,8 @@
 <?php
-/**
- * @file index.php
- * @brief  index.php
- * @author created by Loe.LAVAUD
- * @version 01.02.2023
- */
+
 session_start();
 require 'controller/navigation.php';
-require 'controller/User.php';
+require 'controller/user.php';
 require 'controller/article.php';
 
 if (isset($_GET['action'])) {
@@ -16,32 +11,32 @@ if (isset($_GET['action'])) {
         case "home" :
             getHome();
             break;
-        case "Blog":
-            displayBlog();
+        case "blog":
+            getBlog();
             break;
-        case "AboutUs":
+        case "aboutUs":
             getAboutUs();
             break;
         case "register":
-            displayregister($_POST);
+            register($_POST);
             break;
         case "login":
-            displayLogin($_POST);
+            login($_POST);
             break;
-        case "Logout":
-            displayLogout($_POST);
+        case "logout":
+            logout();
             break;
         case "article":
-            displayArticle($_GET['name']);
+            showArticle($_GET);
             break;
         case "addArticle":
-            displayAddArticle($_POST);
+            addArticle($_POST); /* getAddArticle */
             break;
-        case "Contact":
+        case "contact":
             getContact();
             break;
         default :
-            lost();
+            getLost();
     }
 } else {
     getHome();

@@ -15,13 +15,12 @@ function getRegister($name, $firstname, $mail, $pwd)
         "Mot de passe" => $pwd
     ]);
 
-    $filename = "model/LoginName.json";
+    $filename = "model/loginName.json";
 
     if (file_get_contents($filename) == "") {
         $temparray[] = $data;
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
-        session_start();
         $_SESSION['user_id'] = $mail;
     } else {
         $temparray = file_get_contents($filename);
@@ -29,7 +28,6 @@ function getRegister($name, $firstname, $mail, $pwd)
         array_push($temparray, $data);
         $dataEncode = json_encode($temparray, true);
         file_put_contents($filename, $dataEncode);
-        session_start();
         $_SESSION['user_id'] = $mail;
     }
 }
@@ -38,7 +36,7 @@ function getRegister($name, $firstname, $mail, $pwd)
 function getLogin($mail, $pwd)
 {
     $valeur = 'faux';
-    $filename = "model/LoginName.json";
+    $filename = "model/loginName.json";
     $temparray = file_get_contents($filename);
 
     $users = json_decode($temparray, true);
@@ -57,9 +55,9 @@ function getLogout()
     unset($_SESSION["user_id"]);
 }
 
-function getBlog()
+function getArticleBlog()
 {
-    $filename = "model/Perso.json";
+    $filename = "model/perso.json";
     $temparray = file_get_contents($filename);
 
     $Persos = json_decode($temparray, true);
@@ -70,7 +68,7 @@ function getBlog()
 
 function getArticle($name)
 {
-    $filename = "model/Perso.json";
+    $filename = "model/perso.json";
     $temparray = file_get_contents($filename);
 
     $Persos = json_decode($temparray, true);
@@ -104,7 +102,7 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
         "Description" => $Description
     ]);
 
-    $filename = "model/Perso.json";
+    $filename = "model/perso.json";
 
     $persos = file_get_contents($filename);
     $persos = json_decode($persos, true);
