@@ -1,10 +1,5 @@
 <?php
-/**
- * @file index.php
- * @brief  index.php
- * @author created by Loe.LAVAUD
- * @version 01.02.2023
- */
+
 session_start();
 require 'controller/navigation.php';
 require 'controller/user.php';
