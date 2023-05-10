@@ -1,10 +1,4 @@
 <?php
-/**
- * @file home.php
- * @brief This page is where user appear for the first time this is the main page
- * @author Created by Loe.LAVAUD
- * @version 24.02.2023
- */
 ob_start();
 $title = "BlogAnime";
 ?>

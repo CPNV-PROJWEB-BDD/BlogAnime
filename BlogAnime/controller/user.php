@@ -1,10 +1,4 @@
 <?php
-/**
- * @file user.php
- * @brief this file will have connection about users
- * @author Created by Loe.LAVAUD
- * @version 08.03.2023
- */
 
 function register($Register)
 {

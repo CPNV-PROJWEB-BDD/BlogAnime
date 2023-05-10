@@ -1,10 +1,4 @@
 <?php
-/**
- * @file blog.php
- * @brief this page contain all link to all articles
- * @author Created by Diogo.OLIVEIRA-SOARES
- * @version 24.02.2023
- */
 
 ob_start();
 $title = "Blog";

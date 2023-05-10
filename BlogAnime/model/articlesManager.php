@@ -1,10 +1,4 @@
 <?php
-/**
- * @file articlesManager.php
- * @brief this file contain all function to connect to json's file
- * @author Created by Loe.LAVAUD
- * @version 24.02.2023
- */
 
 function getRegister($name, $firstname, $mail, $pwd)
 {

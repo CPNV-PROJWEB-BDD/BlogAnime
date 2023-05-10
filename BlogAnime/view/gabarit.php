@@ -1,11 +1,3 @@
-<?php
-/**
- * @file gabarit.php
- * @brief This page contain the footer and header who will be on all  pages
- * @author Created by Léo.JAQUIER
- * @version 24.02.2023
- */
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

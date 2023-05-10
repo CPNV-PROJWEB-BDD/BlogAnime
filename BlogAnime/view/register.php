@@ -1,10 +1,4 @@
 <?php
-/**
- * @file register.php
- * @brief this page is where user can create an account
- * @author Created by Loe.LAVAUD
- * @version 08.03.2023
- */
 
 ob_start();
 $title = "BlogAnime";

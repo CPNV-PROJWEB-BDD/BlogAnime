@@ -1,10 +1,4 @@
 <?php
-/**
- * @file navigation.php
- * @brief this file contain all main connection
- * @author Created by Loe.LAVAUD
- * @version 08.03.2023
- */
 function getHome(){
     require 'view/home.php';
 }

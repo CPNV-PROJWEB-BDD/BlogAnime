@@ -17,6 +17,9 @@ if (isset($_GET['action'])) {
         case "aboutUs":
             getAboutUs();
             break;
+        case "contact":
+            getContact();
+            break;
         case "register":
             register($_POST);
             break;
@@ -30,10 +33,7 @@ if (isset($_GET['action'])) {
             showArticle($_GET);
             break;
         case "addArticle":
-            addArticle($_POST); /* getAddArticle */
-            break;
-        case "contact":
-            getContact();
+            addArticle($_POST);
             break;
         default :
             getLost();
