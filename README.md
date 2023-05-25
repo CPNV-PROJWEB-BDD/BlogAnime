@@ -1,29 +1,37 @@
 # BlogAnime
 
 #### Table of content
-- [getting started](##Getting-Started)
-- ([Deployment])(#deployment)
-- [Run Tests](##Run-Tests)
-- [Directory structure](##Directory-Structure)
-- [Collaborate](##Collaborate)
-- [License](##License)
-- [Contact](##Lontact)
+- [getting started](#gettingStarted)
+- [Deployment](#deployment)
+- [Run Tests](#run-Tests)
+- [Directory structure](#directoryStructure)
+- [Collaborate](#collaborate)
+- [License](#license)
+- [Contact](#contact)
 
 ## Description
+this is a blog website on anime for the ProjetWeb and
+inspired by [gumroad](https://gumroad.com/blog).
+## [Getting Started](#gettingStarted)
+if it's your first time with this site all information are on next secions.
 
-a blog website on anime for the ProjetWeb
-theme Neo Brutalism https://gumroad.com/blog
 
-## [Getting Started](##Getting-Started)
 ### Prerequisites
 ### Configuration
 ### Installation
 ## [Deployment](#deployment)
 ### On dev environnement
 ### On integration environnement
-## [Run Tests](##Run-Tests)
-## [Directory structure](##Directory-Structure)
+## [Run Tests](#runTests)
+to know if the  complete deployment is fonctional, please follow next lines:
 
+-test 1
+-test 2
+-test 3
+-test 4
+
+## [Directory structure](#directoryStructure)
+the website structure as it need look like this:
 ```bash
 .
 ├── ./controller
@@ -36,6 +44,13 @@ theme Neo Brutalism https://gumroad.com/blog
     │   └── ./view/image/Perso
     └── ./view/script
 ```
-## [Collaborate](##Collaborate)
-## [License](##License)
-## [Contact](##Contact)
+## [Collaborate](#Collaborate)
+No collaborate for now.
+## [License](#License)
+No license for now.
+## [Contact](#Contact)
+If something wrong or you want to give a feedback please send us email at these addresses : <br>
+
+Leo.JAQUIER@cpnv.ch <br>
+Diogo.OLIVEIRA-SOARES@cpnv.ch<br>
+Loe.LAVAUD@cpnv.ch
