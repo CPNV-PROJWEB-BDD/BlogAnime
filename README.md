@@ -1,6 +1,7 @@
 # BlogAnime
 
 #### Table of content
+- [Description](#description)
 - [Getting started](#getting-started)
 - [Deployment](#deployment)
 - [Run Tests](#run-tests)
@@ -9,7 +10,7 @@
 - [License](#license)
 - [Contact](#contact)
 
-## Description
+## [Description](#Description)
 this is a blog website on anime for the ProjetWeb and
 inspired by [gumroad](https://gumroad.com/blog).
 ## [Getting started](#Getting-started)
