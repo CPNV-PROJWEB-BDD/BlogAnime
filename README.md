@@ -10,10 +10,10 @@
 - [License](#license)
 - [Contact](#contact)
 
-## [Description](#Description)
+## Description
 this is a blog website on anime for the ProjetWeb and
 inspired by [gumroad](https://gumroad.com/blog).
-## [Getting started](#Getting-started)
+## Getting started
 
 if it's your first time with this site all information are on next secions.
 
@@ -25,10 +25,10 @@ https://www.swisstransfer.com/d/829bca6b-2c7f-40c8-b2ec-23188e21d041
 ### Installation
 Here's the documentation for the installation and configuration of the virtual machine
 https://www.notion.so/Configuration-de-la-VM-a11cbb281ad1453a92d520009ee63bc3?pvs=4
-## [Deployment](#Deployment)
+## Deployment
 ### On dev environnement
 ### On integration environnement
-## [Run tests](#Run-tests)
+## Run tests
 to know if the  complete deployment is fonctional, please follow next lines:
 
 -test 1
@@ -36,7 +36,7 @@ to know if the  complete deployment is fonctional, please follow next lines:
 -test 3
 -test 4
 
-## [Directory structure](#Directory-structure)
+## Directory structure
 the website structure as it need look like this:
 ```bash
 .
@@ -50,11 +50,11 @@ the website structure as it need look like this:
     │   └── ./view/image/Perso
     └── ./view/script
 ```
-## [Collaborate](#Collaborate)
+## Collaborate
 No collaborate for now.
-## [License](#License)
+## License
 No license for now.
-## [Contact](#Contact)
+## Contact
 If something wrong or you want to give a feedback please send us email at these addresses : <br>
 
 Leo.JAQUIER@cpnv.ch <br>
