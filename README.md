@@ -1,10 +1,10 @@
 # BlogAnime
 
 #### Table of content
-- [getting started](#gettingStarted)
+- [Getting started](#getting-started)
 - [Deployment](#deployment)
-- [Run Tests](#run-Tests)
-- [Directory structure](#directoryStructure)
+- [Run Tests](#run-tests)
+- [Directory structure](#directory-structure)
 - [Collaborate](#collaborate)
 - [License](#license)
 - [Contact](#contact)
@@ -12,7 +12,8 @@
 ## Description
 this is a blog website on anime for the ProjetWeb and
 inspired by [gumroad](https://gumroad.com/blog).
-## [Getting Started](#gettingStarted)
+## [Getting started](#Getting-started)
+
 if it's your first time with this site all information are on next secions.
 
 
@@ -23,10 +24,10 @@ https://www.swisstransfer.com/d/829bca6b-2c7f-40c8-b2ec-23188e21d041
 ### Installation
 Here's the documentation for the installation and configuration of the virtual machine
 https://www.notion.so/Configuration-de-la-VM-a11cbb281ad1453a92d520009ee63bc3?pvs=4
-## [Deployment](#deployment)
+## [Deployment](#Deployment)
 ### On dev environnement
 ### On integration environnement
-## [Run Tests](#runTests)
+## [Run tests](#Run-tests)
 to know if the  complete deployment is fonctional, please follow next lines:
 
 -test 1
@@ -34,7 +35,7 @@ to know if the  complete deployment is fonctional, please follow next lines:
 -test 3
 -test 4
 
-## [Directory structure](#directoryStructure)
+## [Directory structure](#Directory-structure)
 the website structure as it need look like this:
 ```bash
 .
