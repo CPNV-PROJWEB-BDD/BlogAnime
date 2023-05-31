@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 require 'controller/navigation.php';
 require 'controller/user.php';

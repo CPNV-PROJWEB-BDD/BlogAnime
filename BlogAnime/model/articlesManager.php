@@ -1,117 +1,32 @@
 <?php
-
-function getRegister($name, $firstname, $mail, $pwd)
-{
-    $data = ([
-        "nom" => $name,
-        "Prenom" => $firstname,
-        "Adresse mail" => $mail,
-        "Mot de passe" => $pwd
-    ]);
-
-    $filename = "model/loginName.json";
-
-    if (file_get_contents($filename) == "") {
-        $temparray[] = $data;
-        $dataEncode = json_encode($temparray, true);
-        file_put_contents($filename, $dataEncode);
-        $_SESSION['user_id'] = $mail;
-    } else {
-        $temparray = file_get_contents($filename);
-        $temparray = json_decode($temparray, true);
-        array_push($temparray, $data);
-        $dataEncode = json_encode($temparray, true);
-        file_put_contents($filename, $dataEncode);
-        $_SESSION['user_id'] = $mail;
-    }
-}
-
-
-function getLogin($mail, $pwd)
-{
-    $valeur = 'faux';
-    $filename = "model/loginName.json";
-    $temparray = file_get_contents($filename);
-
-    $users = json_decode($temparray, true);
-
-    foreach ($users as $user) {
-        if ($user['Adresse mail'] == $mail && $user['Mot de passe'] == $pwd) {
-            $valeur = 'vrai';
-            $_SESSION['user_id'] = $user['Adresse mail'];
-        }
-    }
-    return $valeur;
-}
-
-function getLogout()
-{
-    unset($_SESSION["user_id"]);
-}
-
+require "dbConnector.php";
 function getArticleBlog()
 {
-    $filename = "model/perso.json";
-    $temparray = file_get_contents($filename);
-
-    $Persos = json_decode($temparray, true);
-
+    $BlogAnimequery = "SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles FROM BlogAnime.articles";
+    $Persos = executeQuerySelect($BlogAnimequery);
     return $Persos;
 }
 
 
 function getArticle($name)
 {
-    $filename = "model/perso.json";
-    $temparray = file_get_contents($filename);
-
-    $Persos = json_decode($temparray, true);
-
-    foreach ($Persos as $Perso) {
-        if ($Perso['Nom'] == $name) {
-            $NomPerso[] = $Perso;
-        }
-    }
-    return $NomPerso;
+    $strgSeparator = '\'';
+    $queryGetArticle = 'SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles FROM BlogAnime.articles WHERE name='.$strgSeparator.$name.$strgSeparator;
+    $detailPerso = executeQuerySelect($queryGetArticle);
+    return $detailPerso;
 }
 
 function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
 {
-    $data = ([
-        "Nom" => $name,
-        "Nom de code" => $alias,
-        "Age" => $age,
-        "Anime" => $anime,
-        "Images" => "",
-        "Banner" => "",
-        "Premiere apparition" => $firstAppears,
-        "Sexe" => $sexe,
-        "Especes" => $speces,
-        "Residence" => $Residence,
-        "Origine" => $Origine,
-        "Affiliation" => $affiliation,
-        "Occupation" => $occupation,
-        "Style de combat" => $fightingStyle,
-        "Pouvoir" => $power,
-        "Description" => $Description
-    ]);
-
-    $filename = "model/perso.json";
-
-    $persos = file_get_contents($filename);
-    $persos = json_decode($persos, true);
-    foreach ($persos as $perso) {
-        if ($perso['Nom'] !== $name) {
-            $errorDouble = true;
-        }
-        else{
-            $errorDouble = false;
-        }
-    }
-    if ($errorDouble == true){
-        array_push($persos, $data);
-        $dataEncode = json_encode($persos, true);
-        file_put_contents($filename, $dataEncode);
+    $strgSeparator = '\'';
+    $queryCheck = 'SELECT name FROM BlogAnime.articles WHERE name="'.$name.'"';
+    $check = executeQuerySelect($queryCheck);
+    if(isset($check[0])){
+        $errorDouble = false;
+    }else{
+        $BlogAnimequery = 'INSERT INTO BlogAnime.articles (name,codename,age,anime,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles,users_idusers) ';
+        $BlogAnimequery = $BlogAnimequery.'VALUES ("'.$name.'", "'.$alias.'", "'.$age.'", "'.$anime.'", "'.$firstAppears.'", "'.$sexe.'", "'.$speces.'", "'.$Residence.'", "'.$Origine.'", "'.$affiliation.'", "'.$occupation.'", "'.$fightingStyle.'", "'.$power.'", "'.$Description.'",1);';
+        $errorDouble = executeQueryInsertUpdate($BlogAnimequery);
     }
 
     return $errorDouble;

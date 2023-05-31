@@ -2,41 +2,55 @@
 
 function register($Register)
 {
-    if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
-        $Surname = $Register['LogSurname'];
-        $firstname = $Register['LogFirstname'];
-        $mail = $Register['LogMail'];
-        $Password = $Register['LogPassword'];
+    try {
+        $result = 0;
 
-        require_once "model/articlesManager.php";
-        getRegister($Surname, $firstname, $mail, $Password);
-        require "view/home.php";
-    } else {
-        require "view/register.php";
+        if (isset($Register['LogSurname'], $Register['LogFirstname'], $Register['LogMail'], $Register['LogPassword'])) {
+            $Surname = $Register['LogSurname'];
+            $firstname = $Register['LogFirstname'];
+            $mail = $Register['LogMail'];
+            $Password = $Register['LogPassword'];
+
+            require_once "model/userManager.php";
+            $result = getRegister($Surname, $firstname, $mail, $Password);
+        }
+    } catch (ModelDataBaseException $ex){
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        if ($result == false) {
+            require_once "view/register.php";
+        } else {
+            require_once "model/articlesManager.php";
+            $articles = getArticleBlog();
+            require_once "view/home.php";
+        }
     }
 }
 
 function login($login){
+    try {
+        $result = 0;
 
-    if (isset($login['LogMail'], $login['LogPassword'])) {
-        $mail = $login['LogMail'];
-        $Password = $login['LogPassword'];
+        if (isset($login['LogMail'], $login['LogPassword'])) {
+            $mail = $login['LogMail'];
+            $Password = $login['LogPassword'];
 
-        require_once "model/articlesManager.php";
-        $valeur = getLogin($mail, $Password);
-        if ($valeur == 'vrai') {
-            require "view/home.php";
+            require_once "model/userManager.php";
+            $result = getLogin($mail, $Password);
         }
-        if ($valeur == 'faux') {
+    } catch (ModelDataBaseException $ex){
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        if ($result == true) {
+            require "view/home.php";
+        } else {
             require "view/login.php";
         }
-    }else{
-        require "view/login.php";
     }
 }
 
 function logout(){
-        require "model/articlesManager.php";
+        require "model/userManager.php";
         getLogout();
         require "view/home.php";
 }

@@ -8,43 +8,43 @@ $title = "BlogAnime";
     </section>
 <?php foreach ($articles as $article) : ?>
     <section class="articlePage">
-        <?php if ($article['Banner'] == ""): ?>
+        <?php if ($article['bannersPath'] == ""): ?>
             <div class="topBanner" style="background-image: url('view/image/Banner/Image_Indisponible.png')"></div>
         <?php else: ?>
-            <div class="topBanner" style="background-image: url('<?= $article['Banner']; ?>')"></div>
+            <div class="topBanner" style="background-image: url('<?= $article['bannersPath']; ?>')"></div>
         <?php endif; ?>
         <div class="page">
             <aside class="smallDescription">
 
                 <div class="infoCharacter">
-                    <h2 class="titleAside"><?= $article['Nom']; ?></h2>
-                    <?php if ($article['Images'] == ""): ?>
+                    <h2 class="titleAside"><?= $article['name']; ?></h2>
+                    <?php if ($article['imagePath'] == ""): ?>
                         <img class="imgCharacter" src="view/image/Perso/PersoSansImage.webp">
                     <?php else: ?>
-                        <img class="imgCharacter" src="<?= $article['Images']; ?>">
+                        <img class="imgCharacter" src="<?= $article['imagePath']; ?>">
                     <?php endif; ?>
-                    <div class="dataCharacter"><strong>Nom :</strong> <br><?= $article['Nom']; ?></div>
-                    <div class="dataCharacter"><strong>Nom de code :</strong> <br><?= $article['Nom de code']; ?></div>
-                    <div class="dataCharacter"><strong>Age :</strong> <br><?= $article['Age']; ?> ans</div>
-                    <div class="dataCharacter"><strong>Anime :</strong> <br><?= $article['Anime']; ?></div>
-                    <div class="dataCharacter"><strong>Première apparition :</strong> <br><?= $article['Premiere apparition']; ?></div>
-                    <div class="dataCharacter"><strong>Sexe :</strong> <br><?= $article['Sexe']; ?></div>
-                    <div class="dataCharacter"><strong>Especes :</strong> <br><?= $article['Especes']; ?></div>
-                    <div class="dataCharacter"><strong>Residence :</strong> <br><?= $article['Residence']; ?></div>
-                    <div class="dataCharacter"><strong>Origine :</strong> <br><?= $article['Origine']; ?></div>
-                    <div class="dataCharacter"><strong>Affiliation :</strong> <br><?= $article['Affiliation']; ?></div>
-                    <div class="dataCharacter"><strong>Occupation :</strong> <br><?= $article['Occupation']; ?></div>
-                    <?php if ($article['Style de combat'] != "Aucun"): ?>
-                        <div class="dataCharacter"><strong>Style de combat :</strong> <br><?= $article['Style de combat']; ?></div>
+                    <div class="dataCharacter"><strong>Nom :</strong> <br><?= $article['name']; ?></div>
+                    <div class="dataCharacter"><strong>Nom de code :</strong> <br><?= $article['codename']; ?></div>
+                    <div class="dataCharacter"><strong>Age :</strong> <br><?= $article['age']; ?> ans</div>
+                    <div class="dataCharacter"><strong>Anime :</strong> <br><?= $article['anime']; ?></div>
+                    <div class="dataCharacter"><strong>Première apparition :</strong> <br><?= $article['firstappear']; ?></div>
+                    <div class="dataCharacter"><strong>Genre :</strong> <br><?= $article['gender']; ?></div>
+                    <div class="dataCharacter"><strong>Especes :</strong> <br><?= $article['species']; ?></div>
+                    <div class="dataCharacter"><strong>Residence :</strong> <br><?= $article['locationLive']; ?></div>
+                    <div class="dataCharacter"><strong>Origine :</strong> <br><?= $article['origin']; ?></div>
+                    <div class="dataCharacter"><strong>Affiliation :</strong> <br><?= $article['afiliate']; ?></div>
+                    <div class="dataCharacter"><strong>Occupation :</strong> <br><?= $article['occupation']; ?></div>
+                    <?php if ($article['fightstyle'] != "Aucun"): ?>
+                        <div class="dataCharacter"><strong>Style de combat :</strong> <br><?= $article['fightstyle']; ?></div>
                     <?php endif; ?>
-                    <?php if ($article['Pouvoir'] != "Aucun"): ?>
-                        <div class="dataCharacter"><strong>Pouvoir :</strong><br><?= $article['Pouvoir']; ?></div>
+                    <?php if ($article['power'] != "Aucun"): ?>
+                        <div class="dataCharacter"><strong>Pouvoir :</strong><br><?= $article['power']; ?></div>
                     <?php endif; ?>
 
                 </div>
 
             </aside>
-            <article><?= $article['Description']; ?>
+            <article><?= $article['articles']; ?>
             </article>
         </div>
     </section>
