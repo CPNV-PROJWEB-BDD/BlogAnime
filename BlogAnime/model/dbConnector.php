@@ -13,9 +13,9 @@ function openDBConnection()
     $hostname = 'localhost';
     $port = 3306;
     $charset = 'utf8';
-    $dbName = 'BlogAnime';
-    $userName = 'dos';
-    $userPwd = '#Black-Rose2021';
+    $dbName = 'bloganime';
+    $userName = 'bloganime';
+    $userPwd = 'Pa$$w0rd';
     $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
     try {
         $tempDBConnexion = new PDO($dsn, $userName, $userPwd);
