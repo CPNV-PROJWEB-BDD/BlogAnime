@@ -9,68 +9,68 @@ $title = "BlogAnime";
     <section class="bgwhite">
         <form class="containerArticle" action="index.php?action=addArticle" method="post">
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="NomPerso" placeholder="Nom" required>
+                <input class="PersoFeature" type="text" name="Name" placeholder="Nom" required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="AliasPerso" placeholder="Nom de code/Surnom"
+                <input class="PersoFeature" type="text" name="CodeName" placeholder="Nom de code/Surnom"
                        required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="AgePerso" placeholder="Age"
+                <input class="PersoFeature" type="text" name="Age" placeholder="Age"
                        required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="AnimePerso"
+                <input class="PersoFeature" type="text" name="Anime"
                        placeholder="Anime" required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="FirstSeenPerso" placeholder="Première apparition" required>
+                <input class="PersoFeature" type="text" name="FirstAppear" placeholder="Première apparition" required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="s-text7 p-l-22 p-r-22" type="radio" name="SexePerso" value="Homme">Homme -
-                <input class="s-text7 p-l-22 p-r-22" type="radio" name="SexePerso" value="Femme">Femme
+                <input class="s-text7 p-l-22 p-r-22" type="radio" name="Gender" value="Homme">Homme -
+                <input class="s-text7 p-l-22 p-r-22" type="radio" name="Gender" value="Femme">Femme
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="SpecesPerso" placeholder="Especes"
+                <input class="PersoFeature" type="text" name="Species" placeholder="Especes"
                        required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="ResidencePerso"
+                <input class="PersoFeature" type="text" name="LocationLive"
                        placeholder="Résidence" required>
             </div>
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="OriginePerso" placeholder="Origine" required>
+                <input class="PersoFeature" type="text" name="Origin" placeholder="Origine" required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="AffiliationPerso" placeholder="Affiliation"
+                <input class="PersoFeature" type="text" name="Afiliate" placeholder="Affiliation"
                        required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="OccupationPerso" placeholder="Occupation"
+                <input class="PersoFeature" type="text" name="Occupation" placeholder="Occupation"
                        required>
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="FightingStylePerso"
+                <input class="PersoFeature" type="text" name="FightStyle"
                        placeholder="Type de combat(Optionel)">
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="PowerPerso"
+                <input class="PersoFeature" type="text" name="Power"
                        placeholder="Pouvoir(Optionel)">
             </div>
 
             <div class="DescriptionContainer">
-                    <textarea class="DescriptionBox" name="DescriptionPerso" placeholder="Description de votre personnage" required></textarea>
+                    <textarea class="DescriptionBox" name="Description" placeholder="Description de votre personnage" required></textarea>
             </div>
 
             <button class="roundBtn" role="button">Ajouter le personnage</button>

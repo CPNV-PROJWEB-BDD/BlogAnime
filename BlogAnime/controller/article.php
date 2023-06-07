@@ -27,34 +27,35 @@ function showArticle($name)
 function addArticle($Perso)
 {
     try {
-        if (isset($Perso['NomPerso'], $Perso['AliasPerso'], $Perso['AgePerso'], $Perso['AnimePerso'], $Perso['FirstSeenPerso'],
-            $Perso['SexePerso'], $Perso['SpecesPerso'], $Perso['ResidencePerso'], $Perso['OriginePerso'], $Perso['AffiliationPerso'],
-            $Perso['OccupationPerso'], $Perso['DescriptionPerso'])) {
+        if (isset($Perso['Name'], $Perso['CodeName'], $Perso['Age'], $Perso['Anime'],
+            $Perso['FirstAppear'], $Perso['Gender'], $Perso['Species'], $Perso['LocationLive'],
+            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])){
 
-            if ($Perso['FightingStylePerso'] == "") {
-                $Perso['FightingStylePerso'] = "Aucun";
+            if ($Perso['FightStyle'] == "") {
+                $Perso['FightStyle'] = "Aucun";
             }
-            if ($Perso['PowerPerso'] == "") {
-                $Perso['PowerPerso'] = "Aucun";
+            if ($Perso['Power'] == "") {
+                $Perso['Power'] = "Aucun";
             }
 
-            $Name = $Perso['NomPerso'];
-            $Alias = $Perso['AliasPerso'];
-            $Age = $Perso['AgePerso'];
-            $Anime = $Perso['AnimePerso'];
-            $FirstAppears = $Perso['FirstSeenPerso'];
-            $Sexe = $Perso['SexePerso'];
-            $Speces = $Perso['SpecesPerso'];
-            $Residence = $Perso['ResidencePerso'];
-            $Origine = $Perso['OriginePerso'];
-            $Affiliation = $Perso['AffiliationPerso'];
-            $Occupation = $Perso['OccupationPerso'];
-            $FightingStyle = $Perso['FightingStylePerso'];
-            $Power = $Perso['PowerPerso'];
-            $Description = $Perso['DescriptionPerso'];
+            $Name = $Perso['Name'];
+            $Alias = $Perso['CodeName'];
+            $Age = $Perso['Age'];
+            $Anime = $Perso['Anime'];
+            $FirstAppears = $Perso['FirstAppear'];
+            $Sexe = $Perso['Gender'];
+            $Speces = $Perso['Species'];
+            $Residence = $Perso['LocationLive'];
+            $Origine = $Perso['Origin'];
+            $Affiliation = $Perso['Afiliate'];
+            $Occupation = $Perso['Occupation'];
+            $FightingStyle = $Perso['FightStyle'];
+            $Power = $Perso['Power'];
+            $Description = $Perso['Description'];
 
             require_once "model/articlesManager.php";
-            $result = getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces, $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
+            $result = getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces,
+                $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
         } else {
             require_once "view/addArticle.php";
         }
