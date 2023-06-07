@@ -104,6 +104,11 @@ body {
     transform: scaleX(1);
 }
 
+#Username {
+    position: absolute;
+    left: 70%;
+}
+
 #Login {
     display: flex;
     margin-left: auto;
@@ -117,6 +122,7 @@ body {
     text-decoration: none;
     color: whitesmoke;
 }
+
 
 #footer {
     position: relative;
@@ -264,7 +270,7 @@ body {
     align-self: flex-end;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
 
 
     .Image-header {
@@ -369,10 +375,8 @@ body {
         transform: none;
     }
 
-
     #Login {
         display: flex;
-
         align-items: flex-start;
         background-color: gray;
         border: none;

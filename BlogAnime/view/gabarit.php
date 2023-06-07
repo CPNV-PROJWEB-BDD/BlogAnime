@@ -30,10 +30,12 @@
                 <a class="navArticle" href="index.php?action=addArticle" hidden>Ajouter un article</a>
             <?php endif; ?>
             <?php if (isset($_SESSION['user_id'])): ?>
+                <a id="Username"><?=$_SESSION['user_id']; ?></a>
                 <a id="Login" href="index.php?action=logout">Logout</a>
             <?php else: ?>
                 <a id="Login" href="index.php?action=login">Login</a>
-            <?php endif; ?>
+            <?php endif; ?></div>
+        <div>
         </div>
 
     </nav>
