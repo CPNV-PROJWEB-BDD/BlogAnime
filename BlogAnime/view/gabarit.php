@@ -30,7 +30,7 @@
                 <a class="navArticle" href="index.php?action=addArticle" hidden>Ajouter un article</a>
             <?php endif; ?>
             <?php if (isset($_SESSION['user_id'])): ?>
-                <a id="Username"><?=$_SESSION['user_id']; ?></a>
+                <a class="navArticle" id="Username" href="index.php?action=userAccount"><?=$_SESSION['user_id']; ?></a>
                 <a id="Login" href="index.php?action=logout">Logout</a>
             <?php else: ?>
                 <a id="Login" href="index.php?action=login">Login</a>
@@ -111,53 +111,3 @@
 </footer>
 <script src="view/script/master.js"></script>
 </body>
-
-
-<!--
-<div class="box-left">
-    <img class="Image-header" src="view/image/Logo_BlogAnime.png">
-    <br>
-    <br>
-    <div id="form">
-        <label for="fMail"></label>
-        <input type="text" id="fMail" name="newsletter" placeholder="Newsletter ">
-        <a type="submit" id="btnSubmit">></a>
-    </div>
-    <div>
-        <a id="copyright">copyright Oichi No Kata</a>
-    </div>
-</div>
-
-<div class="footer">
-    <table>
-        <tr>
-            <td>Aide</td>
-            <td>Accueil</td>
-        </tr>
-        <tr>
-            <td>Nous contacter</td>
-            <td>blog</td>
-        </tr>
-        <tr>
-            <td>politique de copyright</td>
-            <td>A propos de nous</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM=">
-                    <img class="Image-header" id="instagram" src="view/image/instagram-logo.png">
-                </a>
-                <a href="https://twitter.com/BlogAnime2023">
-                    <img class="Image-header" id="twitter" src="view/image/twitter-logo.jpg">
-                </a>
-                <a href="https://www.reddit.com/user/BlogAnime2023">
-                    <img class="Image-header" id="reddit" src="view/image/reddit-logo.jpg">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100090937893061">
-                    <img class="Image-header" id="facebook" src="view/image/facebook-logo.jpg">
-                </a>
-            </td>
-        </tr>
-    </table>
-</div>
--->

@@ -40,6 +40,10 @@ $title = "BlogAnime";
                     <?php if ($article['power'] != "Aucun"): ?>
                         <div class="dataCharacter"><strong>Pouvoir :</strong><br><?= $article['power']; ?></div>
                     <?php endif; ?>
+                    <div class="dataCharacter">
+                        archive
+                        modifier
+                    </div>
 
                 </div>
 

@@ -14,7 +14,7 @@ function openDBConnection()
     $port = 3306;
     $charset = 'utf8';
     $dbName = 'bloganime';
-    $userName = 'bloganime';
+    $userName = 'root';
     $userPwd = 'Pa$$w0rd';
     $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
     try {
