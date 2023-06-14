@@ -1,11 +1,3 @@
-<?php
-/**
- * @file gabarit.php
- * @brief This page contain the footer and header who will be on all pages
- * @author Created by Léo.JAQUIER
- * @version 24.02.2023
- */
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,18 +22,20 @@
         </div>
         <div id="ulNavbar">
             <a class="navlink" href="index.php?action=home">Accueil</a>
-            <a class="navlink" href="index.php?action=Blog">Blog</a>
-            <a class="navlink" href="index.php?action=AboutUs">A propos de nous</a>
+            <a class="navlink" href="index.php?action=blog">Blog</a>
+            <a class="navlink" href="index.php?action=aboutUs">A propos de nous</a>
             <?php if (isset($_SESSION['user_id'])): ?>
                 <a class="navArticle" href="index.php?action=addArticle">Ajouter un article</a>
             <?php else: ?>
                 <a class="navArticle" href="index.php?action=addArticle" hidden>Ajouter un article</a>
             <?php endif; ?>
             <?php if (isset($_SESSION['user_id'])): ?>
-                <a id="Login" href="index.php?action=Logout">Logout</a>
+                <a class="navArticle" id="Username" href="index.php?action=userAccount"><?=$_SESSION['user_id']; ?></a>
+                <a id="Login" href="index.php?action=logout">Logout</a>
             <?php else: ?>
                 <a id="Login" href="index.php?action=login">Login</a>
-            <?php endif; ?>
+            <?php endif; ?></div>
+        <div>
         </div>
 
     </nav>
@@ -66,14 +60,14 @@
             <table>
                 <tr>
                     <td><span><a href="index.php?action=home">Accueil</a></span></td>
-                    <td><span><a href="index.php?action=Contact">Contacter</a></span></td>
+                    <td><span><a href="index.php?action=contact">Contacter</a></span></td>
                 </tr>
                 <tr>
-                    <td><span><a href="index.php?action=Blog">Blog</a></span></td>
+                    <td><span><a href="index.php?action=blog">Blog</a></span></td>
                     <td><a>Aide</a></td>
                 </tr>
                 <tr>
-                    <td><span><a href="index.php?action=AboutUs">A propos de nous</a></span></td>
+                    <td><span><a href="index.php?action=aboutUs">A propos de nous</a></span></td>
                 </tr>
 
                 <tr>
@@ -85,9 +79,9 @@
                 </tr>
                 <tr>
                 <?php if (isset($_SESSION['user_id'])): ?>
-                        <td><span><a href="index.php?action=Logout">Logout</a></span></td>
+                        <td><span><a href="index.php?action=logout">logout</a></span></td>
                 <?php else: ?>
-                        <td><span><a href="index.php?action=login">Login</a></span></td>
+                        <td><span><a href="index.php?action=login">login</a></span></td>
                 <?php endif; ?>
                 </tr>
             </table>
@@ -117,53 +111,3 @@
 </footer>
 <script src="view/script/master.js"></script>
 </body>
-
-
-<!--
-<div class="box-left">
-    <img class="Image-header" src="view/image/Logo_BlogAnime.png">
-    <br>
-    <br>
-    <div id="form">
-        <label for="fMail"></label>
-        <input type="text" id="fMail" name="newsletter" placeholder="Newsletter ">
-        <a type="submit" id="btnSubmit">></a>
-    </div>
-    <div>
-        <a id="copyright">copyright Oichi No Kata</a>
-    </div>
-</div>
-
-<div class="footer">
-    <table>
-        <tr>
-            <td>Aide</td>
-            <td>Accueil</td>
-        </tr>
-        <tr>
-            <td>Nous contacter</td>
-            <td>blog</td>
-        </tr>
-        <tr>
-            <td>politique de copyright</td>
-            <td>A propos de nous</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM=">
-                    <img class="Image-header" id="instagram" src="view/image/instagram-logo.png">
-                </a>
-                <a href="https://twitter.com/BlogAnime2023">
-                    <img class="Image-header" id="twitter" src="view/image/twitter-logo.jpg">
-                </a>
-                <a href="https://www.reddit.com/user/BlogAnime2023">
-                    <img class="Image-header" id="reddit" src="view/image/reddit-logo.jpg">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100090937893061">
-                    <img class="Image-header" id="facebook" src="view/image/facebook-logo.jpg">
-                </a>
-            </td>
-        </tr>
-    </table>
-</div>
--->

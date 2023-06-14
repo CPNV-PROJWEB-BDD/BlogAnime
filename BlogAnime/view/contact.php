@@ -1,10 +1,4 @@
 <?php
-/**
- * @file Contact.php
- * @brief this page contain all information to contact us
- * @author Created by Loe.LAVAUD
- * @version 24.02.2023
- */
 ob_start();
 $title = "BlogAnime";
 ?>

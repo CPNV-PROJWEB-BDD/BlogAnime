@@ -7,9 +7,9 @@ $title = "BlogAnime";
     </section>
 
     <section class="bgwhite">
-        <form class="containerArticle" action="index.php?action=addArticle" method="post">
+        <form class="containerArticle" action="index.php?action=modifyArticle" method="post">
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="Name" placeholder="Nom" required>
+                <input class="PersoFeature" type="text" name="Name" placeholder="Nom" value="test" required>
             </div>
 
             <div class="ContainerPersoFeature">
@@ -70,7 +70,7 @@ $title = "BlogAnime";
             </div>
 
             <div class="DescriptionContainer">
-                    <textarea class="DescriptionBox" name="Description" placeholder="Description de votre personnage" required></textarea>
+                <textarea class="DescriptionBox" name="Description" placeholder="Description de votre personnage" required></textarea>
             </div>
 
             <button class="roundBtn" role="button">Ajouter le personnage</button>

@@ -1,19 +1,11 @@
 <?php
-/**
- * @file AboutUs.php
- * @brief this page contain all information about the site
- * @author Created by Loe.LAVAUD
- * @version 24.02.2023
- */
 
 
 ob_start();
 $title = "AboutUs";
 ?>
-    <!DOCTYPE html>
-    <html lang="en">
     <section>
-        <link rel="stylesheet" type="text/css" href="../view/css/AboutUs.css">
+        <link rel="stylesheet" type="text/css" href="view/css/aboutUs.css">
     </section>
 <section>
     <!-- Création du premier bloque contenant le titre de la page -->

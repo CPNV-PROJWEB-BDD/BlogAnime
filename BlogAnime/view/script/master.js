@@ -26,7 +26,7 @@ function fnResize() {
     let navbar=document.getElementById('navbarbtn')
 
     let links = document.getElementById("ulNavbar");
-    if (window.innerWidth > 800 && links.style.display !== 'flex'){
+    if (window.innerWidth > 1100 && links.style.display !== 'flex'){
         links.style.display = 'flex';
         console.log('je flex');
         if ( navbar.classList.contains("change")){
@@ -36,7 +36,7 @@ function fnResize() {
 
 
     }
-    if (window.innerWidth  < 800 && links.style.display !== 'none'){
+    if (window.innerWidth  < 1100 && links.style.display !== 'none'){
         links.style.display = 'none';
         console.log('je none');
     }

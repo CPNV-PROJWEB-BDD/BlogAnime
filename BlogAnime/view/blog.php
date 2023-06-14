@@ -1,10 +1,4 @@
 <?php
-/**
- * @file blog.php
- * @brief this page contain all link to all articles
- * @author Created by Diogo.OLIVEIRA-SOARES
- * @version 24.02.2023
- */
 
 ob_start();
 $title = "Blog";
@@ -21,15 +15,15 @@ $title = "Blog";
                 <div id="margin">
                     <div id="box3">
                         <div class="blogPost">
-                            <?php if ($article['Banner'] == ""): ?>
+                            <?php if ($article['bannersPath'] == ""): ?>
                                 <img class="imgPost" src="view/image/Banner/Image_Indisponible.png" alt="Images personnages">
                             <?php else: ?>
-                            <img class="imgPost" src="<?= $article['Banner']; ?>" alt="Images personnages">
+                            <img class="imgPost" src="<?= $article['bannersPath']; ?>" alt="Images personnages">
                             <?php endif; ?>
-                            <article class="artPost"><p><?= $article['Description']; ?></p>
-                                <h4>Apprenez pleins d'infos sur <?= $article['Nom']; ?> dans notre article!</h4>
+                            <article class="artPost"><p><?= $article['articles']; ?></p>
+                                <h4>Apprenez pleins d'infos sur <?= $article['name']; ?> dans notre article!</h4>
                             </article>
-                            <a class="readMore" href="index.php?action=article&name=<?= $article['Nom']; ?>">Read
+                            <a class="readMore" href="index.php?action=article&name=<?= $article['name']; ?>">Read
                                 More → </a>
                         </div>
                     </div>

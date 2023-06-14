@@ -1,15 +1,9 @@
 <?php
-/**
- * @file Login.php
- * @brief this page is where user can connect herself to their account
- * @author Created by Loe.LAVAUD
- * @version 24.02.2023
- */
 ob_start();
 $title = "BlogAnime";
 ?>
     <section>
-        <link rel="stylesheet" type="text/css" href="view/css/Login.css">
+        <link rel="stylesheet" type="text/css" href="view/css/login.css">
     </section>
 
     <section class="bgwhite">
@@ -24,7 +18,7 @@ $title = "BlogAnime";
                        placeholder="Mot de passe" required>
             </div>
 
-            <button class="roundBtn" role="button">Se connecter</button>
+            <button class="roundBtn" role="button" >Se connecter</button>
             <a class="Account" href="index.php?action=register">Pas de Compte ? Créez en un !</a>
         </form>
     </section>

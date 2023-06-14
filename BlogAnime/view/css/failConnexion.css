@@ -1,0 +1,17 @@
+.containfail {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #ed0009;
+    border: 1px solid #ebccd1;
+    border-radius: 40px;
+    height: 35px;
+
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -12px;
+    color: #e6e6e6;
+}

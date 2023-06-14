@@ -1,64 +1,120 @@
 <?php
-/**
- * @file article.php
- * @brief This file will have all connection/action about article
- * @author Created by Loe.LAVAUD
- * @version 29.03.2023
- */
 
-function displayBlog()
+function getBlog()
 {
-    require_once "model/articlesManager.php";
-    $articles = getBlog();
-    require_once "view/blog.php";
-}
-
-function displayArticle($name)
-{
-    require_once "model/articlesManager.php";
-    $articles = getArticle($name);
-    require_once "view/articles.php";
-}
-
-function displayAddArticle($Perso)
-{
-
-    if (isset($Perso['NomPerso'], $Perso['AliasPerso'], $Perso['AgePerso'], $Perso['AnimePerso'], $Perso['FirstSeenPerso'],
-        $Perso['SexePerso'], $Perso['SpecesPerso'], $Perso['ResidencePerso'], $Perso['OriginePerso'], $Perso['AffiliationPerso'],
-        $Perso['OccupationPerso'], $Perso['DescriptionPerso'])) {
-
-        if ($Perso['FightingStylePerso'] == "") {
-            $Perso['FightingStylePerso'] = "Aucun";
-        }
-        if ($Perso['PowerPerso'] == "") {
-            $Perso['PowerPerso'] = "Aucun";
-        }
-
-        $Name = $Perso['NomPerso'];
-        $Alias = $Perso['AliasPerso'];
-        $Age = $Perso['AgePerso'];
-        $Anime = $Perso['AnimePerso'];
-        $FirstAppears = $Perso['FirstSeenPerso'];
-        $Sexe = $Perso['SexePerso'];
-        $Speces = $Perso['SpecesPerso'];
-        $Residence = $Perso['ResidencePerso'];
-        $Origine = $Perso['OriginePerso'];
-        $Affiliation = $Perso['AffiliationPerso'];
-        $Occupation = $Perso['OccupationPerso'];
-        $FightingStyle = $Perso['FightingStylePerso'];
-        $Power = $Perso['PowerPerso'];
-        $Description = $Perso['DescriptionPerso'];
-
+    try {
         require_once "model/articlesManager.php";
-        $result = getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces, $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
+        $articles = getArticleBlog();
+    } catch (ModelDataBaseException $ex){
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        require "view/blog.php";
+    }
+}
+
+function showArticle($name)
+{
+    try {
+        require_once "model/articlesManager.php";
+        $articles = getArticle($name['name']);
+    } catch (ModelDataBaseException $ex){
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        require "view/articles.php";
+    }
+}
+
+function addArticle($Perso)
+{
+    try {
+        if (isset($Perso['Name'], $Perso['CodeName'], $Perso['Age'], $Perso['Anime'],
+            $Perso['FirstAppear'], $Perso['Gender'], $Perso['Species'], $Perso['LocationLive'],
+            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])){
+
+            if ($Perso['FightStyle'] == "") {
+                $Perso['FightStyle'] = "Aucun";
+            }
+            if ($Perso['Power'] == "") {
+                $Perso['Power'] = "Aucun";
+            }
+
+            $Name = $Perso['Name'];
+            $Alias = $Perso['CodeName'];
+            $Age = $Perso['Age'];
+            $Anime = $Perso['Anime'];
+            $FirstAppears = $Perso['FirstAppear'];
+            $Sexe = $Perso['Gender'];
+            $Speces = $Perso['Species'];
+            $Residence = $Perso['LocationLive'];
+            $Origine = $Perso['Origin'];
+            $Affiliation = $Perso['Afiliate'];
+            $Occupation = $Perso['Occupation'];
+            $FightingStyle = $Perso['FightStyle'];
+            $Power = $Perso['Power'];
+            $Description = $Perso['Description'];
+
+            require_once "model/articlesManager.php";
+            $result = getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces,
+                $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
+        } else {
+            require_once "view/addArticle.php";
+        }
+    }catch (ModelDataBaseException $ex){
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
         if ($result == false) {
             require_once "view/addArticle.php";
         } else {
             require_once "model/articlesManager.php";
-            $articles = getBlog();
+            $articles = getArticleBlog();
             require_once "view/blog.php";
         }
-    } else {
-        require_once "view/addArticle.php";
+    }
+}
+function modifyArticle($Perso)
+{
+    try {
+        if (isset($Perso['Name'], $Perso['CodeName'], $Perso['Age'], $Perso['Anime'],
+            $Perso['FirstAppear'], $Perso['Gender'], $Perso['Species'], $Perso['LocationLive'],
+            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])){
+
+            if ($Perso['FightStyle'] == "") {
+                $Perso['FightStyle'] = "Aucun";
+            }
+            if ($Perso['Power'] == "") {
+                $Perso['Power'] = "Aucun";
+            }
+
+            $Name = $Perso['Name'];
+            $Alias = $Perso['CodeName'];
+            $Age = $Perso['Age'];
+            $Anime = $Perso['Anime'];
+            $FirstAppears = $Perso['FirstAppear'];
+            $Sexe = $Perso['Gender'];
+            $Speces = $Perso['Species'];
+            $Residence = $Perso['LocationLive'];
+            $Origine = $Perso['Origin'];
+            $Affiliation = $Perso['Afiliate'];
+            $Occupation = $Perso['Occupation'];
+            $FightingStyle = $Perso['FightStyle'];
+            $Power = $Perso['Power'];
+            $Description = $Perso['Description'];
+
+            require_once "model/articlesManager.php";
+            $result = getmodifyArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces,
+                $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
+        } else {
+            require_once "view/modifyArticle.php";
+        }
+    }catch (ModelDataBaseException $ex){
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        if ($result == false) {
+            require_once "view/addArticle.php";
+        } else {
+            require_once "model/articlesManager.php";
+            $articles = getArticleBlog();
+            require_once "view/blog.php";
+        }
     }
 }
