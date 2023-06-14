@@ -8,7 +8,7 @@ function getRegister($name, $firstname, $mail, $pwd)
     if(isset($check[0])){
         $result = false;
     }else{
-        $BlogAnimequery = 'INSERT INTO BlogAnime.users (emailAddress, firstname, lastname, accountLevel, password) ';
+        $BlogAnimequery = 'INSERT INTO bloganime.users (emailAddress, firstname, lastname, accountLevel, password) ';
         $BlogAnimequery = $BlogAnimequery.'VALUES ("'.$mail.'", "'.$firstname.'", "'.$name.'", 1, "'.$pwd.'");';
         $result = executeQueryInsertUpdate($BlogAnimequery);
         $_SESSION['user_id'] = $mail;
@@ -22,7 +22,7 @@ function getLogin($mail, $pwd)
 {
     $strgSeparator = '\'';
     require "model/dbConnector.php";
-    $queryCheck = 'SELECT emailAddress, password FROM BlogAnime.users WHERE emailAddress="'.$mail.'" AND password="'.$pwd.'"';
+    $queryCheck = 'SELECT emailAddress, password FROM bloganime.users WHERE emailAddress="'.$mail.'" AND password="'.$pwd.'";';
     $check = executeQuerySelect($queryCheck);
     if(isset($check[0])){
         $result = true;

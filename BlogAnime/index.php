@@ -34,6 +34,9 @@ if (isset($_GET['action'])) {
         case "addArticle":
             addArticle($_POST);
             break;
+        case "modifyArticle":
+            modifyArticle($_POST);
+            break;
         default :
             getLost();
     }

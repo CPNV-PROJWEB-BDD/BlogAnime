@@ -31,3 +31,18 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
 
     return $errorDouble;
 }
+
+function getmodifyArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
+{
+    $strgSeparator = '\'';
+    $queryCheck = 'SELECT bloganime.articles  FROM bloganime.articles WHERE name="'.$name.'"';
+    $check = executeQuerySelect($queryCheck);
+    if(isset($check[0])){
+        $errorDouble = false;
+    }else{
+        $BlogAnimequery = 'UPDATE bloganime.articles SET WHERE idarticles=".$idarticles."';
+        $errorDouble = executeQueryInsertUpdate($BlogAnimequery);
+    }
+
+    return $errorDouble;
+}
