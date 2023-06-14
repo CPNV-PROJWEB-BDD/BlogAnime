@@ -33,7 +33,7 @@ Here's the configuration of the VM for the server:
     - vm password: Pa$$w0rd
 
 ### Installation
-For the installation of Apache(2.4.57), MariaDB(10.11.2) and PHP(8.2) you can use the tutorial in this [website](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-on-debian-10)<br>
+For the installation of Apache(2.4.57), MariaDB(10.11) and PHP(8.2) you can use the tutorial in this [website](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-on-debian-10)<br>
 WARNING!!! some of the points of the tutorial where modified or completed so please also do the change below.<br>
 ### Changes
 To have the good version of PHP (8.2), there's this changes to do:<br>
