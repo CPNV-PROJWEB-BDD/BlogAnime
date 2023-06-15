@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="258f7a96-d879-4a5d-a81d-23fa65e1c20e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogAnime/view/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/view/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogAnime/view/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/view/gabarit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gabarit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlogAnime/view/css/archive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogAnime/controller/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/controller/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogAnime/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogAnime/model/articlesManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/model/articlesManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogAnime/model/userManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/model/userManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogAnime/view/articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/view/articles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogAnime/view/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/BlogAnime/view/blog.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +33,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Diogo.OLIVEIRA-SOARE/Documents/github/BlogAnime/BlogAnime",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BlogAnime" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager">
     <configuration name="bloganime" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
       <method v="2" />
@@ -61,6 +55,7 @@
       <updated>1677674216627</updated>
       <workItem from="1677674218050" duration="23000" />
       <workItem from="1677768711511" duration="456000" />
+      <workItem from="1686835492521" duration="28000" />
     </task>
     <servers />
   </component>

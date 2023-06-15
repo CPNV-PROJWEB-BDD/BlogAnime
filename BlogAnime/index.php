@@ -34,6 +34,12 @@ if (isset($_GET['action'])) {
         case "addArticle":
             addArticle($_POST);
             break;
+        case "archiveArticleOn":
+            archiveArticleOn($_GET);
+            break;
+        case "archiveArticleOff":
+            archiveArticleOff($_GET);
+            break;
         case "modifyArticle":
             modifyArticle($_POST);
             break;

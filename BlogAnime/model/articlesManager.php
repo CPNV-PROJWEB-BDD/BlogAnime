@@ -16,6 +16,12 @@ function getArticle($name)
     return $detailPerso;
 }
 
+function getArticlesNoDB(){
+    $queryGetArticleNoDB = 'SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles FROM bloganime.articles WHERE name='.$strgSeparator.$name.$strgSeparator;
+    $result = executeQuerySelect($queryGetArticleNoDB);
+    return $result;
+}
+
 function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
 {
     $strgSeparator = '\'';
@@ -30,6 +36,24 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
     }
 
     return $errorDouble;
+}
+
+function getArchiveArticleOn($name){
+    $strgSeparator = '\'';
+    require "model/dbConnector.php";
+    $updatequery = 'UPDATE bloganime SET active = 1 WHERE name ="'.$name.'"';
+    $updatequery = executeQuerySelect($updatequery);
+
+    return $updatequery;
+}
+
+function getArchiveArticleOff($name){
+    $strgSeparator = '\'';
+    require "model/dbConnector.php";
+    $updatequery = 'UPDATE bloganime SET active = 0 WHERE name ="'.$name.'"';
+    $updatequery = executeQuerySelect($updatequery);
+
+    return $updatequery;
 }
 
 function getmodifyArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)

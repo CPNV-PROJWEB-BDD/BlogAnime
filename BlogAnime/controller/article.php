@@ -5,7 +5,7 @@ function getBlog()
     try {
         require_once "model/articlesManager.php";
         $articles = getArticleBlog();
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         require "view/blog.php";
@@ -17,10 +17,21 @@ function showArticle($name)
     try {
         require_once "model/articlesManager.php";
         $articles = getArticle($name['name']);
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         require "view/articles.php";
+    }
+}
+
+function showArticleNoDB(){
+    try {
+        require_once "model/articlesManager.php";
+        $articles = getArticlesNoDB();
+    } catch (ModelDataBaseException $ex){
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        require "view/blog.php";
     }
 }
 
@@ -29,7 +40,7 @@ function addArticle($Perso)
     try {
         if (isset($Perso['Name'], $Perso['CodeName'], $Perso['Age'], $Perso['Anime'],
             $Perso['FirstAppear'], $Perso['Gender'], $Perso['Species'], $Perso['LocationLive'],
-            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])){
+            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])) {
 
             if ($Perso['FightStyle'] == "") {
                 $Perso['FightStyle'] = "Aucun";
@@ -59,7 +70,7 @@ function addArticle($Perso)
         } else {
             require_once "view/addArticle.php";
         }
-    }catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         if ($result == false) {
@@ -71,12 +82,39 @@ function addArticle($Perso)
         }
     }
 }
+
+function archiveArticleOn($name)
+{
+    try {
+        require_once "model/articlesManager.php";
+        $articles = getArchiveArticleOn($name);
+    } catch (ModelDataBaseException $ex) {
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        showArticleNoDB();
+        require "view/blog.php";
+    }
+}
+
+function archiveArticleOff($name)
+{
+    try {
+        require_once "model/articlesManager.php";
+        $articles = getArchiveArticleOff($name);
+    } catch (ModelDataBaseException $ex) {
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        showArticleNoDB();
+        require "view/blog.php";
+    }
+}
+
 function modifyArticle($Perso)
 {
     try {
         if (isset($Perso['Name'], $Perso['CodeName'], $Perso['Age'], $Perso['Anime'],
             $Perso['FirstAppear'], $Perso['Gender'], $Perso['Species'], $Perso['LocationLive'],
-            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])){
+            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])) {
 
             if ($Perso['FightStyle'] == "") {
                 $Perso['FightStyle'] = "Aucun";
@@ -106,7 +144,7 @@ function modifyArticle($Perso)
         } else {
             require_once "view/modifyArticle.php";
         }
-    }catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         if ($result == false) {

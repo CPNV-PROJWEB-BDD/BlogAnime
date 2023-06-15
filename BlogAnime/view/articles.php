@@ -5,6 +5,7 @@ $title = "BlogAnime";
 ?>
     <section>
         <link rel="stylesheet" type="text/css" href="view/css/articles.css">
+        <link rel="stylesheet" type="text/css" href="view/css/archive.css">
     </section>
 <?php foreach ($articles as $article) : ?>
     <section class="articlePage">
@@ -27,7 +28,8 @@ $title = "BlogAnime";
                     <div class="dataCharacter"><strong>Nom de code :</strong> <br><?= $article['codename']; ?></div>
                     <div class="dataCharacter"><strong>Age :</strong> <br><?= $article['age']; ?> ans</div>
                     <div class="dataCharacter"><strong>Anime :</strong> <br><?= $article['anime']; ?></div>
-                    <div class="dataCharacter"><strong>Première apparition :</strong> <br><?= $article['firstappear']; ?></div>
+                    <div class="dataCharacter"><strong>Première apparition :</strong>
+                        <br><?= $article['firstappear']; ?></div>
                     <div class="dataCharacter"><strong>Genre :</strong> <br><?= $article['gender']; ?></div>
                     <div class="dataCharacter"><strong>Especes :</strong> <br><?= $article['species']; ?></div>
                     <div class="dataCharacter"><strong>Residence :</strong> <br><?= $article['locationLive']; ?></div>
@@ -35,16 +37,29 @@ $title = "BlogAnime";
                     <div class="dataCharacter"><strong>Affiliation :</strong> <br><?= $article['afiliate']; ?></div>
                     <div class="dataCharacter"><strong>Occupation :</strong> <br><?= $article['occupation']; ?></div>
                     <?php if ($article['fightstyle'] != "Aucun"): ?>
-                        <div class="dataCharacter"><strong>Style de combat :</strong> <br><?= $article['fightstyle']; ?></div>
+                        <div class="dataCharacter"><strong>Style de combat :</strong> <br><?= $article['fightstyle']; ?>
+                        </div>
                     <?php endif; ?>
                     <?php if ($article['power'] != "Aucun"): ?>
                         <div class="dataCharacter"><strong>Pouvoir :</strong><br><?= $article['power']; ?></div>
                     <?php endif; ?>
-                    <div class="dataCharacter">
-                        archive
-                        modifier
-                    </div>
+                    <div class="modifyContainer">
+                        <?php if ($article['active'] = 0): ?>
+                            <form id="archive" action="index.php?action=archiveArticleOn&name=<?= $article['name']; ?>"
+                                  method="get">
+                                <button class="roundBtn" role="button">Activer</button>
+                            </form>
+                        <?php else: ?>
+                            <form id="archive" action="index.php?action=archiveArticleOff&name=<?= $article['name']; ?>"
+                                  method="get">
+                                <button class="roundBtn" role="button">Archiver</button>
+                            </form>
+                        <?php endif; ?>
 
+                        <form id="modify" action="index.php?action=modifyArticle" method="get">
+                            <button class="roundBtn" role="button">modifier</button>
+                        </form>
+                    </div>
                 </div>
 
             </aside>
