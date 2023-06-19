@@ -41,8 +41,10 @@ $title = "BlogAnime";
                         <div class="dataCharacter"><strong>Pouvoir :</strong><br><?= $article['power']; ?></div>
                     <?php endif; ?>
                     <div class="dataCharacter">
+                    <?php if (isset($_SESSION['user_id'])): ?>
                         archive
-                        modifier
+                        <a href="index.php?action=showModifyArticle&id=<?=$article['idarticles'];?>">modifier</a>
+                    <?php endif; ?>
                     </div>
 
                 </div>

@@ -3,7 +3,7 @@ function getRegister($name, $firstname, $mail, $pwd)
 {
     $strgSeparator = '\'';
     require "model/dbConnector.php";
-    $queryCheck = 'SELECT emailAddress FROM BlogAnime.users WHERE emailAddress="'.$mail.'"';
+    $queryCheck = 'SELECT emailAddress FROM bloganime.users WHERE emailAddress="'.$mail.'"';
     $check = executeQuerySelect($queryCheck);
     if(isset($check[0])){
         $result = false;
