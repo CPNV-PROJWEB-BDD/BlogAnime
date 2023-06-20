@@ -144,6 +144,7 @@ function modifyArticle($Perso){
     } catch (ModelDataBaseException $ex){
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
-       getBlog();
+        $articles = getArticlesNoDB();
+        require "view/blog.php";
     }
 }

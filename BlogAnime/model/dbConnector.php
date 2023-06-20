@@ -7,24 +7,27 @@
  * @version 08.02.2023
  */
 
-function openDBConnection()
-{
-    $sqlDriver = 'mysql';
-    $hostname = 'localhost';
-    $port = 3306;
-    $charset = 'utf8';
-    $dbName = 'bloganime';
-    $userName = 'bloganime';
-    $userPwd = 'Pa$$w0rd';
-    $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
-    try {
-        $tempDBConnexion = new PDO($dsn, $userName, $userPwd);
-    } catch (PDOException $exception) {
-        echo 'Connection failed' . $exception->getMessage();
-    }
+if(!function_exists('openDBConnection')){
+    function openDBConnection()
+    {
+        $sqlDriver = 'mysql';
+        $hostname = 'localhost';
+        $port = 3306;
+        $charset = 'utf8';
+        $dbName = 'bloganime';
+        $userName = 'bloganime';
+        $userPwd = 'Pa$$w0rd';
+        $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
+        try {
+            $tempDBConnexion = new PDO($dsn, $userName, $userPwd);
+        } catch (PDOException $exception) {
+            echo 'Connection failed' . $exception->getMessage();
+        }
 
-    return $tempDBConnexion;
+        return $tempDBConnexion;
+    }
 }
+
 
 function executeQuerySelect($query)
 {

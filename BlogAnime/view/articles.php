@@ -47,20 +47,12 @@ $title = "BlogAnime";
                     <div class="modifyContainer">
                         <?php if (isset($_SESSION['user_id'])): ?>
                             <?php if ($article['active'] == 0): ?>
-                                <form class="archive" method="get">
-                                    <button class="roundBtn" role="button"><a class="archive" href="index.php?action=archiveArticleOn&name=<?= $article['name']; ?>">Activer</a></button>
-                                </form>
+                                <a class="archive" href="index.php?action=archiveArticleOn&name=<?= $article['name']; ?>">Activer</a>
                             <?php else: ?>
-                                <form class="archive" method="get">
-                                    <button class="roundBtn" role="button"><a href="index.php?action=archiveArticleOff&name=<?= $article['name']; ?>">Archiver</a></button>
-                                </form>
+                                <a href="index.php?action=archiveArticleOff&name=<?= $article['name']; ?>">Archiver</a>
                             <?php endif; ?>
+                            <a class="archive" href="index.php?action=showModifyArticle&id=<?= $article['idarticles']; ?>">Modifier</a>
 
-                            <form class="modify">
-                                <button class="roundBtn" role="button"><a
-                                            class="archive" href="index.php?action=showModifyArticle&id=<?= $article['idarticles']; ?>">Modifier</a>
-                                </button>
-                            </form>
                         <?php endif; ?>
                     </div>
 

@@ -18,7 +18,7 @@ function getArticle($name)
     return $detailPerso;
 }
 
-function getArticlesNoDB($name){
+function getArticlesNoDB(){
     $queryGetArticleNoDB = 'SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles';
     $result = executeQuerySelect($queryGetArticleNoDB);
     return $result;
