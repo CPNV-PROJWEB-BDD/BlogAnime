@@ -56,6 +56,7 @@ CREATE TABLE IF NOT EXISTS `bloganime`.`articles` (
   `fightstyle` VARCHAR(255) NULL,
   `power` VARCHAR(255) NULL,
   `articles` MEDIUMTEXT NOT NULL,
+  `active` INT NOT NULL,
   `users_idusers` INT NOT NULL,
   PRIMARY KEY (`idarticles`, `users_idusers`),
   UNIQUE INDEX `title_UNIQUE` (`name` ASC) VISIBLE,
