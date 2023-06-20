@@ -40,6 +40,9 @@ if (isset($_GET['action'])) {
         case "archiveArticleOff":
             archiveArticleOff($_GET);
             break;
+        case "showModifyArticle":
+            ShowModifyArticle($_GET);
+            break;
         case "modifyArticle":
             modifyArticle($_POST);
             break;

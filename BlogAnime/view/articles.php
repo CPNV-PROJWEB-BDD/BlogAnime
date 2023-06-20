@@ -43,23 +43,27 @@ $title = "BlogAnime";
                     <?php if ($article['power'] != "Aucun"): ?>
                         <div class="dataCharacter"><strong>Pouvoir :</strong><br><?= $article['power']; ?></div>
                     <?php endif; ?>
+
                     <div class="modifyContainer">
-                        <?php if ($article['active'] = 0): ?>
-                            <form id="archive" action="index.php?action=archiveArticleOn&name=<?= $article['name']; ?>"
-                                  method="get">
-                                <button class="roundBtn" role="button">Activer</button>
-                            </form>
-                        <?php else: ?>
-                            <form id="archive" action="index.php?action=archiveArticleOff&name=<?= $article['name']; ?>"
-                                  method="get">
-                                <button class="roundBtn" role="button">Archiver</button>
+                        <?php if (isset($_SESSION['user_id'])): ?>
+                            <?php if ($article['active'] == 0): ?>
+                                <form class="archive" method="get">
+                                    <button class="roundBtn" role="button"><a class="archive" href="index.php?action=archiveArticleOn&name=<?= $article['name']; ?>">Activer</a></button>
+                                </form>
+                            <?php else: ?>
+                                <form class="archive" method="get">
+                                    <button class="roundBtn" role="button"><a href="index.php?action=archiveArticleOff&name=<?= $article['name']; ?>">Archiver</a></button>
+                                </form>
+                            <?php endif; ?>
+
+                            <form class="modify">
+                                <button class="roundBtn" role="button"><a
+                                            class="archive" href="index.php?action=showModifyArticle&id=<?= $article['idarticles']; ?>">Modifier</a>
+                                </button>
                             </form>
                         <?php endif; ?>
-
-                        <form id="modify" action="index.php?action=modifyArticle" method="get">
-                            <button class="roundBtn" role="button">modifier</button>
-                        </form>
                     </div>
+
                 </div>
 
             </aside>
