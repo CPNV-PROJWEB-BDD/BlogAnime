@@ -24,17 +24,6 @@ function showArticle($name)
     }
 }
 
-function showArticleNoDB($name){
-    try {
-        require_once "model/articlesManager.php";
-        $articles = getArticlesNoDB($name);
-    } catch (ModelDataBaseException $ex){
-        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
-    } finally {
-        require "view/blog.php";
-    }
-}
-
 function addArticle($Perso)
 {
     try {

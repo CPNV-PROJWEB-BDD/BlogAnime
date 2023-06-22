@@ -19,7 +19,8 @@ $title = "AboutUs";
         </div>
         <div class="Info-AboutUs">
 
-            <!-- Création d'un deuxième bloque qui s'occupera d'avoir 3 paragraphes contenant les informations sur les créateurs -->
+            <!-- Création d'un deuxième bloque qui s'occupera d'avoir 3 paragraphes
+            contenant les informations sur les créateurs -->
             <h2>Qui sommes nous?</h2>
             <p>
                 Grands fans d'animés et de manga, BlogAnime est un projet de passionnés qui se sont mis au défis de
@@ -46,10 +47,16 @@ $title = "AboutUs";
                 <br>
             <!-- Liens qui mènent aux réseaux sociaux du site -->
             <ul>
-                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM="><h4>Instagram</h4></a>
+                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://instagram.com/bloganime2023?igshid=ZDdkNTZiNTM=">
+                    <h4>Instagram</h4>
+                </a>
                 <a class="lien-Réseaux-Sociaux-AboutUs" href="https://twitter.com/BlogAnime2023"><h4>Twitter</h4></a>
-                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://www.reddit.com/user/BlogAnime2023"><h4>Reddit</h4></a>
-                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://www.facebook.com/profile.php?id=100090937893061""><h4>Facebook</h4></a>
+                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://www.reddit.com/user/BlogAnime2023">
+                    <h4>Reddit</h4>
+                </a>
+                <a class="lien-Réseaux-Sociaux-AboutUs" href="https://www.facebook.com/profile.php?id=100090937893061">
+                    <h4>Facebook</h4>
+                </a>
             </ul>
 
             </p>

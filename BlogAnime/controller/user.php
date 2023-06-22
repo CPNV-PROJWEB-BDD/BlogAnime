@@ -14,20 +14,19 @@ function register($Register)
             require_once "model/userManager.php";
             $result = getRegister($Surname, $firstname, $mail, $Password);
         }
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         if ($result == false) {
             require_once "view/register.php";
         } else {
-            require_once "model/articlesManager.php";
-            $articles = getArticleBlog();
             require_once "view/home.php";
         }
     }
 }
 
-function login($login){
+function login($login)
+{
     try {
         $result = 0;
 
@@ -38,7 +37,7 @@ function login($login){
             require_once "model/userManager.php";
             $result = getLogin($mail, $Password);
         }
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         if ($result == true) {
@@ -49,8 +48,9 @@ function login($login){
     }
 }
 
-function logout(){
-        require "model/userManager.php";
-        getLogout();
-        require "view/home.php";
+function logout()
+{
+    require "model/userManager.php";
+    getLogout();
+    require "view/home.php";
 }

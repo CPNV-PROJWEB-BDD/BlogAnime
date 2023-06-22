@@ -2,7 +2,7 @@
 
 function getArticleBlog()
 {
-    require "dbConnector.php";
+    require_once "dbConnector.php";
     $BlogAnimequery = "SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles";
     $Persos = executeQuerySelect($BlogAnimequery);
     return $Persos;

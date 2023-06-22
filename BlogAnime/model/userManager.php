@@ -22,7 +22,8 @@ function getLogin($mail, $pwd)
 {
     $strgSeparator = '\'';
     require "model/dbConnector.php";
-    $queryCheck = 'SELECT emailAddress, password FROM bloganime.users WHERE emailAddress="'.$mail.'" AND password="'.$pwd.'";';
+    $queryCheck = 'SELECT emailAddress, password FROM bloganime.users WHERE emailAddress="'
+        .$mail.'" AND password="'.$pwd.'";';
     $check = executeQuerySelect($queryCheck);
     if(isset($check[0])){
         $result = true;

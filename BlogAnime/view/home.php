@@ -8,7 +8,8 @@ $title = "BlogAnime";
     </section>
 
     <section id="article">
-        <!-- Crée un total de 3 bloques en colonne qui sont eux même séparer en 2 bloques en ligne chacuns contenant un text et une image et 1 bloque contenant un bouton pour s'inscrire-->
+        <!-- Crée un total de 3 bloques en colonne qui sont eux même séparer en 2 bloques en ligne chacuns contenant
+        un text et une image et 1 bloque contenant un bouton pour s'inscrire-->
         <div class="Border-page">
             <div class="Box">
                 <div class="Welcome-Image" id="imgDemonSlayer"></div>
@@ -37,7 +38,8 @@ $title = "BlogAnime";
 
             <div class="Box-image">
                 <div id="Join">
-                    <a href="index.php?action=register">        <!-- Bloque contenant le bouton qui renvoie à la page d'inscription -->
+                    <!-- Bloque contenant le bouton qui renvoie à la page d'inscription -->
+                    <a href="index.php?action=register">
                         <button class="recBtn" role="button">Click to Join us !</button>
                     </a>
                 </div>

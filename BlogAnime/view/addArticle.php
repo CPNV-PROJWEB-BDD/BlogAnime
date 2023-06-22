@@ -70,7 +70,8 @@ $title = "BlogAnime";
             </div>
 
             <div class="DescriptionContainer">
-                    <textarea class="DescriptionBox" name="Description" placeholder="Description de votre personnage" required></textarea>
+                    <textarea class="DescriptionBox" name="Description"
+                              placeholder="Description de votre personnage" required></textarea>
             </div>
 
             <button class="roundBtn" role="button">Ajouter le personnage</button>

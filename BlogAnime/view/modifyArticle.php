@@ -10,7 +10,8 @@ $title = "BlogAnime";
 <?php foreach ($articles as $article) : ?>
         <form class="containerArticle" action="index.php?action=modifyArticle" method="post">
             <div >
-                <input class="PersoFeature" type="text" name="idarticles" value="<?= $article['idarticles'] ?>" readonly>
+                <input class="PersoFeature" type="text" name="idarticles" value="<?= $article['idarticles'] ?>"
+                       readonly>
             </div>
             <div class="ContainerPersoFeature">
                 <input class="PersoFeature" type="text" name="Name" placeholder="Nom" value="<?= $article['name']; ?>"
@@ -33,7 +34,8 @@ $title = "BlogAnime";
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="FirstAppear" placeholder="Première apparition" value="<?= $article['firstappear']; ?>" required>
+                <input class="PersoFeature" type="text" name="FirstAppear" placeholder="Première apparition"
+                       value="<?= $article['firstappear']; ?>" required>
             </div>
 
             <div class="ContainerPersoFeature">
@@ -50,8 +52,8 @@ $title = "BlogAnime";
             </div>
 
             <div class="ContainerPersoFeature">
-                <input class="PersoFeature" type="text" name="Species" placeholder="Especes" value="<?= $article['species']; ?>"
-                       required>
+                <input class="PersoFeature" type="text" name="Species" placeholder="Especes"
+                       value="<?= $article['species']; ?>" required>
             </div>
 
             <div class="ContainerPersoFeature">
