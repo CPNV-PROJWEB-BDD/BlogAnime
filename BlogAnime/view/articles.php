@@ -47,11 +47,13 @@ $title = "BlogAnime";
                     <div class="modifyContainer">
                         <?php if (isset($_SESSION['user_id'])): ?>
                             <?php if ($article['active'] == 0): ?>
-                                <a class="archive" href="index.php?action=archiveArticleOn&name=<?= $article['name']; ?>">Activer</a>
+                                <a class="archive"
+                                   href="index.php?action=archiveArticleOn&name=<?= $article['name']; ?>">Activer</a>
                             <?php else: ?>
                                 <a href="index.php?action=archiveArticleOff&name=<?= $article['name']; ?>">Archiver</a>
                             <?php endif; ?>
-                            <a class="archive" href="index.php?action=showModifyArticle&id=<?= $article['idarticles']; ?>">Modifier</a>
+                            <a class="archive"
+                               href="index.php?action=showModifyArticle&id=<?= $article['idarticles']; ?>">Modifier</a>
 
                         <?php endif; ?>
                     </div>

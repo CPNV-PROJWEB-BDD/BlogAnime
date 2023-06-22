@@ -3,9 +3,10 @@
 function getArticleBlog()
 {
     require_once "dbConnector.php";
-    $BlogAnimequery = "SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles";
-    $Persos = executeQuerySelect($BlogAnimequery);
-    return $Persos;
+    $BlogAnimequery = "SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,
+       origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles";
+    $characters = executeQuerySelect($BlogAnimequery);
+    return $characters;
 }
 
 
@@ -13,13 +14,16 @@ function getArticle($name)
 {
     require "dbConnector.php";
     $strgSeparator = '\'';
-    $queryGetArticle = 'SELECT idarticles,bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles WHERE name='.$strgSeparator.$name.$strgSeparator;
-    $detailPerso = executeQuerySelect($queryGetArticle);
-    return $detailPerso;
+    $queryGetArticle = 'SELECT idarticles,bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,
+       locationLive,origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles WHERE name='
+        .$strgSeparator.$name.$strgSeparator;
+    $detailCharacter = executeQuerySelect($queryGetArticle);
+    return $detailCharacter;
 }
 
 function getArticlesNoDB(){
-    $queryGetArticleNoDB = 'SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles';
+    $queryGetArticleNoDB = 'SELECT bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,
+       locationLive,origin,afiliate,occupation,fightstyle,power,articles,active FROM bloganime.articles';
     $result = executeQuerySelect($queryGetArticleNoDB);
     return $result;
 }
@@ -46,12 +50,14 @@ function getArticleToModify($id)
 {
     require "dbConnector.php";
     $strgSeparator = '\'';
-    $queryGetArticle = 'SELECT idarticles,bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles FROM bloganime.articles WHERE idarticles='.$id;
-    $detailPerso = executeQuerySelect($queryGetArticle);
-    return $detailPerso;
+    $queryGetArticle = 'SELECT idarticles,bannersPath,name,codename,age,anime,imagePath,firstappear,gender,species,
+       locationLive,origin,afiliate,occupation,fightstyle,power,articles FROM bloganime.articles WHERE idarticles='.$id;
+    $detailCharacter = executeQuerySelect($queryGetArticle);
+    return $detailCharacter;
 }
 
-function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
+function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation
+    , $occupation, $fightingStyle, $power, $Description)
 {
     require "dbConnector.php";
     $strgSeparator = '\'';
@@ -60,8 +66,11 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
     if(isset($check[0])){
         $errorDouble = false;
     }else{
-        $BlogAnimequery = 'INSERT INTO bloganime.articles (name,codename,age,anime,firstappear,gender,species,locationLive,origin,afiliate,occupation,fightstyle,power,articles,active,users_idusers) ';
-        $BlogAnimequery = $BlogAnimequery.'VALUES ("'.$name.'", "'.$alias.'", "'.$age.'", "'.$anime.'", "'.$firstAppears.'", "'.$sexe.'", "'.$speces.'", "'.$Residence.'", "'.$Origine.'", "'.$affiliation.'", "'.$occupation.'", "'.$fightingStyle.'", "'.$power.'", "'.$Description.'",1,1);';
+        $BlogAnimequery = 'INSERT INTO bloganime.articles (name,codename,age,anime,firstappear,gender,species,
+                                locationLive,origin,afiliate,occupation,fightstyle,power,articles,active,users_idusers)';
+        $BlogAnimequery = $BlogAnimequery.'VALUES ("'.$name.'", "'.$alias.'", "'.$age.'", "'.$anime.'", "'
+            .$firstAppears.'", "'.$sexe.'", "'.$speces.'", "'.$Residence.'", "'.$Origine.'", "'.$affiliation.'", "'
+            .$occupation.'", "'.$fightingStyle.'", "'.$power.'", "'.$Description.'",1,1);';
         $errorDouble = executeQueryInsertUpdate($BlogAnimequery);
     }
 
@@ -69,16 +78,19 @@ function getAddArticle($name, $alias, $age, $anime, $firstAppears, $sexe, $spece
 }
 
 
-function getArticleModify($idarticles,$name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine, $affiliation, $occupation, $fightingStyle, $power, $Description)
+function getArticleModify($idarticles,$name, $alias, $age, $anime, $firstAppears, $sexe, $speces, $Residence, $Origine,
+                          $affiliation, $occupation, $fightingStyle, $power, $Description)
 {
     require "dbConnector.php";
     $strgSeparator = '\'';
     if(isset($check[0])){
         $errorDouble = false;
     }else{
-        $BlogAnimequery = 'UPDATE bloganime.articles SET name="'.$name.'", codename="'.$alias.'", age="'.$age.'",anime="'.$anime.'", 
-        firstappear="'.$firstAppears.'",gender= "'.$sexe.'", species="'.$speces.'", locationLive="'.$Residence.'", origin="'.$Origine.'", afiliate="'.$affiliation.'", 
-        occupation="'.$occupation.'",fightstyle= "'.$fightingStyle.'",power= "'.$power.'", articles="'.$Description.'",users_idusers= 1 WHERE idarticles='.$idarticles.'';
+        $BlogAnimequery = 'UPDATE bloganime.articles SET name="'.$name.'", codename="'.$alias.'", age="'.$age.
+            '",anime="'.$anime.'", firstappear="'.$firstAppears.'",gender= "'.$sexe.'", species="'.$speces.
+            '", locationLive="'.$Residence.'", origin="'.$Origine.'", afiliate="'.$affiliation.'", occupation="'
+            .$occupation.'",fightstyle= "'.$fightingStyle.'",power= "'.$power.'", articles="'.$Description.
+            '",users_idusers= 1 WHERE idarticles='.$idarticles;
         $errorDouble = executeQueryInsertUpdate($BlogAnimequery);
     }
 

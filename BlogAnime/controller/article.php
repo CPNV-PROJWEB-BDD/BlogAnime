@@ -24,34 +24,34 @@ function showArticle($name)
     }
 }
 
-function addArticle($Perso)
+function addArticle($character)
 {
     try {
-        if (isset($Perso['Name'], $Perso['CodeName'], $Perso['Age'], $Perso['Anime'],
-            $Perso['FirstAppear'], $Perso['Gender'], $Perso['Species'], $Perso['LocationLive'],
-            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])){
+        if (isset($character['Name'], $character['CodeName'], $character['Age'], $character['Anime'],
+            $character['FirstAppear'], $character['Gender'], $character['Species'], $character['LocationLive'],
+            $character['Origin'], $character['Afiliate'], $character['Occupation'], $character['Description'])){
 
-            if ($Perso['FightStyle'] == "") {
-                $Perso['FightStyle'] = "Aucun";
+            if ($character['FightStyle'] == "") {
+                $character['FightStyle'] = "Aucun";
             }
-            if ($Perso['Power'] == "") {
-                $Perso['Power'] = "Aucun";
+            if ($character['Power'] == "") {
+                $character['Power'] = "Aucun";
             }
 
-            $Name = $Perso['Name'];
-            $Alias = $Perso['CodeName'];
-            $Age = $Perso['Age'];
-            $Anime = $Perso['Anime'];
-            $FirstAppears = $Perso['FirstAppear'];
-            $Sexe = $Perso['Gender'];
-            $Speces = $Perso['Species'];
-            $Residence = $Perso['LocationLive'];
-            $Origine = $Perso['Origin'];
-            $Affiliation = $Perso['Afiliate'];
-            $Occupation = $Perso['Occupation'];
-            $FightingStyle = $Perso['FightStyle'];
-            $Power = $Perso['Power'];
-            $Description = $Perso['Description'];
+            $Name = $character['Name'];
+            $Alias = $character['CodeName'];
+            $Age = $character['Age'];
+            $Anime = $character['Anime'];
+            $FirstAppears = $character['FirstAppear'];
+            $Sexe = $character['Gender'];
+            $Speces = $character['Species'];
+            $Residence = $character['LocationLive'];
+            $Origine = $character['Origin'];
+            $Affiliation = $character['Afiliate'];
+            $Occupation = $character['Occupation'];
+            $FightingStyle = $character['FightStyle'];
+            $Power = $character['Power'];
+            $Description = $character['Description'];
 
             require_once "model/articlesManager.php";
             $result = getAddArticle($Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces,
@@ -98,35 +98,35 @@ function archiveArticleOff($name)
     }
 }
 
-function ShowModifyArticle($Perso)
+function ShowModifyArticle($character)
 {
     try {
         require_once "model/articlesManager.php";
-        $articles = getArticleToModify($Perso['id']);
+        $articles = getArticleToModify($character['id']);
     } catch (ModelDataBaseException $ex){
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         require "view/modifyArticle.php";
     }
 }
-function modifyArticle($Perso){
+function modifyArticle($character){
     try {
         require_once "model/articlesManager.php";
-        $idarticles= $Perso['idarticles'];
-        $Name = $Perso['Name'];
-        $Alias = $Perso['CodeName'];
-        $Age = $Perso['Age'];
-        $Anime = $Perso['Anime'];
-        $FirstAppears = $Perso['FirstAppear'];
-        $Sexe = $Perso['Gender'];
-        $Speces = $Perso['Species'];
-        $Residence = $Perso['LocationLive'];
-        $Origine = $Perso['Origin'];
-        $Affiliation = $Perso['Afiliate'];
-        $Occupation = $Perso['Occupation'];
-        $FightingStyle = $Perso['FightStyle'];
-        $Power = $Perso['Power'];
-        $Description = $Perso['Description'];
+        $idarticles= $character['idarticles'];
+        $Name = $character['Name'];
+        $Alias = $character['CodeName'];
+        $Age = $character['Age'];
+        $Anime = $character['Anime'];
+        $FirstAppears = $character['FirstAppear'];
+        $Sexe = $character['Gender'];
+        $Speces = $character['Species'];
+        $Residence = $character['LocationLive'];
+        $Origine = $character['Origin'];
+        $Affiliation = $character['Afiliate'];
+        $Occupation = $character['Occupation'];
+        $FightingStyle = $character['FightStyle'];
+        $Power = $character['Power'];
+        $Description = $character['Description'];
 
         $articles = getArticleModify($idarticles,$Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces,
             $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
