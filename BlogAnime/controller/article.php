@@ -5,7 +5,7 @@ function getBlog()
     try {
         require_once "model/articlesManager.php";
         $articles = getArticleBlog();
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         require "view/blog.php";
@@ -17,19 +17,34 @@ function showArticle($name)
     try {
         require_once "model/articlesManager.php";
         $articles = getArticle($name['name']);
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         require "view/articles.php";
     }
 }
 
+<<<<<<< Updated upstream
+=======
+function showArticleNoDB($name)
+{
+    try {
+        require_once "model/articlesManager.php";
+        $articles = getArticlesNoDB($name);
+    } catch (ModelDataBaseException $ex) {
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        require "view/blog.php";
+    }
+}
+
+>>>>>>> Stashed changes
 function addArticle($Perso)
 {
     try {
         if (isset($Perso['Name'], $Perso['CodeName'], $Perso['Age'], $Perso['Anime'],
             $Perso['FirstAppear'], $Perso['Gender'], $Perso['Species'], $Perso['LocationLive'],
-            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])){
+            $Perso['Origin'], $Perso['Afiliate'], $Perso['Occupation'], $Perso['Description'])) {
 
             if ($Perso['FightStyle'] == "") {
                 $Perso['FightStyle'] = "Aucun";
@@ -59,7 +74,7 @@ function addArticle($Perso)
         } else {
             require_once "view/addArticle.php";
         }
-    }catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         if ($result == false) {
@@ -71,21 +86,53 @@ function addArticle($Perso)
         }
     }
 }
+<<<<<<< Updated upstream
+=======
+
+function archiveArticleOn($name)
+{
+    try {
+        require_once "model/articlesManager.php";
+        $articles = getArchiveArticleOn($name);
+    } catch (ModelDataBaseException $ex) {
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        $articles = getArticlesNoDB($name);
+        require "view/blog.php";
+    }
+}
+
+function archiveArticleOff($name)
+{
+    try {
+        require_once "model/articlesManager.php";
+        $articles = getArchiveArticleOff($name);
+    } catch (ModelDataBaseException $ex) {
+        $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
+    } finally {
+        $articles = getArticlesNoDB($name);
+        require "view/blog.php";
+    }
+}
+
+>>>>>>> Stashed changes
 function ShowModifyArticle($Perso)
 {
     try {
         require_once "model/articlesManager.php";
         $articles = getArticleToModify($Perso['id']);
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
         require "view/modifyArticle.php";
     }
 }
-function modifyArticle($Perso){
+
+function modifyArticle($Perso)
+{
     try {
         require_once "model/articlesManager.php";
-        $idarticles= $Perso['idarticles'];
+        $idarticles = $Perso['idarticles'];
         $Name = $Perso['Name'];
         $Alias = $Perso['CodeName'];
         $Age = $Perso['Age'];
@@ -101,9 +148,9 @@ function modifyArticle($Perso){
         $Power = $Perso['Power'];
         $Description = $Perso['Description'];
 
-        $articles = getArticleModify($idarticles,$Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces,
+        $articles = getArticleModify($idarticles, $Name, $Alias, $Age, $Anime, $FirstAppears, $Sexe, $Speces,
             $Residence, $Origine, $Affiliation, $Occupation, $FightingStyle, $Power, $Description);
-    } catch (ModelDataBaseException $ex){
+    } catch (ModelDataBaseException $ex) {
         $articleErrorMessages = "Nous rencontrons des problèmes de connexions à la base de données";
     } finally {
        getBlog();
